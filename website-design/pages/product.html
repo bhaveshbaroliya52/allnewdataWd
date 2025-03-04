@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="product.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="heading">
+    <div class="call">
+      <i class="fa-solid fa-phone"></i>
+      <span style="font-style: italic;">902-396-2442</span>
+    </div>
+
+    <div class="sign-in">
+      <a href="#">Login /</a>
+      <a href="#">ragister</a>
+
+    </div>
+  </div>
+
+
+  <header>
+
+    <a href="#" class="logo">Gel Krupa</a>
+
+    <nav>
+      <a href="../project.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Product</a>
+      <a href="#">Contact us</a>
+
+    </nav>
+
+    <div class="serch-bar">
+
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Serch for Product,items and other">
+
+    </div>
+
+
+    <input type="checkbox" name="" id="check">
+    <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="close" viewBox="0 0 16 16">
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+   -->
+
+  </header>
+
+  <main>
+
+    <div class="product">
+
+      <div class="filter-container">
+        <p><strong>Filters</strong></p>
+        <p>PICK A CATEGORY</p>
+
+        <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
+        <ul class="subcategories">
+          <li> <a href="#">Hair Oil</a></li>
+          <li><a href="#">Moisturizer</a></li>
+          <li><a href="#">Shampoo</a></li>
+          <li><a href="#">Face Wash</a></li>
+          <li><a href="#">Face Pack</a></li>
+          <li class="extra" style="display: none;">Serum</li>
+          <li class="extra" style="display: none;">Sunscreen</li>
+          <li class="extra" style="display: none;">Henna</li>
+          <li class="show-more" onclick="showMore(this)">Show 17 more</li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Grocery</div>
+        <ul class="subcategories">
+          <li><a href="#">Tea</a></li>
+          <li><a href="#">Dals</a></li>
+          <li><a href="#">Pulses</a></li>
+          <li><a href="#">Dry Fruits</a></li>
+          <li><a href="#">Cooking Oil</a></li>
+          <li><a href="#"> Grains & sooji </a></li>
+          <li><a href="#">Flours</a></li> <!-- lot chana  -->
+          <li><a href="#">Masala & Spices</a></li>
+          <li><a href="#">Ghee & Vanaspati</a></li>
+          <li><a href="#">Papad</a></li>
+          <li><a href="#">Salt / Sugar / Jaggery</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+        <ul class="subcategories">
+          <li><a href="#">Pen / Pencile</a></li>
+          <li><a href="#">Notebooks / Diaries</a></li>
+          <li><a href="#">Art & Craft</a></li>
+          <li><a href="#">General Stationery</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+        <ul class="subcategories">
+          <li><a href="#">Cold Drinks</a></li>
+          <li><a href="#">Soda & Water</a></li>
+          <li><a href="#">Juice</a></li>
+          <li><a href="#">Milk</a></li>
+          <li><a href="#">Panner</a></li>
+          <li><a href="#">Shrikhand</a></li>
+          <li><a href="#">Butter</a></li>
+          <li><a href="#">chass</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+        <ul class="subcategories">
+          <li><a href="#">Cup</a></li>
+          <li><a href="#">Cones</a></li>
+          <li><a href="#"> Kulfi</a></li>
+          <li><a href="#"> Candies, Dollies</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dessert</div>
+        <ul class="subcategories">
+          <li><a href="#">Chikki</a></li>
+          <li><a href="#">Chikki</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+        <ul class="subcategories">
+          <li><a href="#">Salty Biscuits</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Cream Biscuits</a></li>
+          <li><a href="#">Khari & Toasts</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+        <ul class="subcategories">
+          <li><a href="#">Detergent Powder</a></li>
+          <li><a href="#">Detergent Bar</a></li>
+          <li><a href="#">Cleaners</a></li>
+
+        </ul>
+
+
+        <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+        <ul class="subcategories">
+          <li><a href="#">Diwali</a></li>
+          <li><a href="#">Holi-Special</a></li>
+          <li><a href="#">Utrayan</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+        <ul class="subcategories">
+          <li><a href="#">Namkeen</a></li>
+          <li><a href="#">Wafers</a></li>
+          <li><a href="#">Western Snacks</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Others</div>
+        <ul class="subcategories">
+          <li><a href="#">Repellents</a></li>
+          <li><a href="#">Festive Decor & Gifting</a></li>
+          <li><a href="#">Balm</a></li>
+
+
+        </ul>
+
+        <p class="show-more" onclick="showMore(this)">Show 38 more categories</p>
+      </div>
+
+       
+
+      <script>
+        function toggleCategory(element) {
+          let subcategories = element.nextElementSibling;
+          let isOpen = subcategories.style.display === "block";
+          subcategories.style.display = isOpen ? "none" : "block";
+          element.classList.toggle("open", !isOpen);
+        }
+
+        function showMore(element) {
+          let extras = element.parentElement.querySelectorAll(".extra");
+          extras.forEach(item => item.style.display = "block");
+          element.style.display = "none";
+        }
+      </script>
+
+ <div>
+
+  <p>PRODUCT</p>
+
+      <div class="product-container">
+
+
+      
+        <div class="items">
+          
+          
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+        <div class="items">
+
+
+          <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+          <div class="items-cart">
+            <a href="#"><img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                alt=""></a>
+
+            <div class="detail">
+              <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
+              <span>600 ml</span>
+
+              <div class="price">
+                <h6 style="margin-left: 10px;">MRP</h6>
+
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
+                  viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
+                  <path
+                    d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
+                </svg>
+                <h6>290</h6>
+
+              </div>
+
+            </div>
+            <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Add To Cart</a></button>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    </div>
+  </main>
+</body>
+
+</html>

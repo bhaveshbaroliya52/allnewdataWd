@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+  </head>
+  <body>
+    <div class="heading">
+      <div class="call">
+      <i class="fa-solid fa-phone"></i>
+      <span style= "font-style: italic;">902-396-2442</span>
+  </div>
+
+<div class="sign-in">
+<a href="#">Login /</a> 
+<a href="#">ragister</a> 
+
+</div>
+  </div>
+    <header>
+
+      <a href="#" class="logo">Gel Krupa</a>
+
+ 
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="../pages/product.html">Product</a>
+        <a href="#">Contact us</a>
+        
+      </nav>
+
+      <div class="serch-bar">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="Serch for Product,items and other">
+
+      </div>
+      <div class="Profile">
+
+
+
+        
+      </div>
+
+    </header>
+
+<main>
+  <div class="slider-container">
+    <div class="slides">
+      <img
+        src="images/banner.jpeg"
+        class="slide"
+        alt="Image 1"
+      />
+      <img
+        src="images/Untitled-2.jpeg"
+        class="slide"
+        alt="Image 2"
+      />
+      <img
+        src="images/banner2.png"
+        class="slide"
+        alt="Image 3"
+      />
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+ 
+<script>
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+// Function to show a specific slide
+function showSlide(index) {
+  // Hide all slides
+  slides.forEach((slide) => slide.classList.remove('active'));
+
+  // Make sure index is within the bounds of the slides array
+  if (index >= slides.length) {
+    currentSlide = 0; // Go back to the first slide
+  } else if (index < 0) {
+    currentSlide = slides.length - 1; // Go to the last slide
+  } else {
+    currentSlide = index;
+  }
+
+  // Show the current slide
+  slides[currentSlide].classList.add('active');
+}
+
+// Show next slide
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+// Show previous slide
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+// Initialize the first slide
+showSlide(currentSlide);
+
+//   Automatic slide change every 3 seconds
+setInterval(() => {
+  nextSlide();
+}, 10000);
+
+</script>  
+</main>
+
+
+  </body>
+</html>
