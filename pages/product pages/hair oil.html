@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="hair-oil.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -71,11 +71,10 @@
       <div class="filter-container">
         <p><strong>Filters</strong></p>
         <p>PICK A CATEGORY</p>
-    
 
-        <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
-        <ul class="subcategories">
-          <li> <a href="product pages/hair oil.html">Hair Oil</a></li>
+        <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
+        <ul class="subcategories" style="display: block;">
+          <li> <a href="#" style="color: orangered;">Hair Oil</a></li>
           <li><a href="#">Moisturizer</a></li>
           <li><a href="#">Shampoo</a></li>
           <li><a href="#">Face Wash</a></li>
@@ -198,6 +197,16 @@
         }
       </script>
 
+
+    <script>
+        function toggleCategory(element) {
+            let subcategories = element.nextElementSibling;
+            let isOpen = subcategories.style.display === "block";
+            subcategories.style.display = isOpen ? "none" : "block";
+            element.classList.toggle("open", !isOpen);
+        }
+    </script>
+
       <div>
 
         <p>PRODUCT</p>
@@ -213,12 +222,12 @@
 
             <div class="items-cart">
               <a href="#"><img
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
+                  src="https://m.media-amazon.com/images/I/41sM5--LCqL.jpg"
                   alt=""></a>
 
               <div class="detail">
-                <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
-                <span>600 ml</span>
+                <p style="margin: 0;">Bansi Dhupel Hair Oil & Dandruff Hair Oil </p>
+                <span>500 ml</span>
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
@@ -228,7 +237,7 @@
                     <path
                       d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
                   </svg>
-                  <h6>290</h6>
+                  <h6>60</h6>
 
                 </div>
 
@@ -247,12 +256,12 @@
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
 
             <div class="items-cart">
-              <a href="#"><img src="https://img.clevup.in/285171/1686744967014_SKU-0401_1.png?width=600&format=webp"
+              <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg"
                   alt=""></a>
 
               <div class="detail">
-                <p style="margin: 0;">Dove Shampoo + Hair Conditioner intense repair</p>
-                <span>₹5 × 16</span>
+                <p style="margin: 0;">Dabur Anmol Coconut Oil at  100ml | Nariyal Tel</p>
+                <span>100ml</span>
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
@@ -262,7 +271,7 @@
                     <path
                       d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
                   </svg>
-                  <h6>75</h6>
+                  <h6>15</h6>
                 </div>
               </div>
               <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"

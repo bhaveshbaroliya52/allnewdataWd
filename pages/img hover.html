@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hover Image Effect</title>
+    <style>
+        .hover-img {
+            position: relative;
+            width: 300px;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .hover-img img {
+            width: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .hover-img .img-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+        }
+
+        .hover-img:hover .img-hover {
+            opacity: 1;
+        }
+
+        .hover-img:hover .img-default {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hover-img">
+        <img src="default-image.jpg" alt="Default Image" class="img-default">
+        <img src="hover-image.jpg" alt="Hover Image" class="img-hover">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .heading {
+    background-color: black;
+    color: white;
+    padding: 6px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .heading i {
+    margin-right: 6px;
+    padding: 8px;
+  }
+  .heading span {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .heading .sign-in a {
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  .heading .sign-in a:hover {
+    color: aqua;
+  }
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 68px;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 100%;
+  }
+  
+  header nav a:focus {
+    color: orangered;
+  }
+  
+  header .logo {
+    font-size: 34px;
+    /* background-image: linear-gradient(red, orange); */
+    text-decoration: none;
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    position: relative;
+  }
+  
+  header nav a:hover::before {
+    width: 100%;
+  }
+  header nav a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    background-color: orange;
+    border-radius: 1px;
+    transition: all 300ms;
+  }
+  header nav a:nth-child(3) {
+    color: orangered;
+  }
+  header input {
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+  }
+  
+  header .serch-bar {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: rgb(235, 235, 235); */
+    background-color: rgba(190, 227, 239, 0.284);
+  }
+  
+  header .sign-in {
+    border: 1px solid black;
+    padding: 6px 20px;
+    background-color: rgba(178, 244, 237, 0.696);
+    text-align: center;
+  }
+  
+  .sign-in a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  header #check {
+    display: none;
+  }
+  header #checkbtn {
+    display: none;
+  }
+  @media (max-width: 450px) {
+    header nav {
+      position: absolute;
+      flex-direction: column;
+    }
+    header {
+      height: 46px;
+      width: 100%;
+    }
+  
+    header input {
+      width: 150px;
+      height: 10px;
+      padding: 0px;
+      font-size: 10px;
+    }
+    header .serch-bar i {
+      font-size: 10px;
+    }
+    header .logo {
+      font-size: 20px;
+    }
+  
+    .heading {
+      padding: 4px 20px;
+    }
+    .heading i {
+      margin-right: 4px;
+      padding: 6px;
+      font-size: 12px;
+    }
+    .heading span {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .heading .sign-in a {
+      font-size: 13px;
+    }
+  }
+  
+  
+  main .product {
+    display: flex;
+    flex: 2;
+     
+  }
+  
+  
+  main .filter-container {
+    margin-top: 2px;
+    min-width:  270px; 
+  }
+  
+  main .dropdown .btn {
+    border: none;
+  }
+  main .dropdown .btn:hover {
+    color: orangered;
+  }
+  main .dropdown .btn:focus {
+    color: orangered;
+  }
+  main .dropdown .dropdown-menu {
+    border: none;
+    transition: all 500ms;
+  }
+  
+  .dropdown .dropdown-menu .dropdown-item:hover {
+    color: orange;
+  }
+  
+  .filter-container {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 8px;
+  }
+  
+  .category {
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .category::before {
+    content: "▶";
+    font-size: 12px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+  }
+  
+ 
+
+ 
+  .subcategory {
+    margin-left: 20px;
+}
+.open + .subcategory {
+    display: block;
+}
+
+
+
+  .category.open::before {
+    transform: rotate(90deg);
+  }
+  
+  .subcategories {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+  }
+  
+  .subcategories li {
+    padding: 5px 0;
+  }
+  
+  .subcategories li a {
+    text-decoration: none;
+    color: black;
+  }
+  .subcategories li a:hover {
+    color: orangered;
+  }
+  .show-more {
+    color: blue;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  
+  main .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+  }
+  .product-container .items{
+    position: relative;
+    height: 430px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    transition: all 300ms;
+  display: flex; 
+  flex-direction: column;
+  }
+  .product-container .items:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  
+  }
+   
+  .product-container .items .wishlist-btn{
+    height: 34px;
+    width: 34px;
+    background-color: rgb(199, 199, 199);
+    border: 1px solid black;
+    position: absolute;
+    top: 10px;
+    left: calc(100% - 40px);
+    clip-path: polygon(
+      50% 15%,
+      61% 7%,
+      75% 7%,
+      85% 17%,
+      85% 32%,
+      75% 45%,
+      50% 75%,
+      25% 45%,
+      15% 32%,
+      15% 17%,
+      25% 7%,
+      39% 7%
+    );
+  
+  }
+  
+  
+  
+  .product-container .items a img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  .product-container .items span {
+    color: gray;
+  }
+  .product-container .items .price {
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .product-container .items button {
+    width: 270px;
+    height: 34px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(251, 183, 57, 0.971);
+    transition: all 200ms;
+    margin-top: 8px;
+  }
+  .product-container .items .cart-btn:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: rgba(255, 166, 0, 0.971);
+  text-decoration: none;
+  transition: all 100ms;
+  }
+  
+  .product-container .items button:active{
+  transform: scale(0.97);
+  
+  }
+  .product-container .items button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .product-container .items button a svg {
+    margin-right: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+   
+  .product-container .items i:active {
+    background-color: pink;
+  }
+   
+  
