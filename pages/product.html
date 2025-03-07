@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="product.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -28,7 +29,7 @@
     </div>
 
     <div class="sign-in">
-      <a href="#">Login /</a>
+      <a href="#">Sign-up /</a>
       <a href="#">ragister</a>
 
     </div>
@@ -36,25 +37,21 @@
 
 
   <header>
-
-    <a href="#" class="logo">Gel Krupa</a>
- 
+    <div class="logo">
+      <a href="#" class="logo-1">Gel Krupa</a>
+    </div>
+    
     <nav class="nav-links">
       <a href="../project.html">Home</a>
       <a href="#">About</a>
       <a href="#">Product</a>
       <a href="#">Contact us</a>
-
     </nav>
 
     <div class="serch-bar">
-
       <i class="fa-solid fa-magnifying-glass"></i>
       <input type="text" placeholder="Serch for Product,items and other">
-
     </div>
-
- 
 
     <div class="login">
       <i class="fa-regular fa-user"></i>Login
@@ -63,26 +60,27 @@
       <i class="fa-regular fa-heart"></i>wishlist
     </div>
 
-<div class="cart">
- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
- </svg>Cart
-</div>
+    <div class="cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+      </svg>Cart
+    </div>
 
- <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
 
- 
   </header>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.getElementById("mobile-menu");
-        const navLinks = document.querySelector(".nav-links");
-        menuToggle.addEventListener("click", function() {
-            navLinks.classList.toggle("active");
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
     });
-</script>
+  </script>
 
 
   <main>
@@ -92,7 +90,7 @@
       <div class="filter-container">
         <p><strong>Filters</strong></p>
         <p>PICK A CATEGORY</p>
-    
+
 
         <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
         <ul class="subcategories">
@@ -546,7 +544,9 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/jupu7ww0/hair-oil/y/n/v/20-n-hair-oil-20ml-sachet-pack-of-36-navaratna-original-imaffr77ax2zh4uc.jpeg?q=90&crop=false" alt=""></a>
+              <a href="#"><img
+                  src="https://rukminim2.flixcart.com/image/850/1000/jupu7ww0/hair-oil/y/n/v/20-n-hair-oil-20ml-sachet-pack-of-36-navaratna-original-imaffr77ax2zh4uc.jpeg?q=90&crop=false"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Navaratna N Hair Oil, 20ml Sachet - Pack of 36 Hair Oil </p>
@@ -574,7 +574,8 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2021/7/MI/CZ/WP/109585239/nandini-tea.jpeg" alt=""></a>
+              <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2021/7/MI/CZ/WP/109585239/nandini-tea.jpeg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Green Nandini Tea, Packaging Type: Bag</p>
@@ -632,7 +633,9 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://www.jiomart.com/images/product/original/490000095/everest-pav-bhaji-masala-50-g-product-images-o490000095-p490000095-4-202205180137.jpg?im=Resize=(1000,1000)" alt=""></a>
+              <a href="#"><img
+                  src="https://www.jiomart.com/images/product/original/490000095/everest-pav-bhaji-masala-50-g-product-images-o490000095-p490000095-4-202205180137.jpg?im=Resize=(1000,1000)"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Buy Everest Pav Bhaji Masala 50 g Online at Best Prices in India </p>
@@ -719,7 +722,9 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://bazaar5.com/image/cache/catalog/pro/product/10005/everest-red-chilli-powder-500-gm-coriander-powder-500-gm-turmeric-powder-1-5-kg-combo-pack-product-images-orvfmqlkgrh-p596996763-0-202301071112-320x320w.jpg" alt=""></a>
+              <a href="#"><img
+                  src="https://bazaar5.com/image/cache/catalog/pro/product/10005/everest-red-chilli-powder-500-gm-coriander-powder-500-gm-turmeric-powder-1-5-kg-combo-pack-product-images-orvfmqlkgrh-p596996763-0-202301071112-320x320w.jpg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">EVEREST CHILLI 40G,TURMERIC 100G,CORIANDER 100G </p>
@@ -776,7 +781,9 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2023/2/PX/NH/MQ/163669652/5l-cottonseed-oil-500x500.jpg" alt=""></a>
+              <a href="#"><img
+                  src="https://5.imimg.com/data5/SELLER/Default/2023/2/PX/NH/MQ/163669652/5l-cottonseed-oil-500x500.jpg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">5L Star 555 Cottonseed Oil, 5 Litre 101/litre</p>
@@ -799,16 +806,18 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3-Fqvtxy1aNR-DFqpk7AYfbf51dlPRdWG-Q&s" alt=""></a>
+              <a href="#"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3-Fqvtxy1aNR-DFqpk7AYfbf51dlPRdWG-Q&s"
+                  alt=""></a>
 
               <div class="detail">
-                <p style="margin: 0;">Manchurian Masala 40 gm, Packaging Size: 10/p>
+                <p style="margin: 0;">Manchurian Masala 40 gm, Packaging Size: 10</p>
                 <span>40g</span>
 
                 <div class="price">
@@ -828,15 +837,17 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPZ03t6sdGby84CBoNBX6ZlUmgaVqD-FJRuw&s" alt=""></a>
+              <a href="#"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPZ03t6sdGby84CBoNBX6ZlUmgaVqD-FJRuw&s"
+                  alt=""></a>
 
               <div class="detail">
-                <p style="margin: 0;">Nutritional Value as per 100g, Fat :0.89%, Protein :1.02, Carbohydrates :37.50%</p>
+                <p style="margin: 0;">Nutritional Value as per 100g, Fat :0.89%, Protein :1.02</p>
                 <span>Tomato Sauce</span>
 
                 <div class="price">
@@ -856,12 +867,14 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2025/2/487948018/XM/LX/ZT/15746512/8g-tomato-ketchup-sachets.jpeg" alt=""></a>
+              <a href="#"><img
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/2/487948018/XM/LX/ZT/15746512/8g-tomato-ketchup-sachets.jpeg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Hemz Printed Tomato Ketchup Sachets, Packaging Size: 8 g</p>
@@ -884,12 +897,14 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://bisarga.com/wp-content/uploads/2021/06/Nestle-KitKat-Chocolate-37.3g-Pouch-24.jpg" alt=""></a>
+              <a href="#"><img
+                  src="https://bisarga.com/wp-content/uploads/2021/06/Nestle-KitKat-Chocolate-37.3g-Pouch-24.jpg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Nestle KitKat Chocolate 37.3g Pouch 24/-</p>
@@ -912,12 +927,14 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://images-cdn.ubuy.co.in/63f37b29cc3c0776ff1e3463-cadbury-dairy-milk-milk-chocolate-165g.jpg" alt=""></a>
+              <a href="#"><img
+                  src="https://images-cdn.ubuy.co.in/63f37b29cc3c0776ff1e3463-cadbury-dairy-milk-milk-chocolate-165g.jpg"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Cadbury Dairy Milk Chocolate Bars Bars 11g ₹10/-</p>
@@ -940,16 +957,18 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2SB54AHiKZztxJc5QxXUkZdFIpraduxKPg&s" alt=""></a>
+              <a href="#"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2SB54AHiKZztxJc5QxXUkZdFIpraduxKPg&s"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">5 Star Chocolate at 1/piece | Chocolate in kariyana</p>
-                <span>1/piece  ₹10</span>
+                <span>1/piece ₹10</span>
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
@@ -968,12 +987,14 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFM4v-DTzpDdDB02QBtt0gFajP0IE418OEAw&s" alt=""></a>
+              <a href="#"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFM4v-DTzpDdDB02QBtt0gFajP0IE418OEAw&s"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Udad papad 7 inches - Gopal Snacks Limited.</p>
@@ -996,12 +1017,14 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-<a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhoBBiD-mx9KPmRC9FZau7n4NaEBfDt-2Iw&s" alt="Default Image" class="img-default"></a>
+              <a href="#"> <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhoBBiD-mx9KPmRC9FZau7n4NaEBfDt-2Iw&s"
+                  alt="Default Image" class="img-default"></a>
 
               <div class="detail">
                 <p style="margin: 0;">Buy Gopal Namkeen Bhavnagri Gathiya Online at Best Price </p>
@@ -1024,7 +1047,7 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
@@ -1052,11 +1075,12 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="#"><img src="https://www.gopalnamkeen.com/storage/product/front_images/1719643351.png" alt=""></a>
+              <a href="#"><img src="https://www.gopalnamkeen.com/storage/product/front_images/1719643351.png"
+                  alt=""></a>
 
               <div class="detail">
                 <p style="margin: 0;">Elaichi rusk - Gopal Snacks Limited. BONOVA</p>
@@ -1079,7 +1103,7 @@
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
             </div>
-           </div>
+          </div>
 
 
 
@@ -1090,13 +1114,11 @@
 
 
 
-         
+
+        </div>
+
       </div>
-
-    </div>
   </main>
 </body>
 
 </html>
-
-

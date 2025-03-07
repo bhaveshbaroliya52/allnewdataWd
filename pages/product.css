@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+ 
 
 .heading {
   background-color: black;
   color: white;
-  padding: 6px 40px;
+  padding: 4px 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -16,17 +17,18 @@
   padding: 8px;
 }
 .heading span {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
 }
 
 .heading .sign-in a {
-  color: white;
+  color: rgb(224, 224, 224);
   font-style: italic;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 .heading .sign-in a:hover {
-  color: aqua;
+  color:orange;
 }
 header {
   display: flex;
@@ -36,23 +38,24 @@ header {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 100%;
+  padding: 0px 40px;
 }
-
-header nav a:focus {
-  color: orangered;
-}
-
-header .logo {
+ 
+header .logo  {
   font-size: 34px;
   text-decoration: none;
   background: -webkit-linear-gradient(red, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 600;
 }
+
+
 header nav {
   display: flex;
   gap: 24px;
+  margin-left: 20px;
 }
 
 header nav a {
@@ -62,30 +65,20 @@ header nav a {
   display: flex;
   font-size: 18px;
   letter-spacing: 0.6px;
-  /* position: relative; */
+  transition: all 150ms;
 }
 
-header nav a:hover::before {
-  /* width: 100%; */
+header nav a:hover{
+  color: rgb(255, 119, 0);
 }
-header nav a::before {
-  /* content: "";
-  position: absolute;
-  height: 3px;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  background-color: orange;
-  border-radius: 1px;
-  transition: all 300ms; */
-}
+ 
 header nav a:nth-child(3) {
   color: orangered;
 }
 header input {
   border: none;
   outline: none;
-  width: 300px;
+  width: 350px;
   height: 20px;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -102,8 +95,6 @@ header .serch-bar {
   align-items: center;
   gap: 10px;
   background-color: rgba(190, 227, 239, 0.284);
-}
-header .serch-bar i{
 }
 
 header .sign-in {
@@ -128,7 +119,6 @@ header .login{
   gap: 5px;
   cursor: pointer;
   font-size: 18px;
-
 }
 header .wishlist{
   display: flex;
@@ -143,7 +133,6 @@ header .wishlist i{
   font-size: 20px;
 }
  header .cart{
-
   display: flex;
   align-items: center;
   gap: 5px;
@@ -151,9 +140,20 @@ header .wishlist i{
   font-size: 18px;
   cursor: pointer;
  }
+ header .login:hover, .wishlist:hover, .cart:hover{
+background-color: rgba(255, 166, 0, 0.779);
+
+ }
+ header .login, .cart, .wishlist{
+  padding: 10px 14px;
+  transition: all 300ms;
+  border-radius: 8px;
+ }
  header .menu-toggle{
   display: none;
  }
+
+
 
 
  
@@ -369,7 +369,7 @@ flex-direction: column;
   height: 34px;
   border-radius: 6px;
   border: none;
-  background-color: rgba(251, 183, 57, 0.971);
+  background-color: rgba(250, 185, 66, 0.907);
   transition: all 200ms;
   margin-top: 8px;
 }
