@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Zoom Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .thumbnails img {
+            width: 60px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .thumbnails img:hover {
+            border: 2px solid #000;
+        }
+        .main-image {
+            position: relative;
+            width: 400px;
+            overflow: hidden;
+        }
+        .main-image img {
+            width: 100%;
+            cursor: crosshair;
+        }
+        .zoom-section {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            display: none;
+            position: relative;
+        }
+        .zoom-section img {
+            position: absolute;
+            width: 800px; /* Zoom factor */
+            height: auto;
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnails">
+            <img src="thumb1.jpg" onclick="changeImage('image1.jpg')">
+            <img src="thumb2.jpg" onclick="changeImage('image2.jpg')">
+            <img src="thumb3.jpg" onclick="changeImage('image3.jpg')">
+        </div>
+        <div class="main-image" onmousemove="zoom(event)" onmouseleave="hideZoom()">
+            <img id="displayImage" src="image1.jpg">
+        </div>
+        <div class="zoom-section" id="zoomBox">
+            <img id="zoomImage" src="image1.jpg">
+        </div>
+    </div>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('displayImage').src = imageSrc;
+            document.getElementById('zoomImage').src = imageSrc;
+        }
+
+        function zoom(event) {
+            let zoomBox = document.getElementById('zoomBox');
+            let zoomImage = document.getElementById('zoomImage');
+            let mainImage = document.getElementById('displayImage');
+            
+            zoomBox.style.display = 'block';
+            let rect = mainImage.getBoundingClientRect();
+            let x = ((event.clientX - rect.left) / rect.width) * 100;
+            let y = ((event.clientY - rect.top) / rect.height) * 100;
+            
+            zoomImage.style.transform = `translate(-${x}%, -${y}%)`;
+        }
+
+        function hideZoom() {
+            document.getElementById('zoomBox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

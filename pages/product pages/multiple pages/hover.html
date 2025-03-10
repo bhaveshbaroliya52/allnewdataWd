@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ 
+ 
+
+.images-section img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.images-section img:hover {
+    border: 2px solid #007bff;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+}
+
+</style>
+<body>
+    
+
+    <div class="hero-section">
+        <div class="images-section">
+            <img class="thumb" src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg" alt="">
+            <img class="thumb" src="https://www.daburshop.com/cdn/shop/files/1_ce834cf5-87c0-4531-8f20-19899e917756.jpg?v=1730106685" alt="">
+            <img class="thumb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:AN9GcT6kLqISQDheWvzxa1KxgrCAuIjzF07y5H8bGN-J1AiNxWa-Yr6OiCpV5WhFJdouKi6YzQ" alt="">
+            <img class="thumb" src="https://www.kauverymeds.com/uploads/product/main/1709550381_140185_0.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="image-container">
+            <img id="mainImage" src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg" alt="">
+        </div>
+    </div>
+    
+
+    <script>
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let thumbnails = document.querySelectorAll(".thumb");
+    let mainImage = document.getElementById("mainImage");
+
+    thumbnails.forEach(img => {
+        img.addEventListener("mouseover", function () {
+            mainImage.src = this.src;
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
