@@ -191,6 +191,46 @@ text-align: center;
 
 }
 
+/* chat-gpt */
+
+main .main-section{
+  display: flex;
+  margin-top: 50px;
+justify-content: center;
+gap: 80px;   
+ }
+
+ .main-section .left-container img{
+  height: 100px;
+width: 100px;
+border: 2px solid transparent;
+
+}
+.main-section .left-container img:hover{
+  border:  2px solid black;
+}
+.main-section .left-container{
+
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out;
+}
+
+.main-section .center-container img{
+
+  height: 350px;
+  width: 350px;
+  margin-top: 20px;
+}
+.main-section .center-container{
+
+height: 400px;
+width: 400px;
+border: 1px solid black;
+text-align: center;
+
+}
+ 
 
 
 
