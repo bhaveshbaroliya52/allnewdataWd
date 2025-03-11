@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
+
     <link rel="stylesheet" href="coconut hair oil.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -16,9 +16,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-</head>
 
+</head>
 <body>
+
     <div class="heading">
         <div class="call">
             <i class="fa-solid fa-phone"></i>
@@ -31,7 +32,6 @@
 
         </div>
     </div>
-
 
     <header>
         <div class="logo">
@@ -69,107 +69,130 @@
 
     </header>
 
-
     <main>
+    <div class="main-section">
 
-
-
-        <div class="main-section">
-
-            <div class="left-container">
-                <img class="thumb"
-                    src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg"
-                    alt="">
-                <img class="thumb"
-                    src="https://www.daburshop.com/cdn/shop/files/1_ce834cf5-87c0-4531-8f20-19899e917756.jpg?v=1730106685"
-                    alt="">
-                <img class="thumb"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ67lLh5-VdJamVY5B5DcsQfts-bLkXqE4l8g&s"
-                    alt="">
-                <img class="thumb" src="https://www.kauverymeds.com/uploads/product/main/1709550381_140185_0.jpg"
-                    alt="">
-
-            </div>
-
-            <div class="center-container">
-                <div class="img-container">
-                    <img id="mainImage"
-                        src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg"
-                        alt="">
-
-                </div>
-            </div>
-
-            <div class="right-container">
-                <h3>Dabur Anmol Coconut Oil</h3>
-                <p>Dabur Anmol Coconut Oil at 100ml | Nariyal Tel</p>
-                <h3>Price : ₹ 15</h3>
-            
-
-            <img id="zoomedImage" class="zoomed-img" src="https://via.placeholder.com/300" alt="">
-          
+       
+        <div class="left-container">
+            <img class="thumb" src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg" alt="">
+            <img class="thumb" src="https://www.daburshop.com/cdn/shop/files/1_ce834cf5-87c0-4531-8f20-19899e917756.jpg?v=1730106685" alt="">
+            <img class="thumb" src="https://www.kauverymeds.com/uploads/product/main/1709550381_140185_0.jpg" alt="">
+            <img class="thumb" src="https://www.daburshop.com/cdn/shop/files/4_e2668b1e-7f8f-4629-8c6e-af1287862b02.jpg?v=1730106685" alt="">
         </div>
-    </div>
+        <div class="center-container">
+            <img id="mainImage" src="https://5.imimg.com/data5/SELLER/Default/2024/5/416017426/AK/TJ/XL/128348662/61fwhcslazl-500x500.jpg" alt="">
+        </div>
 
 
-        <!-- <script>
 
-            document.addEventListener("DOMContentLoaded", function () {
-                let thumbnails = document.querySelectorAll(".thumb");
-                let mainImage = document.getElementById("mainImage");
-
-                thumbnails.forEach(img => {
-                    img.addEventListener("mouseover", function () {
-                        mainImage.src = this.src;
-                    });
-                });
-            });
-
-        </script> -->
-
-        <!-- chat gpt  -->
-    
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                let thumbnails = document.querySelectorAll(".thumb");
-                let mainImage = document.getElementById("mainImage");
-                let zoomedImage = document.getElementById("zoomedImage");
-                let rightContainer = document.querySelector(".right-container");
-                let centerContainer = document.querySelector(".center-container");
-    
-                thumbnails.forEach(img => {
-                    img.addEventListener("mouseover", function () {
-                        mainImage.src = this.src;
-                        zoomedImage.src = this.src;
-                    });
-                });
-    
-                centerContainer.addEventListener("mousemove", function (e) {
-                    let rect = this.getBoundingClientRect();
-                    let x = ((e.clientX - rect.left) / rect.width) * 100;
-                    let y = ((e.clientY - rect.top) / rect.height) * 100;
-                    
-                    zoomedImage.style.display = "block";
-                    zoomedImage.style.left = `${-(x * 3)}px`;
-                    zoomedImage.style.top = `${-(y * 3)}px`;
-                    zoomedImage.style.transformOrigin = `${x}% ${y}%`;
-                });
-    
-                centerContainer.addEventListener("mouseleave", function () {
-                    zoomedImage.style.display = "none";
-                });
-            });
-        </script>
-    
-
+     
  
 
 
 
-    </main>
+            <div class="right-container">
+
+                <h3>Dabur Anmol Coconut Oil</h3>
+                <p class="mt-4">Dabur Anmol Coconut Oil at 100ml | Nariyal Tel</p>
+                <div class="price">Price : ₹ 15  </div>
+                <div class="price"> Quantity : 100ml </div>
+                <div class="highlights">
+                    <h3 class="title">Highlights</h3>
+                    <ul>
+                        <li>For Men & Women</li>
+                        <li>Suitable For All Hair Types</li>
+                        <li>Applied For Hair Growth, Hair Strengthening</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="Specifications" id=""><a href="#">Specifications</a></div>   -->
+
+<div class="Specifications">
+                <a href="#" id="openSpecs">Specifications</a>
+                <div id="overlay"></div>
+                <div id="specificationsModal">
+                    <h2>Specifications</h2>
+              
+
+                    <table>
+                        <tr><td>Brand</td><td>Dabur</td></tr>
+                        <tr><td>Model Name</td><td>Anmol Coconut Oil 175*2</td></tr>
+                        <tr><td>Quantity</td><td>350 ml</td></tr>
+                        <tr><td>Ideal For</td><td>Men & Women</td></tr>
+                        <tr><td>Applied For</td><td>Hair Growth, Hair Strengthening</td></tr>
+                        <tr><td>Type</td><td>Coconut Oil</td></tr>
+                        <tr><td>Hair Type</td><td>All Hair Types</td></tr>
+                        <tr><td>Net Quantity</td><td>350 ml</td></tr>
+                    </table>
+                    <!-- Baaki content -->
+                    <button id="closeSpecs">Close</button>
+                </div>
+            </div>
+                <script>
+                  document.getElementById("openSpecs").addEventListener("click", function() {
+                    document.getElementById("specificationsModal").style.display = "block";
+                    document.getElementById("overlay").style.display = "block";
+                });
+                
+                document.getElementById("closeSpecs").addEventListener("click", function() {
+                    document.getElementById("specificationsModal").style.display = "none";
+                    document.getElementById("overlay").style.display = "none";
+                });
+                
+                </script>
 
 
 
+
+                <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path
+                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                  </svg> Add To Cart</a></button>
+                <img id="zoomedImage" class="zoomed-img" src="https://via.placeholder.com/300" alt="">
+
+                
+            </div>
+    </div> 
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let thumbnails = document.querySelectorAll(".thumb");
+            let mainImage = document.getElementById("mainImage");
+            let zoomedImage = document.getElementById("zoomedImage");
+            let rightContainer = document.querySelector(".right-container");
+            let centerContainer = document.querySelector(".center-container");
+
+            function updateZoomedImage() {
+                zoomedImage.src = mainImage.src;
+            }
+            
+            updateZoomedImage(); // Ensure default image zooms correctly
+
+            thumbnails.forEach(img => {
+                img.addEventListener("mouseover", function () {
+                    mainImage.src = this.src;
+                    updateZoomedImage();
+                });
+            });
+
+            centerContainer.addEventListener("mousemove", function (e) {
+                let rect = this.getBoundingClientRect();
+                let x = ((e.clientX - rect.left) / rect.width) * 100;
+                let y = ((e.clientY - rect.top) / rect.height) * 100;
+                
+                zoomedImage.style.display = "block";
+                zoomedImage.style.left = `${-(x * 3)}px`;
+                zoomedImage.style.top = `${-(y * 3)}px`;
+                zoomedImage.style.transformOrigin = `${x}% ${y}%`;
+            });
+
+            centerContainer.addEventListener("mouseleave", function () {
+                zoomedImage.style.display = "none";
+            });
+        });
+    </script> 
+
+</main>
 </body>
-
 </html>

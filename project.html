@@ -134,6 +134,30 @@
   </main>
 
 
+
+  <a href="#" id="openSpecs">Specifications</a>
+<div id="overlay"></div>
+<div id="specificationsModal">
+    <h2>Specifications</h2>
+    <button id="closeSpecs">Close</button>
+    <p>Brand: Dabur</p>
+    <p>Model Name: Anmol Coconut Oil</p>
+    <p>Quantity: 350 ml</p>
+    <!-- Baaki content -->
+</div>
+<script>
+  document.getElementById("openSpecs").addEventListener("click", function() {
+    document.getElementById("specificationsModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+});
+
+document.getElementById("closeSpecs").addEventListener("click", function() {
+    document.getElementById("specificationsModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+});
+
+</script>
+
 </body>
 
 </html>
