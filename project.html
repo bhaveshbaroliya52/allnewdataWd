@@ -56,12 +56,48 @@
 
     <div class="serch-bar">
       <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Serch for Product,items and other">
+      <input type="text" id="serch-products" placeholder="Serch for Product,items and other">
     </div>
 
-    <div class="login">
+    <div id="login">
       <i class="fa-regular fa-user"></i>Login
+      <div id="login-overlay"></div>
     </div>
+    <div id="login-form">
+
+      <div class="form-design">
+      <div class="lsaide">
+<h1>Login</h1>
+<h5>Get access to your Cart, Wishlist </h5>
+
+      </div>
+      <div class="rsaide">
+        <div class="input-container">
+          <input type="text" id="mobile" required>
+          <label for="mobile">Enter Your Mobile Number</label>
+          <button>Request OTP</button>
+        </div>
+        
+
+<button id="form-close">Close</button>
+</div>
+      </div>
+    </div>
+ 
+
+<script>
+  document.getElementById("login").addEventListener("click", function(){
+document.getElementById("login-form").style.display = "block";
+document.getElementById("login-overlay").style.display = "block"
+
+document.getElementById("form-close").addEventListener("click",function(){
+  document.getElementById("login-form").style.display =  "none";
+  document.getElementById("login-overlay").style.display = "none"
+})
+  })
+</script>
+
+
     <div class="wishlist">
       <i class="fa-regular fa-heart"></i>wishlist
     </div>
@@ -75,6 +111,8 @@
     </div>
 
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+    
 
   </header>
 
@@ -135,17 +173,17 @@
 
 
 
-  <a href="#" id="openSpecs">Specifications</a>
+  <!-- <a href="#" id="openSpecs">Specifications</a>
 <div id="overlay"></div>
 <div id="specificationsModal">
     <h2>Specifications</h2>
     <button id="closeSpecs">Close</button>
     <p>Brand: Dabur</p>
     <p>Model Name: Anmol Coconut Oil</p>
-    <p>Quantity: 350 ml</p>
-    <!-- Baaki content -->
-</div>
-<script>
+    <p>Quantity: 350 ml</p> 
+</div> -->
+
+<!-- <script>
   document.getElementById("openSpecs").addEventListener("click", function() {
     document.getElementById("specificationsModal").style.display = "block";
     document.getElementById("overlay").style.display = "block";
@@ -156,7 +194,7 @@ document.getElementById("closeSpecs").addEventListener("click", function() {
     document.getElementById("overlay").style.display = "none";
 });
 
-</script>
+</script> -->
 
 </body>
 

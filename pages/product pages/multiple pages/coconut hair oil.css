@@ -308,7 +308,6 @@ main .main-section {
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 0.7px;
-  /* margin-top: 20px; */
 } 
 
 .right-container button {
@@ -327,6 +326,11 @@ main .main-section {
 text-decoration: none;
 transition: all 100ms;
 }
+.right-container button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
 
 .right-container button:active{
 transform: scale(0.97);
@@ -337,20 +341,13 @@ transform: scale(0.97);
 padding: 6px 14px;
 }
  
-.right-container #specificationsModal{
-border: 2px solid black;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  width: 500px;
-}
-/* chat gpt */
-
 
 #specificationsModal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 500px;
   background: white;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -367,5 +364,44 @@ border: 2px solid black;
   z-index: 999;
   display: none;
 }
+
+
+.Benefits{
+
+  margin: 25px;
+}
+.Benefits ul li{
+font-size: 17px;
+}
+
+main .product-detail{
+  margin:60px;
+}
+.product-detail .img-1{
+  width: 100%;
+}
+.product-detail .images-1{
+  display: flex;
+  margin-top: 20px;
+ 
+}
+.product-detail .images-1 img:nth-child(1){
+
+  height: 470px;
+  width: 800px;
+
+}
+.product-detail .images-1 img:nth-child(2){
+
+  height: 470px;
+  width: 600px;
+}
+
+ 
+
+
+
+
+
 
 
