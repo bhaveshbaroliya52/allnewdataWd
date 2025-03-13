@@ -132,19 +132,31 @@ header .wishlist i{
   margin-top: 2px;
   font-size: 20px;
 }
- header .cart{
+ header .cart-header{
   display: flex;
-  align-items: center;
   gap: 5px;
   letter-spacing: 0.6px;
   font-size: 18px;
   cursor: pointer;
  }
+ header .cart-header:hover{
+  background-color: orange;
+ }
+ header .cart-header #cart-button{
+
+  border: none;
+  background: none;
+ }
+ header .cart-header svg{
+  margin-right: 5px;
+  margin-bottom: 5px;
+ }
+
  header .login:hover, .wishlist:hover, .cart:hover{
 background-color: rgba(255, 166, 0, 0.779);
 
  }
- header .login, .cart, .wishlist{
+ header .login, .cart-header, .wishlist{
   padding: 10px 14px;
   transition: all 300ms;
   border-radius: 8px;
@@ -152,8 +164,6 @@ background-color: rgba(255, 166, 0, 0.779);
  header .menu-toggle{
   display: none;
  }
-
-
 
 
  
@@ -400,4 +410,18 @@ transform: scale(0.97);
 .product-container .items i:active {
   background-color: pink;
 }
+
+.product-container #cart-count {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
  
+
+
+
+

@@ -250,49 +250,87 @@ header #login-form .lsaide{
 header .form-design .rsaide{
   height: 480px;
   width: 450px;
-  position: relative;
   padding: 40px;
+  position: relative;
 }
  
 
-
-.rsaide .input-container {
-  position: relative;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Input field styling */
-.rsaide input {
-  width: 100%;
-  padding: 10px 5px;
-  font-size: 16px;
+ header .rsaide input{
+  /* outline: none;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid rgb(87, 84, 84);
+  width: 368px;
+  padding: 5px 10px; */
+
   outline: none;
-  background: transparent;
-}
-
-/* Placeholder ko invisible kar diya */
-.rsaide input::placeholder {
-  color: transparent;
-}
-
-/* Label ki default position (placeholder ki jagah) */
-.rsaide label {
-  position: absolute;
-  left: 5px;
-  top: 12px;  /* Placeholder position pe set */
+  border: none;
+  border-bottom: 2px solid rgb(87, 84, 84);
+  width: 100%;
+  max-width: 368px;
+  padding: 10px;
   font-size: 16px;
-  color: gray;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
+  transition: border-color 0.3s ease-in-out;
+ }
+ header .rsaide input:focus {
+  border-bottom: 2px solid orange;
+}
+ header .rsaide #form-close{
+  /* position: absolute;
+  top: -4%;
+  left: 100%;
+  background: none;
+  border: none;
+  color: white; */
+
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: rgb(87, 84, 84);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+header .rsaide #form-close i{
+  font-size: 28px;
+}
+header .rsaide #form-close i:hover{
+color: black;
+}
+header .rsaide .request-otp{
+
+  /* padding: 10px 120px;
+  font-size: 22px;
+  background-color: orange;
+  margin-top: 50px;
+  border-radius: 6px; */
+
+  display: block;
+  width: 100%;
+  max-width: 368px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  text-align: center;
+  margin-top: 30px;
 }
 
-/* Jab user input field ko click kare ya likhna shuru kare */
-.rsaide input:focus + label,
-input:not(:placeholder-shown) + label {
-  top: -10px;  /* Label smoothly upar slide hoga */
-  font-size: 12px;
-  color: blue;
+header .rsaide .request-otp:hover{
+  background-color: #e69500;
+  transform: scale(1.05);
 }
+header .rsaide .note {
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+}
+
+
+
+  

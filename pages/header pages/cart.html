@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .cart-container { width: 50%; margin: auto; padding: 20px; }
+        .cart-item { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid #ccc; }
+        .cart-item img { width: 50px; height: 50px; object-fit: cover; margin-right: 10px; }
+        .cart-item-content { flex-grow: 1; display: flex; justify-content: space-between; align-items: center; }
+        .remove-btn { background: red; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script>
+        function getCartItems() {
+            return JSON.parse(localStorage.getItem("cart")) || [];
+        }
+
+        function displayCartItems() {
+            let cartItems = getCartItems();
+            let cartContainer = document.getElementById("cart-items");
+            cartContainer.innerHTML = "";
+            
+            if (cartItems.length === 0) {
+                cartContainer.innerHTML = "<p>Cart is empty</p>";
+                return;
+            }
+
+            cartItems.forEach((item, index) => {
+                let itemElement = document.createElement("div");
+                itemElement.classList.add("cart-item");
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="Product Image">
+                    <div class="cart-item-content">
+                        <span>${item.name} - ₹${item.price}</span>
+                        <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+                    </div>
+                `;
+                cartContainer.appendChild(itemElement);
+            });
+        }
+
+        function removeItem(index) {
+            let cartItems = getCartItems();
+            cartItems.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+            displayCartItems();
+        }
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            displayCartItems();
+        }
+
+        document.addEventListener("DOMContentLoaded", displayCartItems);
+    </script>
+</body>
+</html>

@@ -59,14 +59,20 @@
     <div class="wishlist">
       <i class="fa-regular fa-heart"></i>wishlist
     </div>
-
-    <div class="cart">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+ 
+     
+    <div class="cart-header">
+      <a href="header pages/cart.html">
+      <button id="cart-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
         viewBox="0 0 16 16">
         <path
           d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
       </svg>Cart
-    </div>
+            (<span id="cart-count">0</span>)
+      </button></a>
+      <!-- <ul id="cart-items"></ul> -->
+  </div> 
 
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
 
@@ -242,6 +248,7 @@
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
 
+                  
                   <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
                     viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
                     <path
@@ -252,15 +259,110 @@
                 </div>
 
               </div>
+
+              <div id="cart-container">
               <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                     <path
                       d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                   </svg> Add To Cart</a></button>
+                </div>
 
             </div>
 
           </div>
+
+
+          <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let cartIcon = document.getElementById("cart-count");
+    let cartList = document.getElementById("cart-items");
+
+    // 🔄 Pehle se saved cart load kare
+    let savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    updateCartUI(savedCart);
+
+    document.querySelectorAll(".cart-btn").forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // 🛒 Product details lena
+            let productCard = this.closest(".items-cart");
+            let productName = productCard.querySelector(".detail p").textContent;
+            let productPrice = productCard.querySelector(".price h6:last-child").textContent;
+
+            // 🛍 Cart me add karna
+            let newItem = { name: productName, price: productPrice };
+            savedCart.push(newItem);
+
+            // 📝 Local Storage me save karna
+            localStorage.setItem("cart", JSON.stringify(savedCart));
+
+            // 🔄 UI Update karna
+            updateCartUI(savedCart);
+            
+            alert(`"${productName}" added to cart! 🛒`);
+        });
+    });
+
+    // 🔄 Cart UI Update Function
+    function updateCartUI(cartItems) {
+        cartList.innerHTML = "";  // Pehle cart clear kare
+        cartItems.forEach(item => {
+            let cartItem = document.createElement("li");
+            cartItem.innerHTML = `<strong>${item.name}</strong> - ₹${item.price}`;
+            cartList.appendChild(cartItem);
+        });
+        cartIcon.textContent = cartItems.length; // Cart count update kare
+    }
+});
+
+        </script> -->
+
+        <script>
+         
+document.addEventListener("DOMContentLoaded", function () {
+    let cartIcon = document.getElementById("cart-count");
+
+    // 🔄 Pehle se saved cart load kare
+    let savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    updateCartCount(savedCart);
+
+    document.querySelectorAll(".cart-btn").forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // 🛒 Product details lena
+            let productCard = this.closest(".items-cart");
+            let productName = productCard.querySelector(".detail p").textContent;
+            let productPrice = productCard.querySelector(".price h6:last-child").textContent;
+            let productImage = productCard.querySelector("img").src; // 🔥 Image src le raha hai
+
+            // 🛍 Cart me add karna
+            let newItem = { name: productName, price: productPrice, image: productImage };
+            savedCart.push(newItem);
+
+            // 📝 Local Storage me save karna
+            localStorage.setItem("cart", JSON.stringify(savedCart));
+
+            // 🔄 UI Update karna
+            updateCartCount(savedCart);
+            
+            alert(`"${productName}" added to cart! 🛒`);
+        });
+    });
+
+    // 🔄 Cart Count Update Function
+    function updateCartCount(cartItems) {
+        cartIcon.textContent = cartItems.length; // Cart count update kare
+    }
+});
+</script>
+
+       
+
+        
+  
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
