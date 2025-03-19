@@ -26,6 +26,7 @@
     font-style: italic;
     letter-spacing: 1px;
     font-size: 18px;
+    text-decoration: none;
   }
   .heading .sign-in a:hover {
     color:orange;
@@ -87,7 +88,6 @@
   }
   
   header .serch-bar {
-    /* border: 1px solid black; */
     border-radius: 6px;
     padding: 8px;
     background-color: white;
@@ -98,18 +98,7 @@
     background-color: rgba(190, 227, 239, 0.284);
   }
   
-  header .sign-in {
-    border: 1px solid black;
-    padding: 6px 20px;
-    background-color: rgba(178, 244, 237, 0.696);
-    text-align: center;
-  }
-  
-  .sign-in a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
+ /* login  */
  
   header #login{
     display: flex;
@@ -151,6 +140,37 @@
     display: none;
    }
  
+/* cart */
+
+header .cart-header{
+  display: flex;
+  gap: 5px;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  cursor: pointer;
+ }
+ header .cart-header:hover{
+  background-color: orange;
+ }
+ header .cart-header #cart-button{
+
+  border: none;
+  background: none;
+ }
+ header .cart-header svg{
+  margin-right: 5px;
+  margin-bottom: 5px;
+ }
+
+ header #login:hover, .wishlist:hover, .cart:hover{
+background-color: rgba(255, 166, 0, 0.779);
+
+ }
+ header #login, .cart-header, .wishlist{
+  padding: 10px 14px;
+  transition: all 300ms;
+  border-radius: 8px;
+ }
 
  
 
@@ -207,6 +227,8 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+
+
 header #login-form{
   display: flex;
   position: fixed;
@@ -254,14 +276,7 @@ header .form-design .rsaide{
   position: relative;
 }
  
-
  header .rsaide input{
-  /* outline: none;
-  border: none;
-  border-bottom: 1px solid rgb(87, 84, 84);
-  width: 368px;
-  padding: 5px 10px; */
-
   outline: none;
   border: none;
   border-bottom: 2px solid rgb(87, 84, 84);
@@ -275,13 +290,6 @@ header .form-design .rsaide{
   border-bottom: 2px solid orange;
 }
  header .rsaide #form-close{
-  /* position: absolute;
-  top: -4%;
-  left: 100%;
-  background: none;
-  border: none;
-  color: white; */
-
   position: absolute;
   top: 10px;
   right: 15px;
@@ -297,14 +305,7 @@ header .rsaide #form-close i{
 header .rsaide #form-close i:hover{
 color: black;
 }
-header .rsaide .request-otp{
-
-  /* padding: 10px 120px;
-  font-size: 22px;
-  background-color: orange;
-  margin-top: 50px;
-  border-radius: 6px; */
-
+header .rsaide .request-otp{ 
   display: block;
   width: 100%;
   max-width: 368px;
@@ -330,7 +331,93 @@ header .rsaide .note {
   color: gray;
   margin-top: 10px;
 }
+.items-header{
+  margin: 10px 20px;
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  padding: 0 50px;
+  
+}
+.items-header a{
+  text-decoration: none;
+  color: black;
+}
+.items-header a .main-items img{
+height: 90px;
+width: 90px;
+}
+.items-header a .main-items span{
+  font-size: 18px;
+}
+.items-header a .main-items{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.items-header a .main-items .Home-kitchen{
+  /* width: 150px; */
+}
 
 
 
+
+
+
+.main-items {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-items img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.main-items span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background: #f0f0f0;
+}
+
+.main-items:hover .dropdown {
+  display: block;
+}
+
+.main-items:hover .dropdown i{
+  rotate: 90%;
+}
   

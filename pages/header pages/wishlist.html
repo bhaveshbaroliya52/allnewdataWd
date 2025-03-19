@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.wishlist-btn {
+    width: 30px;
+    height: 30px;
+    background: url('heart-gray.png') no-repeat center center / cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.wishlist-btn.active {
+    background: url('heart-red.png') no-repeat center center / cover;
+    transform: scale(1.2);
+}
+
+#wishlist-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.wishlist-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    </style>
+ </head>
+ <body>
+ 
+    <div id="wishlist-container">
+        <h2>My Wishlist</h2>
+        <div id="wishlist-items"></div>
+
+    </div>
+ 
+
+ <script src="wishist.js"></script>
+ 
+    
+ </body>
+ </html>

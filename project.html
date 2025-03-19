@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <div class="heading">
+  <!-- <div class="heading">
     <div class="call">
       <i class="fa-solid fa-phone"></i>
       <span style="font-style: italic;">902-396-2442</span>
@@ -39,7 +39,7 @@
       <a href="#">ragister</a>
 
     </div>
-  </div>
+  </div> -->
 
 
   <header>
@@ -66,40 +66,121 @@
     <div id="login-form">
 
       <div class="form-design">
-      <div class="lsaide">
-<h1>Login</h1>
-<h5>Get access to your Cart, Wishlist </h5>
+        <div class="lsaide">
+          <h1>Login</h1>
+          <h5>Get access to your Cart, Wishlist </h5>
 
-      </div>
-      <div class="rsaide">
+        </div>
+        <div class="rsaide">
           <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
           <p class="note">We will never share your number with anyone.</p>
           <button class="request-otp">Request OTP</button>
-        
 
-<button id="form-close"><i class="fa-solid fa-xmark"></i></button>
-</div>
+
+          <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
       </div>
     </div>
- 
+
 
     <div class="wishlist">
       <i class="fa-regular fa-heart"></i>wishlist
     </div>
 
-    <div class="cart">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
-        viewBox="0 0 16 16">
-        <path
-          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-      </svg>Cart
+    <div class="cart-header">
+      <a href="pages/header pages/cart.html">
+        <button id="cart-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>Cart
+          (<span id="cart-count">0</span>)
+        </button></a>
+
     </div>
 
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
 
-    
+
 
   </header>
+
+
+  <div class="items-header">
+
+    <a href="#">
+      <div class="main-items">
+        <img src="https://harimafoods.in/wp-content/uploads/2019/06/62.-Pav-Bhaji-Masala_100g.png" alt="">
+        <span>Spices <i class="fa-solid fa-chevron-down"></i></span> 
+        <!-- <div class="dropdown">
+            <a href="#">Turmeric</a>
+            <a href="#">Chili Powder</a>
+            <a href="#">Cumin</a>
+        </div> -->
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/61Pa+g3r8SL.jpg" alt="">
+        <span>Home & Kitchen</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://media.istockphoto.com/id/655123574/photo/soft-drinks-splashing.jpg?s=612x612&w=0&k=20&c=iZcaMSEuzxLRy2lpnUw9NhnTcOhYNgxA3poBbjCsSSc=" alt="">
+        <span>Cold Drinks</span>
+      </div>
+    </a>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/81Mhoi8b+nL.jpg" alt="">
+        <span>Beuty</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://cococart.in/cdn/shop/files/1CH2570.png?v=1728473482" alt="">
+        <span>chocolate</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://i.pinimg.com/736x/9e/84/d3/9e84d3409351aec5d561db7652f32c29.jpg" alt="">
+        <span>Stationery</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/71SmxQFbSdL.jpg" alt="">
+        <span>Packaged Product</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://dodladairy.com/wp-content/uploads/2024/03/icecream-65facbd6d4ff4-1008x1024.webp" alt="">
+        <span>Ice Cream</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="main-items">
+        <img src="https://files.oaiusercontent.com/file-9Jdu3ueYEkYsuXhMZaz1jU?se=2025-03-19T15%3A53%3A03Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D375412b6-2dcf-4cb6-bfa4-ae8942d8dff3.webp&sig=WOvlYTL6J1J967gP%2BE3p0ZZYJ%2BkLAsC3IMRRa1xi7GI%3D" alt="">
+        <span>Festivel Special</span>
+      </div>
+
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/61Pa+g3r8SL.jpg" alt="">
+        <span>Home & Kitchen<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+            <a href="#">Cookware</a>
+            <a href="#">Storage</a>
+            <a href="#">Cleaning Supplies</a>
+        </div>
+    </div>
+</div>
+
+  </div>
 
   <main>
     <div class="slider-container">
@@ -112,12 +193,12 @@
       <button class="next" onclick="nextSlide()">❯</button>
     </div>
 
-    
+
   </main>
 
 
- 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -53,13 +53,37 @@
       <input type="text" placeholder="Serch for Product,items and other">
     </div>
 
-    <div class="login">
+
+    <!-- login -->
+    <div id="login">
       <i class="fa-regular fa-user"></i>Login
-    </div>
-    <div class="wishlist">
-      <i class="fa-regular fa-heart"></i>wishlist
+      <div id="login-overlay"></div>
     </div>
 
+    <div id="login-form">
+
+      <div class="form-design">
+        <div class="lsaide">
+          <h1>Login</h1>
+          <h5>Get access to your Cart, Wishlist </h5>
+
+        </div>
+        <div class="rsaide">
+          <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+          <p class="note">We will never share your number with anyone.</p>
+          <button class="request-otp">Request OTP</button>
+
+
+          <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <a href="header pages/wishlist.html">
+      <div class="wishlist">
+        <i class="fa-regular fa-heart"></i>wishlist
+      </div>
+    </a>
 
     <div class="cart-header">
       <a href="header pages/cart.html">
@@ -198,9 +222,7 @@
 
 
 
-      <script>
 
-      </script>
 
       <div>
 
@@ -211,34 +233,26 @@
 
 
           <div class="items">
-
-
-            <button class="wishlist-btn" onclick="addToWishlist()"> </button>
-
             <div class="items-cart">
+              <button class="wishlist-btn" onclick="addToWishlist(event)">❤️</button>
+              <div id="wishlist-items"></div>
+
               <a href="#"><img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
                   alt=""></a>
-
               <div class="detail">
                 <p style="margin: 0;">Joy Honey & Almonds Advanced Nourishing Body Lotion</p>
                 <span>600 ml</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-
-
                   <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
                     viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
                     <path
                       d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
                   </svg>
                   <h6>290</h6>
-
                 </div>
-
               </div>
-
               <div id="cart-container">
                 <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                       fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
@@ -246,14 +260,12 @@
                         d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                     </svg> Add To Cart</a></button>
               </div>
-
             </div>
-
           </div>
 
 
           <div class="items">
-            <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+            <button class="wishlist-btn" onclick="addToWishlist(event)"> </button>
 
             <div class="items-cart">
               <a href="#"><img src="https://img.clevup.in/285171/1686744967014_SKU-0401_1.png?width=600&format=webp"
@@ -273,6 +285,8 @@
                   </svg>
                   <h6>75</h6>
                 </div>
+
+
               </div>
               <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
@@ -286,7 +300,8 @@
           </div>
 
           <div class="items">
-            <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+            <button class="wishlist-btn" onclick="addToWishlist(event)"> </button>
+
             <div class="items-cart">
               <a href="#"><img src="https://cdn.mafrservices.com/sys-master-root/hf8/ha3/49847413899294/11318_main.jpg"
                   alt=""></a>
@@ -318,8 +333,8 @@
 
           <div class="items">
 
-
-            <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+            <a href="header pages/wishlist.html"></a>
+            <button class="wishlist-btn" onclick="addToWishlist(event)"> </button>
 
             <div class="items-cart">
               <a href="#"><img
@@ -388,9 +403,8 @@
 
 
           </div>
+
           <div class="items">
-
-
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
 
             <div class="items-cart">
@@ -429,6 +443,7 @@
 
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
 
+
             <div class="items-cart">
               <a href="#"><img
                   src="https://jammubasket.com/images/products/216_clinic-plus-strong-long-hair-shampoo-175-ml-caaf24ee1c835e6699601ba523a9375c.jpeg"
@@ -464,6 +479,7 @@
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
             <div class="items-cart">
               <a href="#"><img src="https://m.media-amazon.com/images/I/71bjRIH3zJL.jpg" alt=""></a>
 
@@ -1103,6 +1119,7 @@
 
       </div>
   </main>
+  <script src="../pages/header pages/wishist.js"></script>
   <script src="product.js"></script>
 </body>
 
