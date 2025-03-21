@@ -179,6 +179,8 @@ background-color: rgba(255, 166, 0, 0.779);
   width: 100%;
   height: 460px;
   /* overflow: hidden; */
+  object-position: top;
+  object-fit: cover;
 }
 .slider-container .slides img:nth-child(1){
 
@@ -343,48 +345,35 @@ header .rsaide .note {
   padding: 0 50px;
   
 }
-.items-header a{
+.items-header {
   text-decoration: none;
   color: black;
 }
-.items-header a .main-items img{
+.items-header .main-items img{
 height: 90px;
 width: 90px;
+object-fit: cover;
+border-radius: 4px;
+
 }
-.items-header a .main-items span{
-  font-size: 18px;
+.items-header .main-items span{
+  display: block;
+  font-size: 17px;
 }
-.items-header a .main-items{
+.items-header .main-items{
   display: flex;
   flex-direction: column;
 align-items: center;
+text-decoration: none;
+color: black;
+position: relative;
+cursor: pointer;
 }
-.items-header a .main-items .Home-kitchen{
-  /* width: 150px; */
-}
-
-
-
-
-
-
-.main-items {
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-
-.main-items img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.main-items span {
-  display: block;
-  margin-top: 5px;
-  font-size: 14px;
+ 
+.main-items span i{
+  font-size: 12px;
+  margin-left: 5px;
+  transition: all 300ms;
 }
 
 /* Dropdown Menu */
@@ -406,18 +395,28 @@ align-items: center;
   text-decoration: none;
   color: #333;
   padding: 8px 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
-
+.dropdown h5{
+ font-weight: 500; 
+ font-size: 16px;
+}
 .dropdown a:hover {
   background: #f0f0f0;
+  background: rgba(255, 166, 1, 0.14);
+  color: orangered;
 }
 
 .main-items:hover .dropdown {
   display: block;
 }
-
-.main-items:hover .dropdown i{
-  rotate: 90%;
+.main-items:hover span{
+  color: orangered;
+}
+.main-items:hover span i{
+  transform: rotate(-180deg);
 }
   
+main .Advertisement {
+margin-top: 40px;
+}
