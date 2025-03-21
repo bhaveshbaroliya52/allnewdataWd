@@ -419,4 +419,54 @@ cursor: pointer;
   
 main .Advertisement {
 margin-top: 40px;
+padding: 20px 0;
+background-color: rgba(241, 241, 241, 0.573);
 }
+
+
+
+main .Advertisement .product-buy{
+  display: flex;
+  justify-content:space-around;
+  /* gap: 20px; */
+  margin: 0 20px;
+
+  transition: all 300ms;
+}
+ 
+.Advertisement .product-buy .image-gallery button a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+
+
+.Advertisement .product-buy .image-gallery {
+  position: relative;
+  overflow: hidden;  
+}
+.Advertisement .product-buy .image-gallery:nth-child(1):hover button{
+
+  background-color: rgb(260, 190, 220);
+}
+.Advertisement .product-buy .image-gallery button {
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgb(255, 209, 135);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%); 
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.Advertisement .product-buy .image-gallery:hover button {
+  opacity: 1;
+  transform: translateY(0);  
+}
+

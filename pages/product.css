@@ -109,14 +109,7 @@ header #login{
   cursor: pointer;
   font-size: 18px;
 }
-header .wishlist{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  letter-spacing: 0.6px;
-  font-size: 18px;
-  cursor: pointer;
-}
+ 
 header .wishlist i{
   margin-top: 2px;
   font-size: 20px;
@@ -262,9 +255,40 @@ background-color: rgba(255, 166, 0, 0.779);
  }
 
 
+/* wishlist tranning */
+
+header .wishlist-header{
+  display: flex;
+  gap: 5px;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  cursor: pointer;
+ }
+ header .wishlist-header:hover{
+  background-color: orange;
+ }
+ header .wishlist-header #wishlist-button{
+
+  border: none;
+  background: none;
+ }
+ header .wishlist-header i{
+  margin-right: 5px;
+  margin-bottom: 5px;
+ }
+
+ /* header #login:hover, .wishlist:hover, .cart:hover{
+background-color: rgba(255, 166, 0, 0.779);
+
+ } */
+ header #login, .cart-header, .wishlist-header{
+  padding: 10px 14px;
+  transition: all 300ms;
+  border-radius: 8px;
+ }
 
 
- 
+
 
 @media (max-width: 375px) {
   header nav {
@@ -430,41 +454,12 @@ flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
 }
+ 
 
-/* Wishlist Button */
-
-
- /* .product-container .items .wishlist-btn{
-  height: 34px;
-  width: 34px;
-  background-color: rgb(199, 199, 199);
-  border: 1px solid black;
-  position: absolute;
-  top: 10px;
-  left: calc(100% - 40px);
-  clip-path: polygon(
-    50% 15%,
-    61% 7%,
-    75% 7%,
-    85% 17%,
-    85% 32%,
-    75% 45%,
-    50% 75%,
-    25% 45%,
-    15% 32%,
-    15% 17%,
-    25% 7%,
-    39% 7%
-  );
-
-} */
-
-/* Fix parent positioning */
 .product-container .items {
   position: relative;
 }
 
-/* Wishlist Button Styling */
 .product-container .items .wishlist-btn {
   height: 34px;
   width: 34px;
@@ -491,13 +486,11 @@ flex-direction: column;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Active state */
 .wishlist-btn.active {
   background-color: red;
   transform: scale(1.1);
 }
 
-/* Heart animation */
 .heart {
   position: absolute;
   width: 12px;
@@ -521,7 +514,6 @@ flex-direction: column;
   animation: float 0.8s ease-out forwards;
 }
 
-/* Floating heart animation */
 @keyframes float {
   0% {
       transform: translate(0, 0) scale(1);
@@ -539,9 +531,20 @@ flex-direction: column;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+
+.wishlist-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.wishlist-btn.active {
+  color: red; /* 🔴 Wishlist me hai */
+}
+
  
-
-
 .product-container .items a img {
   height: 250px;
   width: 250px;

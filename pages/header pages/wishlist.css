@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -48,69 +50,69 @@ header .logo  {
     letter-spacing: 0.5px;
     background-color: transparent;
   }
-  header .your-cart h2{
+  header .your-wishlist h2{
     letter-spacing: 1px;
     color: rgb(255, 94, 0);
   }
 
-  
- .cart-container {
-     width: 60%;
-     margin: auto;
-     padding: 20px;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     margin-top: 20px;
- }
 
- .cart-item {
-     display: flex;
-     align-items: center;
-     padding: 10px;
-     border-bottom: 1px solid #ccc;
- }
+.wishlist-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+}
 
- .cart-item img {
-     width: 100px;
-     height: 120px;
-     object-fit: cover;
-     margin-right: 10px;
- }
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
- .cart-item-content {
-     flex-grow: 1;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
+.wishlist-item img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 10px;
+}
 
- .remove-btn {
-     background: red;
-     color: white;
-     border: none;
-     padding: 8px 20px;
-     cursor: pointer;
-     font-size: 16px;
-     transition: 300ms;
- }
- .remove-btn:hover{
-  background-color: orange;
-  color: black;
- }
- .cart-container .Clear-Cart{
+.wishlist-item-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  padding: 10px 20px;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  background-color: orangered;
-  border: none;
-  color: white;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: 300ms;
-  margin-top:20px;
- }
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 300ms;
+}
+.remove-btn:hover{
+ background-color: orange;
+ color: black;
+}
+.wishlist-container .Clear-wishlist{
 
- .cart-container .Clear-Cart:hover{
-  background-color: orange;
-  color: black;
- }
+ padding: 10px 20px;
+ font-size: 20px;
+ letter-spacing: 0.5px;
+ background-color: orangered;
+ border: none;
+ color: white;
+ font-weight: bolder;
+ cursor: pointer;
+ transition: 300ms;
+ margin-top:20px;
+}
+
+.wishlist-container .Clear-wishlist:hover{
+ background-color: orange;
+ color: blacwishlist
+}
