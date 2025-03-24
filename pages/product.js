@@ -85,58 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//  perfect wishlist
 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   let wishlistIcon = document.getElementById("wishlist-count");
-
-//   let savedwishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-//   updatewishlistCount(savedwishlist);
-
-//   document.querySelectorAll(".wishlist-btn").forEach((button) => {
-//       let productCard = button.closest(".items-cart");  
-//       let productName = productCard.querySelector(".detail p").textContent;
-
-//       // 🔄 **Refresh hone par check kare ki item wishlist me hai ya nahi**
-//       if (savedwishlist.some(item => item.name === productName)) {
-//           button.classList.add("active"); // 🔴 Red Color if in wishlist
-//       }
-
-//       button.addEventListener("click", function (event) {
-//           event.preventDefault();
-
-//           let productPrice = productCard.querySelector(".price h6:last-child").textContent;
-//           let productImage = productCard.querySelector("img").src;
-
-//           let newItem = { name: productName, price: productPrice, image: productImage };
-
-//           let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-//           let existingIndex = wishlist.findIndex(item => item.name === productName);
-
-//           if (existingIndex === -1) {
-//               // ✅ Add to wishlist
-//               wishlist.push(newItem);
-//               button.classList.add("active"); // 🔴 Button Red
-//           } else {
-//               // ❌ Remove from wishlist
-//               wishlist.splice(existingIndex, 1);
-//               button.classList.remove("active"); // ⚫ Button Default
-//           }
-
-//           localStorage.setItem("wishlist", JSON.stringify(wishlist));
-//           updatewishlistCount(wishlist);
-//       });
-//   });
-
-//   function updatewishlistCount(wishlistItems) {
-//       if (wishlistIcon) { 
-//           wishlistIcon.textContent = wishlistItems.length;
-//       }
-//   }
-// });
-
-// no prfect wishlist
+// prfect wishlist
 
 
 
