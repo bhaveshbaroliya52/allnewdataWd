@@ -36,7 +36,9 @@ function toggleCategory(element) {
     element.style.display = "none";
   }
 
-//   add to cart
+
+
+// parfect cart
 
 document.addEventListener("DOMContentLoaded", function () {
     let cartIcon = document.getElementById("cart-count");
@@ -53,19 +55,26 @@ document.addEventListener("DOMContentLoaded", function () {
             let productCard = this.closest(".items-cart");
             let productName = productCard.querySelector(".detail p").textContent;
             let productPrice = productCard.querySelector(".price h6:last-child").textContent;
-            let productImage = productCard.querySelector("img").src; // 🔥 Image src le raha hai
+            let productImage = productCard.querySelector("img").src;
 
-            // 🛍 Cart me add karna
-            let newItem = { name: productName, price: productPrice, image: productImage };
-            savedCart.push(newItem);
+            // 🛍 Cart me duplicate check karna
+            let isAlreadyInCart = savedCart.some(item => item.name === productName);
 
-            // 📝 Local Storage me save karna
-            localStorage.setItem("cart", JSON.stringify(savedCart));
+            if (!isAlreadyInCart) {
+                // ✅ Agar product cart me nahi hai tab add kare
+                let newItem = { name: productName, price: productPrice, image: productImage };
+                savedCart.push(newItem);
 
-            // 🔄 UI Update karna
-            updateCartCount(savedCart);
-            
-            alert(`"${productName}" added to cart! 🛒`);
+                // 📝 Local Storage me save karna
+                localStorage.setItem("cart", JSON.stringify(savedCart));
+
+                // 🔄 UI Update karna
+                updateCartCount(savedCart);
+                
+                alert(`"${productName}" added to cart! 🛒`);
+            } else {
+                alert(`"${productName}" is already in the cart! ❌`);
+            }
         });
     });
 
@@ -76,41 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-// whislist
- 
-
-
-// function addToWishlist(event) {
-//   let button = event.target;
-  
-//   // Pehle se active hai toh remove kar, warna add kar
-//   if (button.classList.contains("active")) {
-//       button.classList.remove("active");
-//   } else {
-//       button.classList.add("active");
-//   }
-
-//   let rect = button.getBoundingClientRect();
-
-//   for (let i = 0; i < 6; i++) {
-//       let heart = document.createElement("div");
-//       heart.classList.add("heart");
-
-//       heart.style.left = `${rect.left + window.scrollX + 10}px`;
-//       heart.style.top = `${rect.top + window.scrollY + 10}px`;
-
-//       heart.style.setProperty("--x", `${Math.random() * 80 - 40}px`);
-//       heart.style.setProperty("--y", `${Math.random() * -60 - 30}px`);
-
-//       document.body.appendChild(heart);
-//       setTimeout(() => heart.remove(), 800);
-//   }
-// }
-
- 
-
-//  wislish add perfect
+//  perfect wishlist
 
 
 // document.addEventListener("DOMContentLoaded", function () {
@@ -120,53 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
 //   updatewishlistCount(savedwishlist);
 
 //   document.querySelectorAll(".wishlist-btn").forEach((button) => {
-//       button.addEventListener("click", function (event) {
-//           event.preventDefault();
+//       let productCard = button.closest(".items-cart");  
+//       let productName = productCard.querySelector(".detail p").textContent;
 
-//           let productCard = this.closest(".items-cart");  // ✅ Fixed class name
-//           let productName = productCard.querySelector(".detail p").textContent;
-//           let productPrice = productCard.querySelector(".price h6:last-child").textContent;
-//           let productImage = productCard.querySelector("img").src;
-
-//           let newItem = { name: productName, price: productPrice, image: productImage };
-
-//           let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-//           let existingItem = wishlist.find(item => item.name === productName);
-
-//           if (!existingItem) {
-//               wishlist.push(newItem);
-//               localStorage.setItem("wishlist", JSON.stringify(wishlist));
-//               updatewishlistCount(wishlist);
-//               alert(`"${productName}" added to wishlist! ❤️`);
-//           } else {
-//               alert(`"${productName}" is already in wishlist!`);
-//           }
-//       });
-//   });
-
-//   function updatewishlistCount(wishlistItems) {
-//       if (wishlistIcon) { // ✅ Null check
-//           wishlistIcon.textContent = wishlistItems.length;
+//       // 🔄 **Refresh hone par check kare ki item wishlist me hai ya nahi**
+//       if (savedwishlist.some(item => item.name === productName)) {
+//           button.classList.add("active"); // 🔴 Red Color if in wishlist
 //       }
-//   }
-// });
 
- 
-
-// wishlist perfect
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   let wishlistIcon = document.getElementById("wishlist-count");
-
-//   let savedwishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-//   updatewishlistCount(savedwishlist);
-
-//   document.querySelectorAll(".wishlist-btn").forEach((button) => {
 //       button.addEventListener("click", function (event) {
 //           event.preventDefault();
 
-//           let productCard = this.closest(".items-cart");  
-//           let productName = productCard.querySelector(".detail p").textContent;
 //           let productPrice = productCard.querySelector(".price h6:last-child").textContent;
 //           let productImage = productCard.querySelector("img").src;
 
@@ -178,11 +117,11 @@ document.addEventListener("DOMContentLoaded", function () {
 //           if (existingIndex === -1) {
 //               // ✅ Add to wishlist
 //               wishlist.push(newItem);
-//               this.classList.add("active"); // 🔴 Red Color
+//               button.classList.add("active"); // 🔴 Button Red
 //           } else {
 //               // ❌ Remove from wishlist
 //               wishlist.splice(existingIndex, 1);
-//               this.classList.remove("active"); // ⚫ Default Color
+//               button.classList.remove("active"); // ⚫ Button Default
 //           }
 
 //           localStorage.setItem("wishlist", JSON.stringify(wishlist));
@@ -197,54 +136,88 @@ document.addEventListener("DOMContentLoaded", function () {
 //   }
 // });
 
-// no perfect
+// no prfect wishlist
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
-  let wishlistIcon = document.getElementById("wishlist-count");
+    console.log("✅ JavaScript Loaded!");
 
-  let savedwishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-  updatewishlistCount(savedwishlist);
+    let wishlistIcon = document.getElementById("wishlist-count");
 
-  document.querySelectorAll(".wishlist-btn").forEach((button) => {
-      let productCard = button.closest(".items-cart");  
-      let productName = productCard.querySelector(".detail p").textContent;
+    function getWishlist() {
+        return JSON.parse(localStorage.getItem("wishlist")) || [];
+    }
 
-      // 🔄 **Refresh hone par check kare ki item wishlist me hai ya nahi**
-      if (savedwishlist.some(item => item.name === productName)) {
-          button.classList.add("active"); // 🔴 Red Color if in wishlist
-      }
+    function saveWishlist(wishlist) {
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    }
 
-      button.addEventListener("click", function (event) {
-          event.preventDefault();
+    function updateUI() {
+        let wishlist = getWishlist();
+        updatewishlistCount(wishlist);
 
-          let productPrice = productCard.querySelector(".price h6:last-child").textContent;
-          let productImage = productCard.querySelector("img").src;
+        document.querySelectorAll(".wishlist-btn").forEach((button) => {
+            let productCard = button.closest(".items-cart");
+            if (!productCard) return;
 
-          let newItem = { name: productName, price: productPrice, image: productImage };
+            let productName = productCard.querySelector(".detail p").textContent.trim();
 
-          let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-          let existingIndex = wishlist.findIndex(item => item.name === productName);
+            if (wishlist.some(item => item.name === productName)) {
+                button.classList.add("active");  // ✅ Wishlist me hai to RED
+            } else {
+                button.classList.remove("active"); // ❌ Wishlist me nahi hai to DEFAULT
+            }
+        });
+    }
 
-          if (existingIndex === -1) {
-              // ✅ Add to wishlist
-              wishlist.push(newItem);
-              button.classList.add("active"); // 🔴 Button Red
-          } else {
-              // ❌ Remove from wishlist
-              wishlist.splice(existingIndex, 1);
-              button.classList.remove("active"); // ⚫ Button Default
-          }
+    updateUI(); // ✅ Page load hote hi UI update
 
-          localStorage.setItem("wishlist", JSON.stringify(wishlist));
-          updatewishlistCount(wishlist);
-      });
-  });
+    document.body.addEventListener("click", function (event) {
+        let button = event.target.closest(".wishlist-btn");
+        if (!button) return;  // ❌ Agar button nahi hai to ignore
 
-  function updatewishlistCount(wishlistItems) {
-      if (wishlistIcon) { 
-          wishlistIcon.textContent = wishlistItems.length;
-      }
-  }
+        console.log("✅ Wishlist Button Clicked!");
+
+        event.preventDefault();
+
+        let productCard = button.closest(".items-cart");
+        if (!productCard) {
+            console.log("❌ Product card not found.");
+            return;
+        }
+
+        let productName = productCard.querySelector(".detail p").textContent.trim();
+        let productPrice = productCard.querySelector(".price h6:last-child").textContent.trim();
+        let productImage = productCard.querySelector("img").src;
+
+        let wishlist = getWishlist();
+        let existingIndex = wishlist.findIndex(item => item.name === productName);
+
+        console.log("📋 Wishlist Before:", wishlist);
+
+        if (existingIndex === -1) {
+            if (wishlist.length >= 30) {  
+                alert("Wishlist full! Remove an item first.");
+                return;
+            }
+            wishlist.push({ name: productName, price: productPrice, image: productImage });
+            button.classList.add("active"); // ✅ Click pe RED ho jayega
+            console.log("✅ Added to Wishlist!");
+        } else {
+            wishlist.splice(existingIndex, 1);
+            button.classList.remove("active"); // ❌ Click pe DEFAULT ho jayega
+            console.log("❌ Removed from Wishlist!");
+        }
+
+        saveWishlist(wishlist);
+        updatewishlistCount(wishlist);
+        updateUI();  // ✅ UI ko turant refresh kar diya (AB PAKKA CHALEGA!)
+    });
+
+    function updatewishlistCount(wishlistItems) {
+        if (wishlistIcon) {
+            wishlistIcon.textContent = wishlistItems.length;
+        }
+    }
 });
-
-

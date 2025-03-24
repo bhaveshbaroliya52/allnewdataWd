@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-
-  <link rel="stylesheet" href="style.css">
-
-
-</head>
-
-<body>
-  <!-- <div class="heading">
+  <body>
+    <!-- <div class="heading">
     <div class="call">
       <i class="fa-solid fa-phone"></i>
       <span style="font-style: italic;">902-396-2442</span>
@@ -41,236 +50,426 @@
     </div>
   </div> -->
 
+    <header>
+      <div class="logo">
+        <a href="#" class="logo-1">Gel Krupa</a>
+      </div>
 
-  <header>
-    <div class="logo">
-      <a href="#" class="logo-1">Gel Krupa</a>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="../pages/product.html">Product</a>
+        <a href="#">Contact us</a>
+      </nav>
+
+      <div class="serch-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="serch-products"
+          placeholder="Serch for Product,items and other"
+        />
+      </div>
+
+      <div id="login">
+        <i class="fa-regular fa-user"></i>Login
+        <div id="login-overlay"></div>
+      </div>
+      <div id="login-form">
+        <div class="form-design">
+          <div class="lsaide">
+            <h1>Login</h1>
+            <h5>Get access to your Cart, Wishlist</h5>
+          </div>
+          <div class="rsaide">
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+            <p class="note">We will never share your number with anyone.</p>
+            <button class="request-otp">Request OTP</button>
+
+            <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wishlist"><i class="fa-regular fa-heart"></i>wishlist</div>
+
+      <div class="cart-header">
+        <a href="pages/header pages/cart.html">
+          <button id="cart-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-cart2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+              /></svg
+            >Cart (<span id="cart-count">0</span>)
+          </button></a
+        >
+      </div>
+
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <div class="items-header">
+      <div class="main-items">
+        <img
+          src="https://harimafoods.in/wp-content/uploads/2019/06/62.-Pav-Bhaji-Masala_100g.png"
+          alt=""
+        />
+        <span> Grocery <i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Grocery Products</h5>
+          <a href="#">Tea</a>
+          <a href="#">Dals</a>
+          <a href="#">Dry Fruits</a>
+          <a href="#">Grain & Sooji</a>
+          <a href="#">Flour</a>
+          <a href="#">Masala & Spices</a>
+          <a href="#">Ghee % Vanaspati</a>
+          <a href="#">Papad</a>
+          <a href="#">Salt / Sugar / Jaggery</a>
+        </div>
+      </div>
+
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/61Pa+g3r8SL.jpg" alt="" />
+        <span>Home & Kitchen<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Home & Kitchen</h5>
+          <a href="#">Cleaning Supplies</a>
+          <a href="#">Detergent Powder</a>
+          <a href="#">Detergent Bar</a>
+          <a href="#">Cleaners</a>
+        </div>
+      </div>
+
+      <div class="main-items">
+        <img
+          src="https://media.istockphoto.com/id/655123574/photo/soft-drinks-splashing.jpg?s=612x612&w=0&k=20&c=iZcaMSEuzxLRy2lpnUw9NhnTcOhYNgxA3poBbjCsSSc="
+          alt=""
+        />
+        <span>Cold Drinks<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Cold Drink Products</h5>
+          <a href="#">Soda</a>
+          <a href="#">Water</a>
+          <a href="#">Juice</a>
+          <a href="#">Red bull</a>
+        </div>
+      </div>
+
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/81Mhoi8b+nL.jpg" alt="" />
+        <span>Beauty<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Beuty & Grooming</h5>
+          <a href=".//pages/product pages/hair oil.html">Hair Oil</a>
+          <a href="#">Moisturizer</a>
+          <a href="#">Shampoo</a>
+          <a href="#">Face Wash</a>
+          <a href="#">Body Lotion</a>
+          <a href="#">Powder</a>
+          <a href="#">Fair & Lovely</a>
+          <a href="#">Boroplus</a>
+        </div>
+      </div>
+      <div class="main-items">
+        <img
+          src="https://cococart.in/cdn/shop/files/1CH2570.png?v=1728473482"
+          alt=""
+        />
+        <span>chocolate<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>chocolate Products</h5>
+          <a href="#">Dairy Milk</a>
+          <a href="#">Kit Kat</a>
+          <a href="#">5 Star</a>
+          <a href="#">Perk</a>
+          <a href="#">Dairy Blish</a>
+          <a href="#">Snickers</a>
+          <a href="#">Munch</a>
+        </div>
+      </div>
+      <div class="main-items">
+        <img
+          src="https://i.pinimg.com/736x/9e/84/d3/9e84d3409351aec5d561db7652f32c29.jpg"
+          alt=""
+        />
+        <span>Stationery<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>School Supplies</h5>
+          <a href="#">Pen / Pencile</a>
+          <a href="#">Notebook</a>
+          <a href="#">Diaries</a>
+          <a href="#">Art & Craft</a>
+          <a href="#">colour</a>
+          <a href="#">General Stationery</a>
+        </div>
+      </div>
+      <div class="main-items">
+        <img src="https://m.media-amazon.com/images/I/71SmxQFbSdL.jpg" alt="" />
+        <span>Packaged Product<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Namkeen Products</h5>
+          <a href="#">Balaji Wafers</a>
+          <a href="#">Shree Hari Namkeen</a>
+          <a href="#">Gopal Namkeen</a>
+        </div>
+      </div>
+      <div class="main-items">
+        <img
+          src="https://dodladairy.com/wp-content/uploads/2024/03/icecream-65facbd6d4ff4-1008x1024.webp"
+          alt=""
+        />
+        <span>Ice Cream<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Sheetal Ice Cream</h5>
+          <a href="#">Candies & Dollies</a>
+          <a href="#">Novelties</a>
+          <a href="#">Cones</a>
+          <a href="#">Kulfi</a>
+          <a href="#">Cups</a>
+        </div>
+      </div>
+      <div class="main-items">
+        <img
+          src="https://files.oaiusercontent.com/file-6q8TpQgvvgMmBnEcmeKGPB?se=2025-03-20T03%3A38%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dec6a7e81-61ff-4f03-aa73-571277004e7f.webp&sig=n8QxrRRMZ3tHrijPq4amMltiMfFuxp2voUmt46WhMdI%3D"
+          alt=""
+        />
+        <span>Festivel Special<i class="fa-solid fa-chevron-down"></i></span>
+        <div class="dropdown">
+          <h5>Season Special</h5>
+          <a href="#">Diwali Special</a>
+          <a href="#">Utrayan Special</a>
+          <a href="#">Holi Special</a>
+        </div>
+      </div>
     </div>
 
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="../pages/product.html">Product</a>
-      <a href="#">Contact us</a>
-    </nav>
+    <main>
+      <div class="slider-container">
+        <div class="slides">
+          <img src="images/banner.jpeg" class="slide" alt="Image 1" />
+          <img src="images/Untitled-2.jpeg" class="slide" alt="Image 2" />
+          <img src="images/banner2.png" class="slide" alt="Image 3" />
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
 
-    <div class="serch-bar">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" id="serch-products" placeholder="Serch for Product,items and other">
-    </div>
+      <div class="Advertisement">
+        <div class="product-buy">
+          <div class="image-gallery">
+            <img
+              src="images/ice cram-0.png"
+              alt=""
+              style="width: 355px; height: 400px"
+            />
+            <button><a href="#">View Products</a></button>
+          </div>
+          <div class="image-gallery">
+            <img
+              src="images/ice cream-1.png"
+              alt=""
+              style="width: 355px; height: 400px"
+            />
+            <button><a href="#">View Products</a></button>
+          </div>
+          <div class="image-gallery">
+            <img
+              src="images/chocolats-2.webp"
+              alt=""
+              style="width: 355px; height: 400px; border-radius: 12px"
+            />
+            <button><a href="#">View Products</a></button>
+          </div>
+          <div class="image-gallery">
+            <img
+              src="images/Stationery-1.webp"
+              alt=""
+              style="width: 355px; height: 400px; border-radius: 12px"
+            />
+            <button><a href="#">View Products</a></button>
+          </div>
+        </div>
+      </div>
 
-    <div id="login">
-      <i class="fa-regular fa-user"></i>Login
-      <div id="login-overlay"></div>
-    </div>
-    <div id="login-form">
 
-      <div class="form-design">
-        <div class="lsaide">
-          <h1>Login</h1>
-          <h5>Get access to your Cart, Wishlist </h5>
+      <div class="main-card">
+        <div class="card">
+          <h1>glocery product</h1>
+          <div class="products">
+            <div class="product">
+              <img src="images/Papad-1.jpg" alt="" style="object-fit: cover" />
+              <span>Extruded Unfried Snack <br />Pellets Pinkoo 1 kg oval</span>
+              <h5>pack of 1 (6 piece) ₹10/-</h5>
+            </div>
+            <div class="product">
+              <div class="item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFM4v-DTzpDdDB02QBtt0gFajP0IE418OEAw&s"
+                  alt=""
+                />
+                <span class="mt-4"
+                  >Udad papad <br />
+                  Gopal Snacks Limited.</span
+                >
+                <h5>pack of 1 (6 piece) ₹10/-</h5>
+              </div>
+              <div class="item">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2022/4/XH/AN/DS/14388036/20220303-124458-1000x1000.jpg"
+                  alt=""
+                />
+                <span
+                  >KG PAPAD <br />
+                  PIPE BAMBOO BHUNGLA</span
+                >
+                <h5>130gm ₹10/-</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1>Detergent product</h1>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://www.quickpantry.in/cdn/shop/products/ghadi-detergent-powder-quick-pantry-1.jpg?v=1710538076&width=500"
+                style="height: 230px"
+                alt=""
+              />
+              <span>Udad papad <br />Gopal Snacks Limited.</span>
+              <h5>pack of 1 (1kg) ₹71/-</h5>
+            </div>
+            <div class="product">
+              <div class="item">
+                <img
+                  src="https://cdn-cmimgopt.citymall.live/cmimgopt-57d03b90-4679-4b6a-9786-1a42916b7881.webp"
+                  alt=""
+                />
+                <span>Detergent Bars<br />Shop for High-Quality </span>
+                <h5>pack of 1 ₹10/-</h5>
+              </div>
+              <div class="item">
+                <img
+                  src="https://ppsnco.com/wp-content/uploads/2021/10/Comfort.jpg"
+                  alt=""
+                />
+                <span
+                  >Comphort <br />
+                  Comfort Fabric Conditioner Pink
+                </span>
+                <h5>pack of 1 (19ml) ₹10/-</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1>Bath Shop</h1>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://m.media-amazon.com/images/I/71j0xjIOSbL._AC_UF1000,1000_QL80_.jpg"
+                style="border-radius: 10px"
+                alt=""
+              />
+              <span
+                >Dove bars <br />
+                Beuty Skin care</span
+              >
+              <h5>pack of 1 (100gm) ₹45/-</h5>
+            </div>
+            <div class="product">
+              <div class="item">
+                <img
+                  src="https://m.media-amazon.com/images/I/71k+vczVn9L._AC_UF1000,1000_QL80_.jpg"
+                  alt=""
+                />
+                <span>Santoor Sanda <br />Skin Care, 100g</span>
+                <h5>buy 4 Get 1 FREE ₹159/-</h5>
+              </div>
+              <div class="item">
+                <img
+                  src="https://m.media-amazon.com/images/I/61doezZSD7L.jpg"
+                  alt=""
+                />
+                <span>Dettol Original <br />Combo Offer On Bath Soap</span>
+                <h5>buy 4 Get 1 FREE ₹159/-</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="chocolat-products">
+
+          <div class="chocolat-card">
+            <h1>Chocolates </h1>
+            <div class="products">
+              <div class="product">
+                <img
+                  src="https://bf1af2.a-cdn.akinoncloud.com/products/2024/12/28/97614/7c3543a1-0de8-4beb-8362-124ecb9059e5_size3840_cropCenter.jpg"
+                  alt=""
+                />
+                <span>Nestle KitKat Breaker<br />
+                   3 Fingers Chocolate</span
+                >
+                <h5>pack of 1 ₹25/-</h5>
+              </div>
+              <div class="product">
+                <img
+                  src="https://helloaugust.in/wp-content/uploads/2020/04/Cadbury-Dairy-Milk-Chocolate.jpg"
+                  alt=""
+                />
+                <span>Diary Milk<br />Cadbury Diary Milk Chocolate</span>
+                <h5>pack of 1 ₹10/-</h5>
+              </div>
+            </div>
+
+            <div class="products">
+              <div class="product">
+                <img
+                  src="https://www.giftsmyntra.com/wp-content/uploads/2020/12/maha-pack-of-five-star.jpg"
+                  alt=""
+                />
+                <span>5 Star<br /> maha 5 star chocolat  </span>
+                <h5>pack of 1 ₹10/-</h5>
+              </div>
+              <div class="product">
+                <img
+                  src="https://www.theblissburry.com/wp-content/uploads/2021/07/BlissChoco007.jpg"
+                  alt=""
+                />
+                <span>Snickers<br />5 Packs of Snickers Chocolates</span>
+                <h5>pack of 5 ₹50/-</h5>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="box">
+            <img src="images/chocolat-4.webp" style="height: 642px; width:950px;" alt="">
+          </div>
+
 
         </div>
-        <div class="rsaide">
-          <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
-          <p class="note">We will never share your number with anyone.</p>
-          <button class="request-otp">Request OTP</button>
-
-
-          <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="wishlist">
-      <i class="fa-regular fa-heart"></i>wishlist
-    </div>
-
-    <div class="cart-header">
-      <a href="pages/header pages/cart.html">
-        <button id="cart-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-          </svg>Cart
-          (<span id="cart-count">0</span>)
-        </button></a>
-
-    </div>
-
-    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-
-  </header>
-
-
-  <div class="items-header">
-
-    <div class="main-items">
-      <img src="https://harimafoods.in/wp-content/uploads/2019/06/62.-Pav-Bhaji-Masala_100g.png" alt="">
-      <span> Grocery <i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Grocery Products</h5>
-        <a href="#">Tea</a>
-        <a href="#">Dals</a>
-        <a href="#">Dry Fruits</a>
-        <a href="#">Grain & Sooji</a>
-        <a href="#">Flour</a>
-        <a href="#">Masala & Spices</a>
-        <a href="#">Ghee % Vanaspati</a>
-        <a href="#">Papad</a>
-        <a href="#">Salt / Sugar / Jaggery</a>
-      </div>
-    </div>
-
-
-    <div class="main-items">
-      <img src="https://m.media-amazon.com/images/I/61Pa+g3r8SL.jpg" alt="">
-      <span>Home & Kitchen<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Home & Kitchen </h5>
-        <a href="#">Cleaning Supplies</a>
-        <a href="#">Detergent Powder</a>
-        <a href="#">Detergent Bar</a>
-        <a href="#">Cleaners</a>
-      </div>
-    </div>
-
-    <div class="main-items">
-      <img
-        src="https://media.istockphoto.com/id/655123574/photo/soft-drinks-splashing.jpg?s=612x612&w=0&k=20&c=iZcaMSEuzxLRy2lpnUw9NhnTcOhYNgxA3poBbjCsSSc="
-        alt="">
-      <span>Cold Drinks<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Cold Drink Products</h5>
-        <a href="#">Soda</a>
-        <a href="#">Water</a>
-        <a href="#">Juice</a>
-        <a href="#">Red bull</a>
-      </div>
-    </div>
-
-    <div class="main-items">
-      <img src="https://m.media-amazon.com/images/I/81Mhoi8b+nL.jpg" alt="">
-      <span>Beauty<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Beuty & Grooming</h5>
-        <a href=".//pages/product pages/hair oil.html">Hair Oil</a>
-        <a href="#">Moisturizer</a>
-        <a href="#">Shampoo</a>
-        <a href="#">Face Wash</a>
-        <a href="#">Body Lotion</a>
-        <a href="#">Powder</a>
-        <a href="#">Fair & Lovely</a>
-        <a href="#">Boroplus</a>
-      </div>
-    </div>
-    <div class="main-items">
-      <img src="https://cococart.in/cdn/shop/files/1CH2570.png?v=1728473482" alt="">
-      <span>chocolate<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>chocolate Products</h5>
-        <a href="#">Dairy Milk</a>
-        <a href="#">Kit Kat</a>
-        <a href="#">5 Star</a>
-        <a href="#">Perk</a>
-        <a href="#">Dairy Blish</a>
-        <a href="#">Snickers</a>
-        <a href="#">Munch</a>
-      </div>
-    </div>
-    <div class="main-items">
-      <img src="https://i.pinimg.com/736x/9e/84/d3/9e84d3409351aec5d561db7652f32c29.jpg" alt="">
-      <span>Stationery<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>School Supplies</h5>
-        <a href="#">Pen / Pencile</a>
-        <a href="#">Notebook</a>
-        <a href="#">Diaries</a>
-        <a href="#">Art & Craft</a>
-        <a href="#">colour</a>
-        <a href="#">General Stationery</a>
-      </div>
-    </div>
-    <div class="main-items">
-      <img src="https://m.media-amazon.com/images/I/71SmxQFbSdL.jpg" alt="">
-      <span>Packaged Product<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Namkeen Products</h5>
-        <a href="#">Balaji Wafers</a>
-        <a href="#">Shree Hari Namkeen</a>
-        <a href="#">Gopal Namkeen</a>
-      </div>
-    </div>
-    <div class="main-items">
-      <img src="https://dodladairy.com/wp-content/uploads/2024/03/icecream-65facbd6d4ff4-1008x1024.webp" alt="">
-      <span>Ice Cream<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Sheetal Ice Cream</h5>
-        <a href="#">Candies & Dollies</a>
-        <a href="#">Novelties</a>
-        <a href="#">Cones</a>
-        <a href="#">Kulfi</a>
-        <a href="#">Cups</a>
-      </div>
-    </div>
-    <div class="main-items">
-      <img
-        src="https://files.oaiusercontent.com/file-6q8TpQgvvgMmBnEcmeKGPB?se=2025-03-20T03%3A38%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dec6a7e81-61ff-4f03-aa73-571277004e7f.webp&sig=n8QxrRRMZ3tHrijPq4amMltiMfFuxp2voUmt46WhMdI%3D"
-        alt="">
-      <span>Festivel Special<i class="fa-solid fa-chevron-down"></i></span>
-      <div class="dropdown">
-        <h5>Season Special</h5>
-        <a href="#">Diwali Special</a>
-        <a href="#">Utrayan Special</a>
-        <a href="#">Holi Special</a>
-      </div>
-    </div>
-
-  </div>
-
-
-  <main>
-    <div class="slider-container">
-      <div class="slides">
-        <img src="images/banner.jpeg" class="slide" alt="Image 1" />
-        <img src="images/Untitled-2.jpeg" class="slide" alt="Image 2" />
-        <img src="images/banner2.png" class="slide" alt="Image 3" />
-      </div>
-      <button class="prev" onclick="prevSlide()">❮</button>
-      <button class="next" onclick="nextSlide()">❯</button>
-    </div>
-
-
-    <div class="Advertisement">
-      <div class="product-buy">
-        <div class="image-gallery">
-          <img src="images/ice cram-0.png" alt="" style="width: 355px; height: 400px;">
-          <button><a href="#">View Products</a></button>
-        </div>
-        <div class="image-gallery">
-          
-          <img src="images/ice cream-1.png" alt="" style="width: 355px;height: 400px;">
-          <button><a href="#">View Products</a></button>
-        </div>
-        <div class="image-gallery">
-          
-          <img src="images/chocolats-2.webp" alt="" style=" width: 355px; height: 400px; border-radius: 12px;">
-          <button><a href="#">View Products</a></button>
-        </div>
-        <div class="image-gallery">
-          <img src="images/Stationery-1.webp" alt="" style="width: 355px; height: 400px; border-radius: 12px;">
-          <button><a href="#">View Products</a></button>
-        </div>
-        
-      </div>
-    </div> 
-
-
-
-  </main>
-  <script src="script.js"></script>
-</body>
-
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

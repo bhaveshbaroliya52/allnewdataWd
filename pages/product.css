@@ -455,11 +455,6 @@ flex-direction: column;
 
 }
  
-
-.product-container .items {
-  position: relative;
-}
-
 .product-container .items .wishlist-btn {
   height: 34px;
   width: 34px;
@@ -486,44 +481,9 @@ flex-direction: column;
   transition: background-color 0.3s ease-in-out;
 }
 
-.wishlist-btn.active {
+ #wishlist-product .wishlist-btn:active{
   background-color: red;
-  transform: scale(1.1);
-}
-
-.heart {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: red;
-  clip-path: polygon(
-      50% 15%,
-      61% 7%,
-      75% 7%,
-      85% 17%,
-      85% 32%,
-      75% 45%,
-      50% 75%,
-      25% 45%,
-      15% 32%,
-      15% 17%,
-      25% 7%,
-      39% 7%
-  );
-  opacity: 1;
-  animation: float 0.8s ease-out forwards;
-}
-
-@keyframes float {
-  0% {
-      transform: translate(0, 0) scale(1);
-      opacity: 1;
-  }
-  100% {
-      transform: translate(var(--x), var(--y)) scale(0.5);
-      opacity: 0;
-  }
-}
+ }
 
 .wishlist-btn.active {
   background-color: red !important;
@@ -540,10 +500,7 @@ flex-direction: column;
   transition: color 0.3s ease-in-out;
 }
 
-.wishlist-btn.active {
-  color: red; /* 🔴 Wishlist me hai */
-}
-
+ 
  
 .product-container .items a img {
   height: 250px;
