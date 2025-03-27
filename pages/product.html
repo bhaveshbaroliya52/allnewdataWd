@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="product.css">
+
+ 
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -79,12 +84,12 @@
       </div>
     </div>
 
- 
+
     <div class="wishlist-header">
       <a href="header pages/wishlist.html">
         <button id="wishlist-button">
           <i class="fa-regular fa-heart"></i>wishlist
- (<span id="wishlist-count">0</span>)
+          (<span id="wishlist-count">0</span>)
         </button></a>
     </div>
 
@@ -100,11 +105,8 @@
           </svg>Cart
           (<span id="cart-count">0</span>)
         </button></a>
-
     </div>
-
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-
   </header>
 
 
@@ -236,20 +238,14 @@
       </div>
 
 
-
-
-
       <div>
 
-        <p>PRODUCT</p>
+     <div class="product-titel">One items about all Products</div>
 
         <div class="product-container">
 
-
-
           <div class="items">
             <div class="items-cart">
-              <!-- <button class="wishlist-btn" onclick="addToWishlist(event)"></button>            -->
               <a href="#"><img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/w/n/0/-original-imah7ctuxqafnyya.jpeg?q=70"
                   alt=""></a>
@@ -258,73 +254,45 @@
                 <span>600 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>290</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 290
+                  </h6> 
                 </div>
               </div>
-              <div id="cart-container">
-                <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                      fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                      <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                    </svg> Add To Cart</a></button>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn">
+                </button>
               </div>
-
-<!-- wishlist-trainnig -->
-<div id="wishlist-container">
-  <button class="wishlist-btn">  
-    <!-- <i class="fa-regular fa-heart"></i>wishlist
-       Add To wishlist -->
-      </button>
-</div>
-
-
             </div>
           </div>
-
 
           <div class="items">
             <div class="items-cart">
               <a href="#"><img src="https://img.clevup.in/285171/1686744967014_SKU-0401_1.png?width=600&format=webp"
                   alt=""></a>
-
               <div class="detail">
                 <p style="margin: 0;">Dove Shampoo + Hair Conditioner intense repair</p>
                 <span>₹5 × 16</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>75</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 75
+                  </h6> 
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
-
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
-
-
           </div>
 
           <div class="items">
-            <!-- <button class="wishlist-btn" onclick="addToWishlist(event)"> </button> -->
-
             <div class="items-cart">
               <a href="#"><img src="https://cdn.mafrservices.com/sys-master-root/hf8/ha3/49847413899294/11318_main.jpg"
                   alt=""></a>
@@ -335,26 +303,17 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>290</h6>
-
+                    <h6 style="margin-left: 10px; display: flex;">
+                      <i class="bi bi-currency-rupee "></i> 290
+                    </h6>                  
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-                  
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
-
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -370,24 +329,17 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>290</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 290
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-                  
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
-
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -399,24 +351,17 @@
                 <span>600 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>290</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 290
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
-
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -427,26 +372,19 @@
               <div class="detail">
                 <p style="margin: 0;">Buy Clinic Plus Strong & Long Shampoo Sachet online at best price</p>
                 <span>6 ml</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>1</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 1
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -460,23 +398,17 @@
                 <span>400 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>120</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 120
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -486,26 +418,19 @@
               <div class="detail">
                 <p style="margin: 0;">Buy BENAL ARITHA Hair Oil (500 ml) Online at Low Prices in India </p>
                 <span>600 ml</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>60</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 60
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -518,23 +443,17 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>207</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 207
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -549,23 +468,17 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>35</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 35
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -579,22 +492,17 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>95</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 95
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -606,23 +514,17 @@
                 <span>400g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>50</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -636,22 +538,17 @@
                 <span>pack of 1</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -663,23 +560,17 @@
                 <span>pack of 1 (1/kg)</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>120</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 120
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -691,23 +582,17 @@
                 <span>pack of 1 (500g)</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>30</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 30
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -721,23 +606,17 @@
                 <span>(3 x 100 g)</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>30</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 30
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -750,23 +629,17 @@
                 <span>1 Ltr</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>140</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 140
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -780,23 +653,17 @@
                 <span> 5 Ltr</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>700</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 700
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -810,23 +677,17 @@
                 <span>40g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -840,23 +701,17 @@
                 <span>Tomato Sauce</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>66.00</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 66.00
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -870,23 +725,17 @@
                 <span> 2 piece</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>40</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 40
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -900,23 +749,17 @@
                 <span>KitKat</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>25</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 25
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -930,23 +773,17 @@
                 <span> 11g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -960,23 +797,17 @@
                 <span>1/piece ₹10</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10/-</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10/-
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -988,27 +819,19 @@
               <div class="detail">
                 <p style="margin: 0;">Udad papad 7 inches - Gopal Snacks Limited.</p>
                 <span>pack of 1 (6 piece)</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
                 </div>
-
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -1022,23 +845,17 @@
                 <span> 500g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>700</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 700
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
 
@@ -1050,55 +867,40 @@
                 <span> Milk Rusk</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10/-
+                  </h6>
                 </div>
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn">  </button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
             </div>
           </div>
-          
+
           <div class="items">
             <div class="items-cart">
               <a href="#"><img src="https://www.gopalnamkeen.com/storage/product/front_images/1719643351.png"
                   alt=""></a>
-
               <div class="detail">
                 <p style="margin: 0;">Elaichi rusk - Gopal Snacks Limited. BONOVA</p>
                 <span> Elaichi rusk</span>
-
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px; margin-bottom:5px;" height="16px"
-                    viewBox="0 -960 960 960" width="16px" fill="#1f1f1f">
-                    <path
-                      d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z" />
-                  </svg>
-                  <h6>10</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 100
+                  </h6>
                 </div>
-
               </div>
-              <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path
-                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-                  </svg> Add To Cart</a></button>
-                  
-                  <div id="wishlist-product">
-                    <button class="wishlist-btn"></button>
-                  </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-product">
+                <button class="wishlist-btn"></button>
+              </div>
             </div>
           </div>
 

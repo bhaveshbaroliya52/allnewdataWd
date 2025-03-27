@@ -40,6 +40,7 @@ function toggleCategory(element) {
 
 // parfect cart
 
+
 document.addEventListener("DOMContentLoaded", function () {
     let cartIcon = document.getElementById("cart-count");
 
@@ -86,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// prfect wishlist
 
+// prfect wishlist
 
 
 document.addEventListener("DOMContentLoaded", function () {

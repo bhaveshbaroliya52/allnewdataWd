@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide menu by default */
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Sidebar hidden initially */
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+}
+
+/* Show menu when active */
+.nav-links.active {
+    right: 0;
+}
+
+/* Menu Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Button */
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Hide button on desktop */
+    }
+
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        border-bottom: none;
+        color: black;
+    }
+}
+
+  </style>
+ </head>
+ <body>
+  <header>
+    <div class="logo">Gel Krupa</div>
+    <button class="menu-toggle">☰</button> 
+
+    <nav class="nav-links">
+        <button class="close-btn">&times;</button>
+        <a href="#">Home</a>
+        <a href="#">Billing Information</a>
+        <a href="#">Order Tracker</a>
+        <a href="#">Contact Information</a>
+        <a href="#">Sign In</a>
+    </nav>
+</header>
+<script>
+
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.add("active");
+});
+
+document.querySelector(".close-btn").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.remove("active");
+});
+
+</script>
+ </body>
+ </html>

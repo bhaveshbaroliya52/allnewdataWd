@@ -36,7 +36,7 @@ header {
   height: 68px;
   align-items: center;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 100%;
   padding: 0px 40px;
 }
@@ -50,7 +50,6 @@ header .logo  {
   background-clip: text;
   font-weight: 600;
 }
-
 
 header nav {
   display: flex;
@@ -255,7 +254,7 @@ background-color: rgba(255, 166, 0, 0.779);
  }
 
 
-/* wishlist tranning */
+/* wishlist*/
 
 header .wishlist-header{
   display: flex;
@@ -282,103 +281,19 @@ header .wishlist-header{
   transition: all 300ms;
   border-radius: 8px;
  }
+ 
 
+/* products */
 
-
-
-@media (max-width: 375px) {
-  header nav {
-    position: absolute;
-    flex-direction: column;
-  }
-  header {
-    height: 46px;
-    width: 100%;
-  }
-
-  header input { 
-    display: none;
-  }
-  header .serch-bar {
-    font-size: 12px;
-    background-color: transparent;
-    border: none;
-  }
-  header .logo {
-    font-size: 20px;
-  }
-
-  .heading {
-    padding: 4px 20px;
-  }
-  .heading i {
-    margin-right: 4px;
-    padding: 6px;
-    font-size: 12px;
-  }
-  .heading span {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-  .heading .sign-in a {
-    font-size: 13px;
-  }
-}
-
-
-@media (max-width: 375px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      background: white;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .nav-links.active {
-      display: flex;
-  }
-  .menu-toggle {
-      display: flex;
-  }
-  .search-box input {
-      width: 100px;
-  }
-}
 
 main .product {
   display: flex;
-  flex: 2;
-   
+  flex: 2;  
 }
-
-
 main .filter-container {
   margin-top: 2px;
   min-width:  270px; 
 }
-
-main .dropdown .btn {
-  border: none;
-}
-main .dropdown .btn:hover {
-  color: orangered;
-}
-main .dropdown .btn:focus {
-  color: orangered;
-}
-main .dropdown .dropdown-menu {
-  border: none;
-  transition: all 500ms;
-}
-
-.dropdown .dropdown-menu .dropdown-item:hover {
-  color: orange;
-}
-
 .filter-container {
   width: 250px;
   border: 1px solid #ddd;
@@ -428,7 +343,10 @@ main .dropdown .dropdown-menu {
   display: none;
 }
 
-
+.product-titel{
+  font-size: 20px;
+  margin: 16px 0 16px 40px;
+}
 
 main .product-container {
 display: flex;
@@ -452,8 +370,8 @@ flex-direction: column;
 }
  
 .product-container .items .wishlist-btn {
-  height: 34px;
-  width: 34px;
+  height: 25px;
+  width: 25px;
   background-color: rgb(199, 199, 199);
   border: 1px solid black;
   position: absolute;
@@ -511,8 +429,11 @@ flex-direction: column;
   align-items: center;
   display: flex;
 }
-
-.product-container .items button {
+.product-container .items .price h6 i{
+  font-size: 17px;
+  margin-top: 0.9px;
+}
+.product-container .items  .cart-btn {
   width: 270px;
   height: 34px;
   border-radius: 6px;
@@ -520,7 +441,20 @@ flex-direction: column;
   background-color: rgba(250, 185, 66, 0.907);
   transition: all 200ms;
   margin-top: 8px;
+  display: flex;
+  justify-content: center;
 }
+.product-container .items  .cart-btn a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+.product-container .items  .cart-btn a i{
+font-size: 20px;
+margin-right: 8px;
+margin-bottom: 5px;
+}
+ 
 .product-container .items .cart-btn:hover {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -531,24 +465,8 @@ transition: all 100ms;
 
 .product-container .items button:active{
 transform: scale(0.97);
-
-}
-.product-container .items button a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-.product-container .items button a svg {
-  margin-right: 12px;
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 6px;
 }
  
-.product-container .items i:active {
-  background-color: pink;
-}
-
 .product-container #cart-count {
   background-color: red;
   color: white;
@@ -559,7 +477,10 @@ transform: scale(0.97);
 }
 
  
+ 
 
+
+ 
  
 
 

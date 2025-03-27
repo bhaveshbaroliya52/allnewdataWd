@@ -27,45 +27,6 @@ document.getElementById("closeSpecs").addEventListener("click", function () {
 
 // zoom in
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let thumbnails = document.querySelectorAll(".thumb");
-//     let mainImage = document.getElementById("mainImage");
-//     let zoomedImage = document.getElementById("zoomedImage");
-//     let rightContainer = document.querySelector(".right-container");
-//     let centerContainer = document.querySelector(".center-container");
-
-//     function updateZoomedImage() {
-//         zoomedImage.src = mainImage.src;
-//     }
-
-//     updateZoomedImage();
-
-//     thumbnails.forEach(img => {
-//         img.addEventListener("mouseover", function () {
-//             mainImage.src = this.src;
-//             updateZoomedImage();
-//         });
-//     });
-
-//     centerContainer.addEventListener("mousemove", function (e) {
-//         let rect = this.getBoundingClientRect();
-//         let x = ((e.clientX - rect.left) / rect.width) * 100;
-//         let y = ((e.clientY - rect.top) / rect.height) * 100;
-
-//         zoomedImage.style.display = "block";
-//         zoomedImage.style.left = `${-(x * 3)}px`;
-//         zoomedImage.style.top = `${-(y * 3)}px`;
-//         zoomedImage.style.transformOrigin = `${x}% ${y}%`;
-//     });
-
-//     centerContainer.addEventListener("mouseleave", function () {
-//         zoomedImage.style.display = "none";
-//     });
-// });
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     let thumbnails = document.querySelectorAll(".thumb");
@@ -105,6 +66,54 @@ document.addEventListener("DOMContentLoaded", function () {
     centerContainer.addEventListener("mouseleave", function () {
         zoomedImage.style.display = "none";
     });
+});
+
+
+
+// parfect cart
+
+document.addEventListener("DOMContentLoaded", function () {
+    let cartIcon = document.getElementById("cart-count");
+
+    // 🔄 Pehle se saved cart load kare
+    let savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    updateCartCount(savedCart);
+
+    document.querySelectorAll(".cart-btn").forEach((button) => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // 🛒 Product details lena
+            let productCard = this.closest(".items-cart");
+            let productName = productCard.querySelector(".detail p").textContent;
+            let productPrice = productCard.querySelector(".price h6:last-child").textContent;
+            let productImage = productCard.querySelector("img").src;
+
+            // 🛍 Cart me duplicate check karna
+            let isAlreadyInCart = savedCart.some(item => item.name === productName);
+
+            if (!isAlreadyInCart) {
+                // ✅ Agar product cart me nahi hai tab add kare
+                let newItem = { name: productName, price: productPrice, image: productImage };
+                savedCart.push(newItem);
+
+                // 📝 Local Storage me save karna
+                localStorage.setItem("cart", JSON.stringify(savedCart));
+
+                // 🔄 UI Update karna
+                updateCartCount(savedCart);
+                
+                alert(`"${productName}" added to cart! 🛒`);
+            } else {
+                alert(`"${productName}" is already in the cart! ❌`);
+            }
+        });
+    });
+
+    // 🔄 Cart Count Update Function
+    function updateCartCount(cartItems) {
+        cartIcon.textContent = cartItems.length; // Cart count update kare
+    }
 });
 
 
