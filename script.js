@@ -94,3 +94,20 @@ document.addEventListener("DOMContentLoaded", function () {
       cartIcon.textContent = cartItems.length; // Cart count update kare
   }
 });
+
+ 
+
+
+// 3 dots menu bar
+
+document.getElementById("three-dots").addEventListener("click", function() {
+  document.getElementById("menu-items").style.display = "flex";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+  document.getElementById("menu-items").style.display = "none";
+});
+
+
+
+ 
