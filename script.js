@@ -109,5 +109,31 @@ document.getElementById("close-btn").addEventListener("click", function() {
 });
 
 
+document.addEventListener("click", function (event) {
+  let menuToggle = document.getElementById("menu-toggle");
+  let navLinks = document.querySelector(".nav-links");
+  
+//   Agar koi bhi click nav-links ya menu-toggle ke alawa ho, to menu hide karo
+  // if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+  //     menuToggle.checked = false;
+  // }
+});
 
- 
+
+
+// menu toggle chat gpt
+
+// const menu = document.querySelector(".nav-links");
+// const menuToggle = document.getElementById("three-dots");
+// const closeBtn = document.getElementById("close-btn");
+
+// // Menu Open
+// menuToggle.addEventListener("click", function() {
+//   menu.style.right = "0"; // Menu dikhao
+// });
+
+// // Menu Close
+// closeBtn.addEventListener("click", function() {
+//   menu.style.right = "-250px"; // Menu hide karo
+// });
+// ;
