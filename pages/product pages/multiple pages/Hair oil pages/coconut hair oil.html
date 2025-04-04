@@ -6,6 +6,7 @@
     <title>document</title>
 
     <link rel="stylesheet" href="cascading style.css" />
+    <link rel="stylesheet" href="../../../product.css">
 
     <link
       rel="stylesheet"
@@ -29,65 +30,51 @@
   </head>
 
   <body>
-    <div class="heading">
-      <div class="call">
-        <i class="fa-solid fa-phone"></i>
-        <span style="font-style: italic">902-396-2442</span>
-      </div>
-
-      <div class="sign-in">
-        <a href="#">Sign-up /</a>
-        <a href="#">ragister</a>
-      </div>
-    </div>
-
     <header>
       <div class="logo">
         <a href="#" class="logo-1">Gel Krupa</a>
       </div>
-
+  
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label for="menu-toggle" class="close-btn">
+        <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+      </label>
+  
       <nav class="nav-links">
-        <a href="../../../../project.html">Home</a>
+        <h2 class="menu">menu</h2>
+        <a href="../../../project.html">Home</a>
         <a href="#">About</a>
         <a href="#">Product</a>
         <a href="#">Contact us</a>
       </nav>
-
+  
       <div class="serch-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Serch for Product,items and other" />
+        <input type="text" placeholder="Serch for Product,items and other">
       </div>
-
+  
+  
+  <div class="menu-bar">
+    <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+  <div class="menu-items" id="menu-items">
+    <i class="fa-solid fa-times" id="close-btn"></i>
+  
       <div id="login">
         <i class="fa-regular fa-user"></i>Login
         <div id="login-overlay"></div>
       </div>
-
-      <!-- login-form -->
-    <div id="login-form">
-
-      <div class="form-design">
-      <div class="lsaide">
-<h1>Login</h1>
-<h5>Get access to your Cart, Wishlist </h5>
-
+      <div class="wishlist-header">
+        <a href="../../header pages/wishlist.html">
+          <button id="wishlist-button">
+            <i class="fa-regular fa-heart"></i>wishlist
+            (<span id="wishlist-count">0</span>)
+          </button></a>
       </div>
-      <div class="rsaide">
-          <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
-          <p class="note">We will never share your number with anyone.</p>
-          <button class="request-otp">Request OTP</button>
-        
-
-<button id="form-close"><i class="fa-solid fa-xmark"></i></button>
-</div>
-      </div>
-    </div>
-
-
-      <div class="wishlist"><i class="fa-regular fa-heart"></i>wishlist</div>
-
       <div class="cart-header">
-        <a href="../../../header pages/cart.html">
+        <a href="../../header pages/cart.html">
           <button id="cart-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
               viewBox="0 0 16 16">
@@ -95,11 +82,35 @@
                 d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
             </svg>Cart
             (<span id="cart-count">0</span>)
-          </button></a> 
+          </button></a>
       </div>
-
-      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </div>
+  
+          <!-- login-form -->
+          <div id="login-form">
+            <div class="form-design">
+              <div class="lsaide">
+                <h1>Login</h1>
+                <h5>Get access to your Cart, Wishlist </h5>
+              </div>
+              <div class="rsaide">
+                <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+                <p class="note">We will never share your number with anyone.</p>
+                <button class="request-otp">Request OTP</button>
+                <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            </div>
+          </div>
     </header>
+
+    <div class="heading">
+      <button id="filter-btn" class="category-button">☰ All categories</button>
+      <div class="serch-bar-2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+      </div>
+    </div>
 
     <main>
       <div class="main-section">
@@ -192,11 +203,23 @@
 
           <hr />
 
-          <button class="cart-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-            fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-            <path
-              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-          </svg> Add To Cart</a></button>
+          <button class="cart-btn">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-cart2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                />
+              </svg>
+              Add To Cart</a
+            >
+          </button>
 
           <img
             id="zoomedImage"

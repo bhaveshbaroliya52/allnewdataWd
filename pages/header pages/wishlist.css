@@ -116,3 +116,43 @@ header .logo  {
  background-color: orange;
  color: blacwishlist
 }
+
+@media(max-width:1198px){
+  header .your-wishlist{
+    display: none;
+  }
+}
+@media(max-width:892px){
+ header .serch-bar input{
+  width: 300px;
+ }
+}
+
+@media(max-width:738px){
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .serch-bar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .wishlist-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .wishlist-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .wishlist-item img {
+    margin-bottom: 10px;
+  }
+  .wishlist-item-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  }

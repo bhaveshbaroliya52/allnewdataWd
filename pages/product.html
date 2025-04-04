@@ -7,11 +7,11 @@
   <title>Document</title>
   <link rel="stylesheet" href="product.css">
 
- 
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -27,26 +27,22 @@
 
 <body>
 
-  <div class="heading">
-    <div class="call">
-      <i class="fa-solid fa-phone"></i>
-      <span style="font-style: italic;">902-396-2442</span>
-    </div>
-
-    <div class="sign-in">
-      <a href="#">Sign-up /</a>
-      <a href="#">ragister</a>
-
-    </div>
-  </div>
-
 
   <header>
     <div class="logo">
       <a href="#" class="logo-1">Gel Krupa</a>
     </div>
 
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+    </label>
+
     <nav class="nav-links">
+      <h2 class="menu">menu</h2>
       <a href="../project.html">Home</a>
       <a href="#">About</a>
       <a href="#">Product</a>
@@ -60,64 +56,63 @@
 
 
     <!-- login -->
-    <div id="login">
-      <i class="fa-regular fa-user"></i>Login
-      <div id="login-overlay"></div>
+    <div class="menu-bar">
+      <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+      <div class="menu-items" id="menu-items">
+        <i class="fa-solid fa-times" id="close-btn"></i>
+        <div id="login">
+          <i class="fa-regular fa-user"></i>Login
+          <div id="login-overlay"></div>
+        </div>
+
+        <div class="wishlist-header">
+          <a href="header pages/wishlist.html">
+            <button id="wishlist-button">
+              <i class="fa-regular fa-heart"></i>wishlist
+              (<span id="wishlist-count">0</span>)
+            </button></a>
+        </div>
+        <div class="cart-header">
+          <a href="header pages/cart.html">
+            <button id="cart-button">
+              <i class="bi bi-cart2"></i>Cart
+              (<span id="cart-count">0</span>)
+            </button></a>
+        </div>
+      </div>
     </div>
 
     <div id="login-form">
-
       <div class="form-design">
         <div class="lsaide">
           <h1>Login</h1>
           <h5>Get access to your Cart, Wishlist </h5>
-
         </div>
         <div class="rsaide">
           <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
           <p class="note">We will never share your number with anyone.</p>
           <button class="request-otp">Request OTP</button>
-
-
           <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
       </div>
     </div>
-
-
-    <div class="wishlist-header">
-      <a href="header pages/wishlist.html">
-        <button id="wishlist-button">
-          <i class="fa-regular fa-heart"></i>wishlist
-          (<span id="wishlist-count">0</span>)
-        </button></a>
-    </div>
-
-
-
-    <div class="cart-header">
-      <a href="header pages/cart.html">
-        <button id="cart-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-          </svg>Cart
-          (<span id="cart-count">0</span>)
-        </button></a>
-    </div>
-    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
   </header>
+
+  <div class="heading">
+    <button id="filter-btn" class="category-button">☰ All categories</button>
+    <div class="serch-bar-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+    </div>
+  </div>
 
 
   <main>
 
     <div class="product">
-
       <div class="filter-container">
         <p><strong>Filters</strong></p>
         <p>PICK A CATEGORY</p>
-
 
         <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
         <ul class="subcategories">
@@ -234,13 +229,17 @@
           <li><a href="#">Balm</a></li>
         </ul>
 
-        <p class="show-more" onclick="showMore(this)">Show 38 more categories</p>
+        <!-- <p class="show-more" onclick="showMore(this)">Show 38 more categories</p> -->
+        <button id="filter-close-btn" class="filter-close-button">
+          <i class="fa-solid fa-times"></i>
+        </button>
+
       </div>
 
 
       <div>
 
-     <div class="product-titel">One items about all Products</div>
+        <div class="product-titel">One items about all Products</div>
 
         <div class="product-container">
 
@@ -256,7 +255,7 @@
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
                     <i class="bi bi-currency-rupee "></i> 290
-                  </h6> 
+                  </h6>
                 </div>
               </div>
               <button class="cart-btn">
@@ -280,7 +279,7 @@
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
                     <i class="bi bi-currency-rupee "></i> 75
-                  </h6> 
+                  </h6>
                 </div>
               </div>
               <button class="cart-btn">
@@ -303,9 +302,9 @@
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
-                    <h6 style="margin-left: 10px; display: flex;">
-                      <i class="bi bi-currency-rupee "></i> 290
-                    </h6>                  
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 290
+                  </h6>
                 </div>
               </div>
               <button class="cart-btn">
@@ -464,7 +463,7 @@
                   alt=""></a>
               <div class="detail">
                 <p style="margin: 0;">Navaratna N Hair Oil, 20ml Sachet - Pack of 36 Hair Oil </p>
-                <span>N Hair Oil, 20ml Sachet - Pack of 36</span>
+                <span> 20ml Sachet - Pack of 36</span>
 
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
@@ -904,17 +903,11 @@
             </div>
           </div>
 
-
-
-
-
-
-
-
         </div>
 
       </div>
   </main>
+  
   <script src="product.js"></script>
 </body>
 

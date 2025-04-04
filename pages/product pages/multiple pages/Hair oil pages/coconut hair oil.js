@@ -117,4 +117,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// 3 dots menu bar
+
+document.getElementById("three-dots").addEventListener("click", function() {
+    document.getElementById("menu-items").style.display = "flex";
+  });
+  
+  document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("menu-items").style.display = "none";
+  });
+  
+  
+  document.addEventListener("click", function (event) {
+    let menuToggle = document.getElementById("menu-toggle");
+ 
+  });
+ 
+
+document.getElementById("filter-btn").addEventListener("click", function() {
+    document.querySelector(".filter-container").classList.toggle("show");
+});
+
+document.getElementById("filter-close-btn").addEventListener("click", function() {
+    document.querySelector(".filter-container").classList.remove("show");
+});
+
+
+
  
