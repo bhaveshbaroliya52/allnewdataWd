@@ -596,6 +596,9 @@ header .menu-toggle {
     justify-content: space-between;
     /* box-shadow: none; */
   }
+  #filter-close-btn{
+    display: block !important;
+  }
 
   header .serch-bar {
     display: none;
@@ -966,7 +969,9 @@ main .product {
   display: flex;
   flex: 2;
 }
-
+#filter-close-btn{
+  display: none;
+}
 main .filter-container {
   margin-top: 2px;
   min-width: 270px;
@@ -1014,6 +1019,10 @@ main .filter-container {
 
 .subcategories li:hover a {
   color: orangered;
+}
+.subcategories li a.active {
+  color: orangered;
+  font-weight: bold;
 }
 
 .subcategories li a {

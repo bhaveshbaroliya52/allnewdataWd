@@ -134,6 +134,7 @@ document.getElementById("three-dots").addEventListener("click", function() {
  
   });
  
+//   filter-container (responsive)
 
 document.getElementById("filter-btn").addEventListener("click", function() {
     document.querySelector(".filter-container").classList.toggle("show");
@@ -143,6 +144,25 @@ document.getElementById("filter-close-btn").addEventListener("click", function()
     document.querySelector(".filter-container").classList.remove("show");
 });
 
+
+// left-container
+
+const mainImage = document.getElementById("mainImage");
+const thumbs = document.querySelectorAll(".thumb");
+
+thumbs.forEach((thumb) => {
+  thumb.addEventListener("click", () => {
+    mainImage.src = thumb.src;
+
+    // Remove active from all
+    thumbs.forEach(t => t.classList.remove("active"));
+    thumb.classList.add("active");
+  });
+});
+
+
+
+// left-cntainer slider (responsive)
 
 
  

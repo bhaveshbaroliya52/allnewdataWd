@@ -12,8 +12,10 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
     <link
       rel="stylesheet"
@@ -40,23 +42,21 @@
   </head>
 
   <body>
- 
-
     <header>
       <div class="logo">
         <a href="#" class="logo-1">Gel Krupa</a>
       </div>
 
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-  </label>
-  <label for="menu-toggle" class="close-btn">
-    <i class="fa-solid fa-times"></i> <!-- Close Icon -->
-  </label>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label for="menu-toggle" class="close-btn">
+        <i class="fa-solid fa-times"></i>
+      </label>
 
-  <nav class="nav-links"> 
-      <h2 class="menu">menu</h2>
+      <nav class="nav-links">
+        <h2 class="menu">menu</h2>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="../pages/product.html">Product</a>
@@ -71,91 +71,81 @@
           placeholder="Serch for Product,items and other"
         />
       </div>
-      
-      
-      
-      
+
       <!-- <i class="bi bi-three-dots-vertical"></i> -->
-      
+
       <div class="menu-bar">
         <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
-        
+
         <div class="menu-items" id="menu-items">
-          <i class="fa-solid fa-times" id="close-btn"></i>  
+          <i class="fa-solid fa-times" id="close-btn"></i>
           <div id="login">
-        <i class="fa-regular fa-user"></i>Login
-        <div id="login-overlay"></div>
-      </div>
+            <i class="fa-regular fa-user"></i>Login
+            <div id="login-overlay"></div>
+          </div>
 
-      <div class="wishlist-header">
-        <a href="../pages/header pages/wishlist.html">
-          <button id="wishlist-button">
-            <i class="fa-regular fa-heart"></i>wishlist
-            (<span id="wishlist-count">0</span>)
-          </button></a>
-      </div>
-
-      <div class="cart-header">
-        <a href="pages/header pages/cart.html">
-          <button id="cart-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-cart2"
-              viewBox="0 0 16 16"
+          <div class="wishlist-header">
+            <a href="../pages/header pages/wishlist.html">
+              <button id="wishlist-button">
+                <i class="fa-regular fa-heart"></i>wishlist (<span
+                  id="wishlist-count"
+                  >0</span
+                >)
+              </button></a
             >
-              <path
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
-              /></svg
-            >Cart (<span id="cart-count">0</span>)
-          </button></a
-        >
+          </div>
+
+          <div class="cart-header">
+            <a href="pages/header pages/cart.html">
+              <button id="cart-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-cart2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  /></svg
+                >Cart (<span id="cart-count">0</span>)
+              </button></a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-</div>
 
+      <div id="login-form">
+        <div class="form-design">
+          <div class="lsaide">
+            <h1>Login</h1>
+            <h5>Get access to your Cart, Wishlist</h5>
+          </div>
+          <div class="rsaide">
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+            <p class="note">We will never share your number with anyone.</p>
+            <button class="request-otp">Request OTP</button>
 
-
-<div id="login-form">
-  <div class="form-design">
-    <div class="lsaide">
-      <h1>Login</h1>
-      <h5>Get access to your Cart, Wishlist</h5>
-    </div>
-    <div class="rsaide">
+            <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="serch-bar-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
       <input
         type="text"
-        id="mobile"
-        placeholder="Enter Your Mobile Number"
-        required
+        id="serch-products"
+        placeholder="Serch for Product, items and other"
       />
-      <p class="note">We will never share your number with anyone.</p>
-      <button class="request-otp">Request OTP</button>
-
-      <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
     </div>
-  </div>
-</div>
 
-
-
-
-
-</header>
-<div class="serch-bar-2">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input
-    type="text"
-    id="serch-products"
-    placeholder="Serch for Product, items and other"
-  />
-</div>
-
-
- 
- 
     <div class="items-header">
       <div class="main-items">
         <img
@@ -303,12 +293,8 @@
           <a href="#">Holi Special</a>
         </div>
       </div>
-
     </div>
 
- 
-
-    
     <main>
       <div class="slider-container">
         <div class="slides">
@@ -356,7 +342,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="main-card">
         <div class="card">
@@ -430,7 +415,6 @@
           </div>
         </div>
 
-
         <div class="card">
           <h1>Bath Shop</h1>
           <div class="products">
@@ -467,142 +451,148 @@
           </div>
         </div>
 
-<!-- display none -->
+        <!-- display none -->
 
-<div class="card">
-  <h1>Detergent product</h1>
-  <div class="products">
-    <div class="product">
-      <img
-        src="https://www.quickpantry.in/cdn/shop/products/ghadi-detergent-powder-quick-pantry-1.jpg?v=1710538076&width=500"
-        style="height: 230px"
-        alt=""
-      />
-      <span>Udad papad <br />Gopal Snacks Limited.</span>
-      <h5>pack of 1 (1kg) ₹71/-</h5>
-    </div>
-    <div class="product">
-      <div class="item">
-        <img
-          src="https://cdn-cmimgopt.citymall.live/cmimgopt-57d03b90-4679-4b6a-9786-1a42916b7881.webp"
-          alt=""
-        />
-        <span>Detergent Bars<br />Shop for High-Quality </span>
-        <h5>pack of 1 ₹10/-</h5>
-      </div>
-      <div class="item">
-        <img
-          src="https://ppsnco.com/wp-content/uploads/2021/10/Comfort.jpg"
-          alt=""
-        />
-        <span
-          >Comphort <br />
-          Comfort Fabric Conditioner Pink
-        </span>
-        <h5>pack of 1 (19ml) ₹10/-</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      </div>
-
-
-        <div class="chocolat-products">
-
-          <div class="chocolat-card">
-            <h1>Chocolates </h1>
-            <div class="products">
-              <div class="product">
-                <img
-                  src="https://bf1af2.a-cdn.akinoncloud.com/products/2024/12/28/97614/7c3543a1-0de8-4beb-8362-124ecb9059e5_size3840_cropCenter.jpg"
-                  alt=""
-                />
-                <span>Nestle KitKat Breaker<br />
-                   3 Fingers Chocolate</span
-                >
-                <h5>pack of 1 ₹25/-</h5>
-              </div>
-              <div class="product">
-                <img
-                  src="https://helloaugust.in/wp-content/uploads/2020/04/Cadbury-Dairy-Milk-Chocolate.jpg"
-                  alt=""
-                />
-                <span>Diary Milk<br />Cadbury Diary Milk Chocolate</span>
-                <h5>pack of 1 ₹10/-</h5>
-              </div>
+        <div class="card">
+          <h1>Detergent product</h1>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://www.quickpantry.in/cdn/shop/products/ghadi-detergent-powder-quick-pantry-1.jpg?v=1710538076&width=500"
+                style="height: 230px"
+                alt=""
+              />
+              <span>Udad papad <br />Gopal Snacks Limited.</span>
+              <h5>pack of 1 (1kg) ₹71/-</h5>
             </div>
-
-            <div class="products">
-              <div class="product">
+            <div class="product">
+              <div class="item">
                 <img
-                  src="https://www.giftsmyntra.com/wp-content/uploads/2020/12/maha-pack-of-five-star.jpg"
+                  src="https://cdn-cmimgopt.citymall.live/cmimgopt-57d03b90-4679-4b6a-9786-1a42916b7881.webp"
                   alt=""
                 />
-                <span>5 Star<br /> maha 5 star chocolat  </span>
+                <span>Detergent Bars<br />Shop for High-Quality </span>
                 <h5>pack of 1 ₹10/-</h5>
               </div>
-              <div class="product">
+              <div class="item">
                 <img
-                  src="https://www.theblissburry.com/wp-content/uploads/2021/07/BlissChoco007.jpg"
+                  src="https://ppsnco.com/wp-content/uploads/2021/10/Comfort.jpg"
                   alt=""
                 />
-                <span>Snickers<br />5 Packs of Snickers Chocolates</span>
-                <h5>pack of 5 ₹50/-</h5>
+                <span
+                  >Comphort <br />
+                  Comfort Fabric Conditioner Pink
+                </span>
+                <h5>pack of 1 (19ml) ₹10/-</h5>
               </div>
             </div>
           </div>
-
-          <div class="chocolat-card">
-            <h1>Chocolates </h1>
-            <div class="products">
-              <div class="product">
-                <img
-                  src="https://bf1af2.a-cdn.akinoncloud.com/products/2024/12/28/97614/7c3543a1-0de8-4beb-8362-124ecb9059e5_size3840_cropCenter.jpg"
-                  alt=""
-                />
-                <span>Nestle KitKat Breaker<br />
-                   3 Fingers Chocolate</span
-                >
-                <h5>pack of 1 ₹25/-</h5>
-              </div>
-              <div class="product">
-                <img
-                  src="https://helloaugust.in/wp-content/uploads/2020/04/Cadbury-Dairy-Milk-Chocolate.jpg"
-                  alt=""
-                />
-                <span>Diary Milk<br />Cadbury Diary Milk Chocolate</span>
-                <h5>pack of 1 ₹10/-</h5>
-              </div>
-            </div>
-
-            <div class="products">
-              <div class="product">
-                <img
-                  src="https://www.giftsmyntra.com/wp-content/uploads/2020/12/maha-pack-of-five-star.jpg"
-                  alt=""
-                />
-                <span>5 Star<br /> maha 5 star chocolat  </span>
-                <h5>pack of 1 ₹10/-</h5>
-              </div>
-              <div class="product">
-                <img
-                  src="https://www.theblissburry.com/wp-content/uploads/2021/07/BlissChoco007.jpg"
-                  alt=""
-                />
-                <span>Snickers<br />5 Packs of Snickers Chocolates</span>
-                <h5>pack of 5 ₹50/-</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="choco-img">
-            <img src="images/chocolat-4.webp" style="height: 642px; width:950px;" alt="">
-          </div>
-
-
         </div>
+      </div>
+
+      <div class="chocolat-products">
+        <div class="chocolat-card">
+          <h1>Chocolates</h1>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://bf1af2.a-cdn.akinoncloud.com/products/2024/12/28/97614/7c3543a1-0de8-4beb-8362-124ecb9059e5_size3840_cropCenter.jpg"
+                alt=""
+              />
+              <span
+                >Nestle KitKat Breaker<br />
+                3 Fingers Chocolate</span
+              >
+              <h5>pack of 1 ₹25/-</h5>
+            </div>
+            <div class="product">
+              <img
+                src="https://helloaugust.in/wp-content/uploads/2020/04/Cadbury-Dairy-Milk-Chocolate.jpg"
+                alt=""
+              />
+              <span>Diary Milk<br />Cadbury Diary Milk Chocolate</span>
+              <h5>pack of 1 ₹10/-</h5>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://www.giftsmyntra.com/wp-content/uploads/2020/12/maha-pack-of-five-star.jpg"
+                alt=""
+              />
+              <span
+                >5 Star<br />
+                maha 5 star chocolat
+              </span>
+              <h5>pack of 1 ₹10/-</h5>
+            </div>
+            <div class="product">
+              <img
+                src="https://www.theblissburry.com/wp-content/uploads/2021/07/BlissChoco007.jpg"
+                alt=""
+              />
+              <span>Snickers<br />5 Packs of Snickers Chocolates</span>
+              <h5>pack of 5 ₹50/-</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="chocolat-card">
+          <h1>Chocolates</h1>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://bf1af2.a-cdn.akinoncloud.com/products/2024/12/28/97614/7c3543a1-0de8-4beb-8362-124ecb9059e5_size3840_cropCenter.jpg"
+                alt=""
+              />
+              <span
+                >Nestle KitKat Breaker<br />
+                3 Fingers Chocolate</span
+              >
+              <h5>pack of 1 ₹25/-</h5>
+            </div>
+            <div class="product">
+              <img
+                src="https://helloaugust.in/wp-content/uploads/2020/04/Cadbury-Dairy-Milk-Chocolate.jpg"
+                alt=""
+              />
+              <span>Diary Milk<br />Cadbury Diary Milk Chocolate</span>
+              <h5>pack of 1 ₹10/-</h5>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://www.giftsmyntra.com/wp-content/uploads/2020/12/maha-pack-of-five-star.jpg"
+                alt=""
+              />
+              <span
+                >5 Star<br />
+                maha 5 star chocolat
+              </span>
+              <h5>pack of 1 ₹10/-</h5>
+            </div>
+            <div class="product">
+              <img
+                src="https://www.theblissburry.com/wp-content/uploads/2021/07/BlissChoco007.jpg"
+                alt=""
+              />
+              <span>Snickers<br />5 Packs of Snickers Chocolates</span>
+              <h5>pack of 5 ₹50/-</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="choco-img">
+          <img
+            src="images/chocolat-4.webp"
+            style="height: 642px; width: 950px"
+            alt=""
+          />
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
