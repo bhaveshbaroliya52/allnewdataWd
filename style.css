@@ -501,11 +501,18 @@ header .rsaide .note {
     margin-top: 6px;
     margin-right: 10px;
   }
-
-  header .nav-links .menu {
+ 
+ header .nav-links .menu {
     display: block;
+    margin-left: 20px;
+    color: #111;
   }
-
+  header .nav-links .menu small{
+    font-size: 16px;
+  }
+  header .nav-links .menu small:hover{
+ color: #ff3700;
+  }
   header .nav-links a {
     font-size: 20px;
     color: white;
@@ -793,6 +800,9 @@ header .rsaide .note {
   .items-header .main-items:nth-child(2) {
     display: none;
   }
+  header .nav-links .menu{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -889,6 +899,7 @@ header .rsaide .note {
     width: 150px;
     overflow: hidden;
   }
+
 }
 
 @media(max-width:525px) {
@@ -901,6 +912,7 @@ header .rsaide .note {
     width: 130px;
     overflow: hidden;
   }
+
 }
 
 .main-card .card .products img {
@@ -916,6 +928,7 @@ div.chocolat-card div.products img {
 }
  
 @media (max-width:424px) {
+
   header {
     box-shadow: none;
     justify-content: space-between;
@@ -961,6 +974,7 @@ div.chocolat-card div.products img {
 }
 
 @media (max-width:420px) {
+
 
   div.items-header {
     margin: 4px !important;
@@ -1452,3 +1466,58 @@ main .chocolat-products {
   width: 950px;
 
 }
+
+
+main .thums-up{
+  background-color: rgba(234, 234, 234, 0.312);
+ margin-top: 40px;
+ padding: 20px;
+
+}
+.thums-up .thums-up-cold-drinks{
+  background-color: white;
+  display: flex;
+ justify-content: space-between;
+ padding: 26px;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ flex-wrap: wrap;
+
+}
+.thums-up .soda{
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: fit-content;
+
+}
+
+.thums-up .soda a img{
+  height: 130px;
+  width: 130px;
+}
+.thums-up .thums-up-cold-drinks:nth-child(2){
+  margin-top: 20px;
+}
+@media(max-width:417px){
+  .thums-up .thums-up-cold-drinks .soda{
+    width: 120px;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 6px;
+  }
+  .thums-up .thums-up-cold-drinks img{
+    width: 100px;
+  }
+
+}
+@media(max-width:332px){
+
+  .thums-up .thums-up-cold-drinks{
+  justify-content: center;
+  }
+  .thums-up .thums-up-cold-drinks .soda{
+  justify-content: center;
+  }
+}
+
+

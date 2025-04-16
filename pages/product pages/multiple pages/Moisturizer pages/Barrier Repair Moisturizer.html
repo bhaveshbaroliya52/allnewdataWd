@@ -14,7 +14,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -35,110 +38,128 @@
       <div class="logo">
         <a href="#" class="logo-1">Gel Krupa</a>
       </div>
-  
-      <input type="checkbox" id="menu-toggle">
+
+      <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </label>
       <label for="menu-toggle" class="close-btn">
-        <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+        <i class="fa-solid fa-times"></i>
+        <!-- Close Icon -->
       </label>
-  
+
       <nav class="nav-links">
         <h2 class="menu">menu</h2>
-        <a href="../../../project.html">Home</a>
+        <a href="../../../../project.html">Home</a>
         <a href="#">About</a>
         <a href="#">Product</a>
         <a href="#">Contact us</a>
       </nav>
-  
+
       <div class="serch-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Serch for Product,items and other">
+        <input type="text" placeholder="Serch for Product,items and other" />
       </div>
-  
-  
-  <div class="menu-bar">
-    <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
-  <div class="menu-items" id="menu-items">
-    <i class="fa-solid fa-times" id="close-btn"></i>
-  
-      <div id="login">
-        <i class="fa-regular fa-user"></i>Login
-        <div id="login-overlay"></div>
-      </div>
-      <div class="wishlist-header">
-        <a href="../../../header pages/wishlist.html">
-          <button id="wishlist-button">
-            <i class="fa-regular fa-heart"></i>wishlist
-            (<span id="wishlist-count">0</span>)
-          </button></a>
-      </div>
-      <div class="cart-header">
-        <a href="../../../header pages/cart.html">
-          <button id="cart-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
-              viewBox="0 0 16 16">
-              <path
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-            </svg>Cart
-            (<span id="cart-count">0</span>)
-          </button></a>
-      </div>
-    </div>
-  </div>
-  
-          <!-- login-form -->
-          <div id="login-form">
-            <div class="form-design">
-              <div class="lsaide">
-                <h1>Login</h1>
-                <h5>Get access to your Cart, Wishlist </h5>
-              </div>
-              <div class="rsaide">
-                <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
-                <p class="note">We will never share your number with anyone.</p>
-                <button class="request-otp">Request OTP</button>
-                <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
-              </div>
-            </div>
+
+      <div class="menu-bar">
+        <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+        <div class="menu-items" id="menu-items">
+          <i class="fa-solid fa-times" id="close-btn"></i>
+
+          <div id="login">
+            <i class="fa-regular fa-user"></i>Login
+            <div id="login-overlay"></div>
           </div>
+          <div class="wishlist-header">
+            <a href="../../../header pages/wishlist.html">
+              <button id="wishlist-button">
+                <i class="fa-regular fa-heart"></i>wishlist (<span
+                  id="wishlist-count"
+                  >0</span
+                >)
+              </button></a
+            >
+          </div>
+          <div class="cart-header">
+            <a href="../../../header pages/cart.html">
+              <button id="cart-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-cart2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  /></svg
+                >Cart (<span id="cart-count">0</span>)
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- login-form -->
+      <div id="login-form">
+        <div class="form-design">
+          <div class="lsaide">
+            <h1>Login</h1>
+            <h5>Get access to your Cart, Wishlist</h5>
+          </div>
+          <div class="rsaide">
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+            <p class="note">We will never share your number with anyone.</p>
+            <button class="request-otp">Request OTP</button>
+            <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="heading">
       <button id="filter-btn" class="category-button">☰ All categories</button>
       <div class="serch-bar-2">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+        <input
+          type="text"
+          id="serch-products"
+          placeholder="Serch for Product, items and other"
+        />
       </div>
     </div>
 
     <main>
       <div class="main-section">
         <div class="left-container">
-         
           <img
             class="thumb"
-            src="https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/y/n/t/100-ceramides-hyaluronic-barrier-repair-moisturizer-with-original-imahap4pdygemcxe.jpeg?q=70"
+            src="https://images.mamaearth.in/catalog/product/g/e/gel-face-moisturizer.jpg?format=auto&height=600"
             alt=""
           />
           <img
             class="thumb"
-            src="https://www.daburshop.com/cdn/shop/files/1_ce834cf5-87c0-4531-8f20-19899e917756.jpg?v=1730106685"
+            src="https://images.mamaearth.in/catalog/product/_/a/_aqua-glow-gel-face-moisturizer_6_1.jpg?format=auto&height=600"
             alt=""
           />
           <img
             class="thumb"
-            src="https://www.kauverymeds.com/uploads/product/main/1709550381_140185_0.jpg"
+            src="https://images.mamaearth.in/catalog/product/_/a/_aqua-glow-gel-face-moisturizer_5_1.jpg?format=auto&height=600"
             alt=""
           />
           <img
             class="thumb"
-            src="https://www.daburshop.com/cdn/shop/files/4_e2668b1e-7f8f-4629-8c6e-af1287862b02.jpg?v=1730106685"
+            src="https://images.mamaearth.in/catalog/product/_/a/_aqua_glow_gel_face_moisturizer_7_1.jpg?format=auto&height=600"
             alt=""
           />
         </div>
-       
+
         <div class="center-container">
           <img
             id="mainImage"
@@ -237,40 +258,82 @@
         <ul>
           <h4>Benefits</h4>
           <li>
-            Hair Nourishment: Coconut oil can help nourish and condition the
-            hair, making it softer and more manageable.
+            Hydrated skin is happy skin. It’s time to give your skin a boost of hydration with the natural goodness of Himalayan Thermal Water and the power of Hyaluronic Acid.
           </li>
           <li>
-            Skin Moisturization: Coconut oil can moisturise and hydrate the
-            skin, leaving it smooth and supple.
+            Say hello to youthful, healthy, soft, and glowing skin with Mamaearth Aqua Glow Gel Face Moisturizer that will give your skin 72 hours of hydration
           </li>
           <li>
-            Healthy Cooking Option: Coconut oil contains healthy saturated fats
-            and can be a good alternative to other cooking oils.
+            Say hello to youthful, healthy, soft, and glowing skin with Mamaearth Aqua Glow Gel Face Moisturizer that will give your skin 72 hours of hydration
+          </li>
+          <li>
+            Say hello to youthful, healthy, soft, and glowing skin with Mamaearth Aqua Glow Gel Face Moisturizer that will give your skin 72 hours of hydration
+          </li>
+          <li>
+            And because of our no toxins and no harmful chemicals philosophy, you won’t find any Silicones, Parabens, mineral oil & dyes in our Aqua Glow Gel Face Moisturize
           </li>
         </ul>
       </div>
 
       <div class="product-detail">
         <img
-          src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/a0cdfd6e-4d2e-4175-8517-6908e98a0095.__CR0,0,970,300_PT0_SX970_V1___.jpg"
+          src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/d5d49020-9260-40d2-91ba-b916b2dd5dae.__CR0,0,970,300_PT0_SX970_V1___.jpg"
           class="img-1"
           alt=""
         />
 
         <div class="images-1">
           <img
-            src="https://www.daburshop.com/cdn/shop/files/1_ce834cf5-87c0-4531-8f20-19899e917756.jpg?v=1730106685"
+            src="https://i.ytimg.com/vi/ttiuUxI3LHQ/sddefault.jpg"
             class="scroll-content"
             alt=""
           />
           <img
-            src="https://www.kauverymeds.com/uploads/product/main/1709550381_140185_0.jpg"
+            src="https://images.meesho.com/images/products/163215239/uwu68_512.webp"
             class="scroll-content"
             alt=""
           />
         </div>
       </div>
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          
+          <div class="footer-section">
+            <h3 class="footer-title">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3 class="footer-title">Gel Krupa Center</h3>
+            <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving taste since [year]!</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3 class="footer-title">Connect</h3>
+            <div class="social-icons">
+              <a href="https://wa.me/919023962442"> 
+                <i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <hr class="footer-divider">
+      
+        <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+      </footer>
+
+
     </main>
     <script src="../Hair oil pages/coconut hair oil.js"></script>
   </body>

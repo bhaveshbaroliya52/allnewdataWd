@@ -164,5 +164,6 @@ thumbs.forEach((thumb) => {
 
 // left-cntainer slider (responsive)
 
-
  
+
+
