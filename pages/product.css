@@ -750,9 +750,22 @@ header .menu-toggle {
     padding-left: 40px;
     transition: all 300ms;
   }
+
+ 
 }
 
 @media(max-width:405px) {
+
+.product-container .items .detail p{
+max-height: 55px !important;
+overflow: hidden;
+
+}
+.footer{
+  padding: 40px 60px !important;
+}
+
+
 
   .menu-bar #three-dots {
     display: block;
@@ -789,6 +802,7 @@ header .menu-toggle {
   .menu-bar .menu-items #cart-button {
     font-size: 14px;
     font-weight: 600;
+ 
   }
 
   .menu-bar .menu-items div {

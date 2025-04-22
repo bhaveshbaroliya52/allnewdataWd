@@ -449,7 +449,7 @@ main .main-section {
   color: gray;
   font-size: 18px;
 }
-
+ 
 .right-container .Specifications a {
   text-decoration: none;
   font-size: 18px;
@@ -541,13 +541,13 @@ main .product-detail {
 
 .product-detail .images-1 img:nth-child(1) {
   height: 470px;
-  width: 800px;
+  width: 700px;
+
 }
 
 .product-detail .images-1 img:nth-child(2) {
-
   height: 470px;
-  width: 600px;
+  width: 700px;
 }
 
 
@@ -664,7 +664,14 @@ header .nav-links .menu {
 
   header .nav-links .menu {
     display: block;
-    margin-left: 40px;
+    margin-left: 20px;
+    color: #111;
+  }
+  header .nav-links .menu small{
+    font-size: 16px;
+  }
+  header .nav-links .menu small:hover{
+ color: #ffae00;
   }
 
   header .nav-links a {
