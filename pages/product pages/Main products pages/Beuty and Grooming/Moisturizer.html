@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="hair-oil.css"> -->
-  <!-- <link rel="stylesheet" href="hair oil.css"> -->
-  <link rel="stylesheet" href="../../../pages/product.css">
+  <link rel="stylesheet" href="../../../../pages/product.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +26,7 @@
 
   <header>
     <div class="logo">
-      <a href="../../../index.html" class="logo-1">Gel Krupa</a>
+      <a href="../../../../index.html" class="logo-1">Gel Krupa</a>
     </div>
 
     <input type="checkbox" id="menu-toggle">
@@ -43,10 +41,10 @@
       <h2 class="menu">Gel Krupa Mart <br>
         <small>Serving Since 2005</small>
       </h2>
-      <a href="../../../index.html">Home</a>
-      <a href="../../header pages/About.html">About</a>
-      <a href="../../product.html">Product</a>
-      <a href="../../header pages/Contact-us.html">Contact us</a>
+      <a href="../../../../index.html">Home</a>
+      <a href="../../../header pages/About.html">About</a>
+      <a href="../../../product.html">Product</a>
+      <a href="../../../header pages/Contact-us.html">Contact us</a>
     </nav>
 
     <div class="serch-bar">
@@ -65,14 +63,14 @@
       <div id="login-overlay"></div>
     </div>
     <div class="wishlist-header">
-      <a href="../../header pages/wishlist.html">
+      <a href="../../../header pages/wishlist.html">
         <button id="wishlist-button">
           <i class="fa-regular fa-heart"></i>wishlist
           (<span id="wishlist-count">0</span>)
         </button></a>
     </div>
     <div class="cart-header">
-      <a href="../../header pages/cart.html">
+      <a href="../../../header pages/cart.html">
         <button id="cart-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
             viewBox="0 0 16 16">
@@ -119,14 +117,11 @@
         <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
         <ul class="subcategories" style="display: block;">
           <li> <a href="hair oil.html">Hair Oil</a></li>
-          <li><a href="Moisturizer.html" >Moisturizer</a></li>
-          <li><a href="#" style="color: orangered;">Shampoo</a></li>
-          <li><a href="#">Face Wash</a></li>
-          <li><a href="#">Face Pack</a></li>
-          <li class="extra" style="display: none;">Serum</li>
-          <li class="extra" style="display: none;">Sunscreen</li>
-          <li class="extra" style="display: none;">Henna</li>
-          <li class="show-more" onclick="showMore(this)">Show 17 more</li>
+          <li><a href="#" style="color: orangered;">Moisturizer</a></li>
+          <li><a href="shampoo.html">Shampoo</a></li>
+          <li><a href="facewhash.html">Face Wash</a></li>
+          <li><a href="face pack.html">Face Pack</a></li>
+          <li><a href="Henna.html">Henna</a></li>
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">Grocery</div>
@@ -227,45 +222,51 @@
       </div>
       <div>
 
-        <div class="product-titel">All Shampoo Products</div>
+        <div class="product-titel">All Moisturizer Products</div>
 
         <div class="product-container">
-            <div class="items">
-                <div class="items-cart">
-                  <a href="../multiple pages/shampoo pages/dove 5rs.html"><img src="https://img.clevup.in/285171/1686744967014_SKU-0401_1.png?width=600&format=webp"
-                      alt=""></a>
-                  <div class="detail">
-                    <p style="margin: 0;">Dove Shampoo + Hair Conditioner intense repair</p>
-                    <span>₹5 × 16</span>
-                    <div class="price">
-                      <h6 style="margin-left: 10px;">MRP</h6>
-                      <h6 style="margin-left: 10px; display: flex;">
-                        <i class="bi bi-currency-rupee "></i> 75
-                      </h6>
-                    </div>
-                  </div>
-                  <button class="cart-btn">
-                    <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
-                  </button>
-                  <div id="wishlist-container">
-                    <button class="wishlist-btn"> </button>
-                  </div>
+          <div class="items">
+            <button class="wishlist-btn" onclick="addToWishlist()"> </button>
+
+            <div class="items-cart">
+              <a href="../../multiple pages/Moisturizer pages/Hydra Gel Moisturizer.html"><img
+                  src="https://aqualogica.in/cdn/shop/files/1_9f045f26-21c3-443f-a9cc-cff3ef4313af.jpg?v=1719554597&width=990"
+                  alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Illuminate + Hydra Gel Moisturizer with Wild Berries & Alpha Arbutin</p>
+                <span>200 g</span>
+
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 399
+                  </h6>
                 </div>
               </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+
+          </div>
 
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Clinic Plus 1rs.html"><img
-                  src="https://cdn.dotpe.in/longtail/store-items/1087846/gPKVuUrN.webp" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/Barrier Repair Moisturizer.html"><img
+                  src="https://images.mamaearth.in/catalog/product/g/e/gel-face-moisturizer.jpg?format=auto&height=600&width=600" alt=""></a>
 
               <div class="detail">
-                <p style="margin: 0;">Clinic Plus Strong & Long Shampoo 16Sachets</p>
-                <span>pack of 16</span>
+                <p style="margin: 0;">Mamaearth Aqua Glow Gel Face Moisturizer - 100 ml</p>
+                <span>600 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 16
+                    <i class="bi bi-currency-rupee "></i> 290
                   </h6>
                 </div>
               </div>
@@ -281,15 +282,15 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Head-Shoulder 2rs.html"><img src="https://growstar.in/wp-content/uploads/2019/04/80-min-5.jpg"
+              <a href="../../multiple pages/Moisturizer pages/Hydration Moisturizing.html"><img src="https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v4/moisturizing-cream/cerave_moisturizing_cream_16oz_jar_front-700x875-v4.jpg?rev=db6e3c22250e4928bc749dd2c207de5b&w=900&hash=E68F77D279494CD09396613CB8496EB7"
                   alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Head & Shoulder Basic Clean Shampoo </p>
-                <span>pack of 10</span>
+                <p style="margin: 0;">Deep Hydration Moisturizing Cream | CeraVe </p>
+                <span>453 gm</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 20
+                    <i class="bi bi-currency-rupee "></i> 300
                   </h6>
                 </div>
               </div>
@@ -305,14 +306,14 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="..//multiple pages/shampoo pages/Sunsilk Thick.html"><img src="https://daily.myindianbrand.com/wp-content/uploads/2022/12/Sunsilk-Thick-and-Long-Shampoo-1rs-sachet.jpg" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/Nivea Soft Light Moisturizer.html"><img src="https://pixies.in/media/catalog/product/cache/e9780188a08ae15edb442fcb34502371/n/i/nivea-soft-light-moisturizer-for-face-hand-body-n_11_1.jpeg" alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Sunsilk Thick and Long Shampoo 1rs sachet</p>
-                <span>pack of 1</span>
+                <p style="margin: 0;">Nivea Soft Light Moisturizer for Face, Hand & Body, Non-Sticky Cream.</p>
+                <span>200 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 1
+                    <i class="bi bi-currency-rupee "></i> 329
                   </h6>
                 </div>
               </div>
@@ -328,11 +329,11 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/Moisturizer pages/Ponds Dry Skin Cream.html"><img
-                  src="https://m.media-amazon.com/images/I/41r7eh4fZLL._AC_.jpg"
+              <a href="../../multiple pages/Moisturizer pages/Ponds Dry Skin Cream.html"><img
+                  src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/pnd/pnd79304/v/28.jpg"
                   alt=""></a>
               <div class="detail">
-                <p style="margin: 0;"> VATIKA health shampoo sachets 6.5ml each
+                <p style="margin: 0;">Pond's, Dry Skin Cream, Facial Moisturizer, 10.1 oz (286 g)
                 </p>
                 <span>286 g</span>
                 <div class="price">
@@ -354,16 +355,16 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages//shampoo pages/Clinic Plus Strong.html"><img
-                  src="https://m.media-amazon.com/images/I/416sjmgSQ5L._SX300_SY300_QL70_FMwebp_.jpg"
+              <a href="../../multiple pages/Moisturizer pages/Nourishing Moisturizer.html"><img
+                  src="https://foxtale.in/cdn/shop/files/SUMMER_REVAMP-NOURISHING_MOISTURISER_PDP-01.jpg?v=1743842298"
                   alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Clinic Plus Strong & Thick Shampoo with Rice water,Protein</p>
-                <span>100 ml</span>
+                <p style="margin: 0;">Non-greasy hydration for a soft glow |  100 ml</p>
+                <span>150 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 65
+                    <i class="bi bi-currency-rupee "></i> 395
                   </h6>
                 </div>
               </div>
@@ -378,14 +379,14 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Dove Glycolic.html"><img src="https://m.media-amazon.com/images/I/51jjCmb8LHL._SX522_.jpg" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/Almonds Deep Nourishing Moisturizer.html"><img src="https://img.cdnx.in/372005/SKU-7966_0-1729091748176.jpg?width=600&format=webp" alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Dove Glycolic + Hydration Shampoo 100 ml </p>
-                <span>100 ml</span>
+                <p style="margin: 0;">Joy Honey & Almonds Deep Nourishing Moisturizer</p>
+                <span>200 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 117
+                    <i class="bi bi-currency-rupee "></i> 290
                   </h6>
                 </div>
               </div>
@@ -400,14 +401,14 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Dove Dryness Care.html"><img src="https://images.apollo247.in/pub/media/catalog/product/d/o/dov0060_2_1_1.jpg?tr=w-264,q-80,f-webp,dpr-1.25,c-at_max" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/Daisy Baby Moisturizer.html"><img src="https://staranddaisy.in/wp-content/uploads/2023/09/Baby-Moisturizer-18923-main-768x768.jpg" alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Dove Dryness Care Shampoo, 180 ml</p>
-                <span>180 ml</span>
+                <p style="margin: 0;">StarAndDaisy Baby Moisturizer – Baby Moisturizing Cream</p>
+                <span>200 ml</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 190
+                    <i class="bi bi-currency-rupee "></i> 449
                   </h6>
                 </div>
               </div>
@@ -423,16 +424,16 @@
           <div class="items">
             <button class="wishlist-btn" onclick="addToWishlist()"> </button>
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Head-Shoulders shampoo.html"><img
-                  src="https://m.media-amazon.com/images/I/51E+yZ0KJ2L._SX522_.jpg"
+              <a href="../../multiple pages/Moisturizer pages/Ceramide  Vitamin.html"><img
+                  src="https://www.drsheths.com/cdn/shop/files/CVCOFM.png?v=1689592980&width=990"
                   alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Head & Shoulders , Anti Dandruff Shampoo, Anti Hairfall, 180 ML </p>
-                <span>Head & Shoulders</span>
+                <p style="margin: 0;">Ceramide & Vitamin C Brightening Oil-Free Moisturizer - 50g\ </p>
+                <span>Lightweight</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 197
+                    <i class="bi bi-currency-rupee "></i> 296
                   </h6>
                 </div>
               </div>
@@ -447,16 +448,16 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Dabur Vatika Health Shampoo.html"><img
-                  src="https://m.media-amazon.com/images/I/717mSMWtziL._SX522_.jpg"
+              <a href="../../multiple pages/Moisturizer pages/Hydrating Gel Moisturizer.html"><img
+                  src="https://tatvedherbal.com/wp-content/uploads/2024/05/MOISTURIZER-Oily-1-scaled-1-800x800.jpg"
                   alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Dabur Vatika Health Shampoo - 100mL With 7 natural ingredients </p>
-                <span> ( <i class="bi bi-currency-rupee "></i>47/ 100ml )</span>
+                <p style="margin: 0;">Hydrating Gel Moisturizer by Tatved Herbal</p>
+                <span>100 g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 301
+                    <i class="bi bi-currency-rupee "></i> 375
                   </h6>
                 </div>
               </div>
@@ -471,16 +472,17 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Himalaya Gentle Baby Shampoo.html"><img
-                  src="https://m.media-amazon.com/images/I/716YJQn6uQL._SX679_.jpg" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/5 Ceramides Barrier Repair Moisturizer.html"><img
+                  src="https://discoverpilgrim.com/cdn/shop/files/5CeramidesBarrierRepairMoisturizer_1080x1080_White-background_46a1cbe1-a42b-4665-80b3-7c198af8cc35.jpg?v=1729685245&width=800" alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Himalaya Gentle Baby Shampoo 100ml | No Tears formula
+                <p style="margin: 0;">5 Ceramides Barrier Repair Moisturizer
+                  Discover Strong, Protected Skin Barrier
                 </p>
-                <span>100 ml</span>
+                <span>100 g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 85
+                    <i class="bi bi-currency-rupee "></i> 395
                   </h6>
                 </div>
               </div>
@@ -495,14 +497,14 @@
 
           <div class="items">
             <div class="items-cart">
-              <a href="../multiple pages/shampoo pages/Johnson's Baby No More Tears Shampoo.html"><img src="https://m.media-amazon.com/images/I/51HrjMgr76L._SX679_.jpg" alt=""></a>
+              <a href="../../multiple pages/Moisturizer pages/Oil-Free Moisturizer.html"><img src="https://discoverpilgrim.com/cdn/shop/files/VitaminCOil-FreeMoisturizer_2__1080x1080_White-background.jpg?v=1707215446&width=800" alt=""></a>
               <div class="detail">
-                <p style="margin: 0;">Johnson's Baby No More Tears Shampoo, 100ml (Transparent)</p>
-                <span>100 ml</span>
+                <p style="margin: 0;">With Australian Kakadu Plum & 99.9% Pure Vitamin C Form</p>
+                <span>180 g</span>
                 <div class="price">
                   <h6 style="margin-left: 10px;">MRP</h6>
                   <h6 style="margin-left: 10px; display: flex;">
-                    <i class="bi bi-currency-rupee "></i> 114
+                    <i class="bi bi-currency-rupee "></i> 350
                   </h6>
                 </div>
               </div>
