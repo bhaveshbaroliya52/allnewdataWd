@@ -30,11 +30,15 @@ function toggleCategory(element) {
     element.classList.toggle("open", !isOpen);
   }
 
-  function showMore(element) {
-    let extras = element.parentElement.querySelectorAll(".extra");
-    extras.forEach(item => item.style.display = "block");
-    element.style.display = "none";
-  }
+//   function showMore(element) {
+//     let extras = element.parentElement.querySelectorAll(".extra");
+//     extras.forEach(item => item.style.display = "block");
+//     element.style.display = "none";
+//   }
+
+ 
+ 
+ 
 
 
 
