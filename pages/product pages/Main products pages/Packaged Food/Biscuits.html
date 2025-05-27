@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../pages/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+
+
+  <header>
+    <div class="logo">
+      <a href="../../../../index.html" class="logo-1">Gel Krupa</a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+    </label>
+
+    <nav class="nav-links">
+      <h2 class="menu">Gel Krupa Mart <br>
+        <small>Serving Since 2005</small>
+      </h2>
+      <a href="../../../../index.html">Home</a>
+      <a href="../../../header pages/About.html">About</a>
+      <a href="../../../product.html">Product</a>
+      <a href="../../../header pages/Contact-us.html">Contact us</a>
+    </nav>
+
+    <div class="serch-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Serch for Product,items and other">
+    </div>
+
+
+<div class="menu-bar">
+  <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+<div class="menu-items" id="menu-items">
+  <i class="fa-solid fa-times" id="close-btn"></i>
+
+    <div id="login">
+      <i class="fa-regular fa-user"></i>Login
+      <div id="login-overlay"></div>
+    </div>
+    <div class="wishlist-header">
+      <a href="../../../header pages/wishlist.html">
+        <button id="wishlist-button">
+          <i class="fa-regular fa-heart"></i>wishlist
+          (<span id="wishlist-count">0</span>)
+        </button></a>
+    </div>
+    <div class="cart-header">
+      <a href="../../../header pages/cart.html">
+        <button id="cart-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>Cart
+          (<span id="cart-count">0</span>)
+        </button></a>
+    </div>
+  </div>
+</div>
+
+        <!-- login-form -->
+        <div id="login-form">
+          <div class="form-design">
+            <div class="lsaide">
+              <h1>Login</h1>
+              <h5>Get access to your Cart, Wishlist </h5>
+            </div>
+            <div class="rsaide">
+              <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+              <p class="note">We will never share your number with anyone.</p>
+              <button class="request-otp">Request OTP</button>
+              <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+        </div>
+  </header>
+
+  <div class="heading">
+    <button id="filter-btn" class="category-button">☰ All categories</button>
+    <div class="serch-bar-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+    </div>
+  </div>
+  <main>
+
+    <div class="product">
+      <div class="filter-container">
+        <p><strong>Filters</strong></p>
+        <p>PICK A CATEGORY</p>
+
+        <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
+        <ul class="subcategories" >
+          <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
+          <li><a href="../Beuty and Grooming/Moisturizer.html" >Moisturizer</a></li>
+          <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
+          <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
+          <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
+          <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Grocery</div>
+        <ul class="subcategories">
+          <li><a href="../Glocery/Tea.html">Tea</a></li>
+          <li><a href="../Glocery/dal.html">Dals</a></li>
+          <li><a href="../Glocery/Pulses.html">Pulses</a></li>
+          <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
+          <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
+          <li><a href="#">Grains & sooji </a></li>
+          <li><a href="#">Flours</a></li> <!-- lot chana  -->
+          <li><a href="#">Masala & Spices</a></li>
+          <li><a href="#">Ghee & Vanaspati</a></li>
+          <li><a href="#">Papad</a></li>
+          <li><a href="#">Salt / Sugar / Jaggery</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+        <ul class="subcategories" >
+          <li><a href="Pen-Pencile.html">Pen / Pencile</a></li>
+          <li><a href="Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+          <li><a href="#">Art & Craft</a></li>
+          <li><a href="#">General Stationery</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+        <ul class="subcategories">
+          <li><a href="#" >Cold Drinks</a></li>
+          <li><a href="#">Soda & Water</a></li>
+          <li><a href="#">Juice</a></li>
+          <li><a href="#">Milk</a></li>
+          <li><a href="#">Panner</a></li>
+          <li><a href="#">Shrikhand</a></li>
+          <li><a href="#">Butter</a></li>
+          <li><a href="#">chass</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+        <ul class="subcategories">
+          <li><a href="Cup.html">Cup</a></li>
+          <li><a href="#">Cones</a></li>
+          <li><a href="#"> Kulfi</a></li>
+          <li><a href="#"> Candies, Dollies</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dessert</div>
+        <ul class="subcategories">
+          <li><a href="#">Chikki</a></li>
+          <li><a href="#">Chikki</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+        <ul class="subcategories"  style="display: block;">
+          <li><a href="#" style="color: orangered;">Biscuits</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Cream Biscuits</a></li>
+          <li><a href="#">Khari & Toasts</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+        <ul class="subcategories">
+          <li><a href="#">Detergent Powder</a></li>
+          <li><a href="#">Detergent Bar</a></li>
+          <li><a href="#">Cleaners</a></li>
+
+        </ul>
+
+
+        <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+        <ul class="subcategories">
+          <li><a href="#">Diwali</a></li>
+          <li><a href="#">Holi-Special</a></li>
+          <li><a href="#">Utrayan</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+        <ul class="subcategories">
+          <li><a href="#">Namkeen</a></li>
+          <li><a href="#">Wafers</a></li>
+          <li><a href="#">Western Snacks</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Others</div>
+        <ul class="subcategories">
+          <li><a href="#">Repellents</a></li>
+          <li><a href="#">Festive Decor & Gifting</a></li>
+          <li><a href="#">Balm</a></li>
+
+
+        </ul>
+
+        <button id="filter-close-btn" class="filter-close-button">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div>
+
+        <div class="product-titel">All Biscuits Products</div>
+
+        <div class="product-container">
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/moneko 10.html"><img
+                  src="https://www.bbassets.com/media/uploads/p/l/302119_12-parle-monaco-biscuits-salted-snack.jpg"
+                  alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;"> Parle Monaco Buiscuit (Salty Buiscui)Pack of 1
+                </p>
+                <span>58 g</span>
+
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/parle 5.html"><img
+                  src="https://m.media-amazon.com/images/I/517OOGtjAxL.jpg" alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Parle G Glucose Biscuit Sugar,Edible Vegetable Oil.</p>
+                <span>56 g</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 5
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/parle-10.html">
+                <img src="https://www.noworry.in/cdn/shop/files/61kZskdmJzL._SL1000.jpg?v=1741467669"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle G Glucose Biscuit Sugar,Edible Vegetable Oil.</p>
+                <span>100 g</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/krack jack 10.html">
+                <img src="https://dookan.com/cdn/shop/files/Dookan_Parle_Krakjack_Biscuits_60g_e344ffdc-4059-4f2d-aa1c-745c6ff6e76a.png?v=1729884053"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;"> Parle Krakjack Biscuits (56 g)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Oats barry.html">
+                <img src="https://m.media-amazon.com/images/I/511C0MBBTOL._SX679_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle -G Oats & Blueberry Biscuits, 85 Gram </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i>  10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix Chocolat.html"><img
+                  src="https://5.imimg.com/data5/FC/VY/YZ/SELLER-107310956/parle-magix-cream-biscuit-1000x1000.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Chocolate Parle Magix Cream Pack of 12 
+                </p>
+                <span>(Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix orange.html"><img
+                  src="https://5.imimg.com/data5/QV/SY/WB/SELLER-32943822/parle-magix-orange-cream-round-biscuit.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle Magix Kream Biscuit, Orange (Pack of 12)</p>
+                <span>(Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix Pineapple.html">
+                <img src="https://m.media-amazon.com/images/I/51rmGf5KerL._PIbundle-12,TopRight,0,0_AA500SH20_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle Magix Kream Biscuit, Pineapple, 35 g (Pack of 12)</p>
+                <span>(Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix stroebery.html">
+                <img src="https://m.media-amazon.com/images/I/51rr8XUkOJL._PIbundle-12,TopRight,0,0_AA500SH20_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle Magix Kream Biscuit, Strawberry, 35gm (Pack of 12)</p>
+                <span>(Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix mango.html"><img
+                  src="https://m.media-amazon.com/images/I/51xxoaGcFVL._PIbundle-12,TopRight,0,0_AA500SH20_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle Magix Kream Biscuit, Mango, 35gm (Pack of 12)</p>
+                <span>(Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/magix Elaichi.html"><img
+                  src="https://m.media-amazon.com/images/I/51+punjosJL._PIbundle-12,TopRight,0,0_AA500SH20_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Parle Magix Kream Biscuit, Elaichi, 35gm (Pack of 12)
+                   </p>
+                <span> (Pack of 11+1 Free)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 55
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Tiger Krunch.html"><img
+                  src="https://m.media-amazon.com/images/I/61Oknf50cwL._SX679_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Britannia Tiger Krunch Chocochip Biscuits, 27 gm
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 5
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Jam-in Mix.html">
+                <img src="https://eu.dookan.com/cdn/shop/files/ParleGJamFabBiscuits_48x55g.png?v=1742983046" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Fab! Jam-in Mix Fruit 55g</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Britannia Milk.html">
+                <img src="https://www.bigbasket.com/media/uploads/p/xl/40023490_10-britannia-milk-bikis-biscuits.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Britannia Milk Bikis 33 gm  small Pack
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 5
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Tiger Glucose.html">
+                <img src="https://www.bigbasket.com/media/uploads/p/xxl/40001617-2_5-britannia-tiger-glucose-biscuits-chocolate-flavour-high-nutrition-teatime-snack.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Britannia Tiger Glucose Biscuits 42.7g Unique</p>
+                <span>Pack of 1 </span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 5
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/pakeged food/Buiscuits/Dark Fantasy.html">
+                <img src="https://www.bigbasket.com/media/uploads/p/xxl/1202645_10-sunfeast-dark-fantasy-choco-fills.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Sunfeast Dark Fantasy Dark Fantasy Choco Fills</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 40
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/DOMS Fsc.html">
+                <img src="https://www.bbassets.com/media/uploads/p/l/412247_1-fanta-orange.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Fanta Orange, 250 ml Bottle</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 20
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Limun Lemon.html">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296841620/LC/BN/JK/79423280/davat-beverages-160ml-limun-lemon-juice-based-drink.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Cloudy White Davat Beverages 160ml Limun Lemon</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/davat mozzy.html">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296248193/VW/HP/YD/79423280/davat-600ml-mozzy-beverage.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Yellow Davat Beverages 160ml Mozzy Mango Drink</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Guava Flavored.html">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296519813/SK/AW/XN/79423280/davat-160ml-guava-beverage.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Guava Flavored Drink, 160 ml (Pack of 1)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Love Apple.html">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296522773/ZV/DK/DR/79423280/love-apple-160-800px.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Love Apple Juice Based Drink</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Kinley Strong.html">
+                <img src="https://m.media-amazon.com/images/I/41akRAbexAL._SX679_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Kinley Strong Soda Original, 750 Ml</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 20
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Kinley Strong.html">
+                <img src="https://img.clevup.in/325460/kinley-soda-extra-punch-750ml-pet-bottle-1696659619606_SKU-1938_0.jpg?width=600&format=webp" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">we present an exceptionally range of Kinely Soda Water. </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/changer cick.html">
+                <img src="https://www.davatbeverages.com/images/p2.png" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Davat beverages changer Kick (Pack of 1)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Changer berry.html">
+                <img src="https://www.davatbeverages.com/images/p1.png" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Davat Beverage Changer Berry</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/davat green-g.html">
+                <img src="https://www.davatbeverages.com/images/p6.png" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;"> green-G At-davat building lasting customer trust.</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/davat frester .html">
+                <img src="https://www.davatbeverages.com/images/p5.png" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">davat beverages Freshter(Pack of 1)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/Thums Up 2.25.html">
+                <img src="https://m.media-amazon.com/images/I/61tiR5teCjL._SX679_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Thums Up Soft Cola Drink Pet Bottle, 2.25 L</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 105
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Dairy - Beverage/Cold drinks/davat orange160ml.html">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296842999/FT/QC/KK/79423280/davat-beverages-160ml-orange-juice-base-drink-1000x1000.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Liquid Davat Beverages 160ml Orange</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+        
+
+           
+
+           
+
+
+
+
+
+
+        </div>
+
+      </div>
+      <!-- <script src="hair oil.js"></script> -->
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../header pages/About.html">About</a></li>
+          <li><a href="../../../product.html">Products</a></li>
+          <li><a href="../../../header pages/Contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Gel Krupa Center</h3>
+        <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving taste since [year]!</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Connect</h3>
+        <div class="social-icons">
+          <a href="https://wa.me/919023962442"> 
+            <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <hr class="footer-divider">
+  
+    <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+  </footer>
+
+
+  <script src="../../../product.js"></script>
+
+</body>
+
+</html>
