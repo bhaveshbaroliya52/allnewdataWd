@@ -1,0 +1,340 @@
+.html<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+
+    <link
+      rel="stylesheet"
+      href="../../Beuty and Grooming/Hair oil pages/cascading style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../../../../index.html" class="logo-1">Gel Krupa</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label for="menu-toggle" class="close-btn">
+        <i class="fa-solid fa-times"></i>
+      </label>
+
+      <nav class="nav-links">
+        <h2 class="menu">
+          Gel Krupa Mart <br />
+          <small>Serving Since 2005</small>
+        </h2>
+        <a href="../../../../../index.html">Home</a>
+        <a href="../../../../header pages/About.html">About</a>
+        <a href="../../../../product.html">Product</a>
+        <a href="../../../../header pages/Contact-us.html">Contact us</a>
+      </nav>
+
+      <div class="serch-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Serch for Product,items and other" />
+      </div>
+
+      <div class="menu-bar">
+        <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+        <div class="menu-items" id="menu-items">
+          <i class="fa-solid fa-times" id="close-btn"></i>
+
+          <div id="login">
+            <i class="fa-regular fa-user"></i>Login
+            <div id="login-overlay"></div>
+          </div>
+          <div class="wishlist-header">
+            <a href="../../../../header pages/wishlist.html">
+              <button id="wishlist-button">
+                <i class="fa-regular fa-heart"></i>wishlist (<span
+                  id="wishlist-count"
+                  >0</span
+                >)
+              </button></a
+            >
+          </div>
+          <div class="cart-header">
+            <a href="../../../../header pages/cart.html">
+              <button id="cart-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-cart2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  /></svg
+                >Cart (<span id="cart-count">0</span>)
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- login-form -->
+      <div id="login-form">
+        <div class="form-design">
+          <div class="lsaide">
+            <h1>Login</h1>
+            <h5>Get access to your Cart, Wishlist</h5>
+          </div>
+          <div class="rsaide">
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+            <p class="note">We will never share your number with anyone.</p>
+            <button class="request-otp">Request OTP</button>
+            <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="heading">
+      <button id="filter-btn" class="category-button">☰ All categories</button>
+      <div class="serch-bar-2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="serch-products"
+          placeholder="Serch for Product, items and other"
+        />
+      </div>
+    </div>
+
+    <main>
+      <div class="main-section">
+        <div class="left-container">
+          <img
+            class="thumb"
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            alt=""
+          />
+          <img
+            class="thumb"
+            src="https://m.media-amazon.com/images/I/41Fob+vMlLL._AC_UF1000,1000_QL80_.jpg"
+            alt=""
+          />
+          <img
+            class="thumb"
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            alt=""
+          />
+          <img
+            class="thumb"
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="center-container">
+          <img
+            id="mainImage"
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="right-container" style="width: fit-content">
+          <h3>Balaji Wafers Funne Spicy Punch</h3>
+          <p>Balaji Wafers Funne Spicy Punch, 40 g Pouch</p>
+          <div class="price">Price : ₹ 10</div>
+          <div class="price">Quantity : 1</div>
+          <div class="highlights">
+            <h3 class="title">Highlights</h3>
+            <ul>
+              <li>Brand: Balaji Wafers</li>
+              <li>Flavor: Spicy Punch</li>
+              <li>Organic: No</li>
+              <li>Diet Type: Vegetarian</li>
+            </ul>
+          </div>
+
+          <div class="Specifications">
+            <a href="#" id="openSpecs">Specifications</a>
+            <div id="overlay"></div>
+            <div id="specificationsModal">
+              <h2>Specifications</h2>
+              <table>
+                <tr>
+                  <td>Specialty</td>
+                  <td>Vegetarian</td>
+                </tr>
+                <tr>
+                  <td>Weight</td>
+                  <td>50 Grams</td>
+                </tr>
+                <tr>
+                  <td>Ingredient Type</td>
+                  <td>Vegetarian</td>
+                </tr>
+                <tr>
+                  <td>Brand</td>
+                  <td>Balaji Wefers</td>
+                </tr>
+                <tr>
+                  <td>Package Information</td>
+                  <td>Pouch</td>
+                </tr>
+                <tr>
+                  <td>Manufacturer</td>
+                  <td>	BALAJI WAFERS PRIVATE LIMTED</td>
+                </tr>
+
+                <tr>
+                  <td>Net Quantity</td>
+                  <td>40 gram</td>
+                </tr>
+                <tr>
+                  <td>Item Weight</td>
+                  <td>40 g</td>
+                </tr>
+              </table>
+
+              <button id="closeSpecs" class="cart-btn">Close</button>
+            </div>
+          </div>
+
+          <hr />
+
+          <button class="cart-btn">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-cart2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                />
+              </svg>
+              Add To Cart</a
+            >
+          </button>
+
+          <img
+            id="zoomedImage"
+            class="zoomed-img"
+            src="https://via.placeholder.com/300"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="Benefits">
+        <ul>
+          <h4>About This Product</h4>
+          <li>
+           Balaji Wafers Funne Spicy Punch, 40g
+          </li>
+          
+           
+        </ul>
+      </div>
+      <div class="product-detail">
+        <img src="https://i.ytimg.com/vi/3rNwfWLFPRU/hqdefault.jpg" class="img-1" alt="">
+        <div class="images-1">
+          <img
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            class="scroll-content"
+            alt=""
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61e6gfbwusL.jpg"
+            class="scroll-content"
+            alt=""
+          />
+        </div>
+        
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-title">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="../../../../../index.html">Home</a></li>
+              <li><a href="../../../../header pages/About.html">About</a></li>
+              <li><a href="../../../../product.html">Products</a></li>
+              <li>
+                <a href="../../../../header pages/Contact-us.html">
+                  Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Gel Krupa Center</h3>
+            <p class="footer-text">
+              Quality groceries and sweet delights delivered fresh to your
+              doorstep. Serving taste since [year]!
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Connect</h3>
+            <div class="social-icons">
+              <a href="https://wa.me/919023962442">
+                <i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/gelkrupa_official"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://t.me/+919023962442">
+                <i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+      </footer>
+    </main>
+    <script src="../../Beuty and Grooming/Hair oil pages/coconut hair oil.js"></script>
+  </body>
+</html>
