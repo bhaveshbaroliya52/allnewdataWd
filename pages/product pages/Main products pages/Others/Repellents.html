@@ -1,11 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../../../../pages/product.css">
+  <!-- <link rel="stylesheet" href="hair-oil.css"> -->
+  <!-- <link rel="stylesheet" href="hair oil.css"> -->
+  <link rel="stylesheet" href="../../../product.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,30 +21,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </head>
-<style>
-    .namkeen-container{
-        margin: 72px;
-    }
-    .namkeen{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .namkeen button{
-        border: none;
-    }
-.namkeen img{
-    height: 180px;
-    width: 180px;
-    margin: 80px;
-    transition: all 300ms;
- 
-}
-.namkeen img:hover{
-    transform: scale(1.1);
-}
-
-</style>
 
 <body>
  
@@ -87,14 +65,14 @@
       <div id="login-overlay"></div>
     </div>
     <div class="wishlist-header">
-      <a href="../../../header pages/wishlist.html">
+      <a href="../../header pages/wishlist.html">
         <button id="wishlist-button">
           <i class="fa-regular fa-heart"></i>wishlist
           (<span id="wishlist-count">0</span>)
         </button></a>
     </div>
     <div class="cart-header">
-      <a href="../../../header pages/cart.html">
+      <a href="../../header pages/cart.html">
         <button id="cart-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
             viewBox="0 0 16 16">
@@ -139,23 +117,24 @@
         <p>PICK A CATEGORY</p>
 
         <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
-        <ul class="subcategories" >
-          <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
-          <li><a href="../Beuty and Grooming/Moisturizer.html" >Moisturizer</a></li>
-          <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
-          <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
-          <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
-          <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+        <ul class="subcategories">
+          <li> <a href="hair oil.html">Hair Oil</a></li>
+          <li><a href="Moisturizer.html">Moisturizer</a></li>
+          <li><a href="shampoo.html">Shampoo</a></li>
+          <li><a href="#">Face Wash</a></li>
+          <li><a href="face pack.html">Face Pack</a></li>
+          <li><a href="Henna.html">Henna</a></li>
+         
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">Grocery</div>
         <ul class="subcategories">
-          <li><a href="../Glocery/Tea.html">Tea</a></li>
-          <li><a href="../Glocery/dal.html">Dals</a></li>
-          <li><a href="../Glocery/Pulses.html">Pulses</a></li>
-          <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
-          <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
-          <li><a href="#">Grains & sooji </a></li>
+          <li><a href="#">Tea</a></li>
+          <li><a href="#">Dals</a></li>
+          <li><a href="#">Pulses</a></li>
+          <li><a href="#">Dry Fruits</a></li>
+          <li><a href="#">Cooking Oil</a></li>
+          <li><a href="#"> Grains & sooji </a></li>
           <li><a href="#">Flours</a></li> <!-- lot chana  -->
           <li><a href="#">Masala & Spices</a></li>
           <li><a href="#">Ghee & Vanaspati</a></li>
@@ -164,9 +143,9 @@
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">School Supplies</div>
-        <ul class="subcategories" >
-          <li><a href="Pen-Pencile.html">Pen / Pencile</a></li>
-          <li><a href="Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+        <ul class="subcategories">
+          <li><a href="#">Pen / Pencile</a></li>
+          <li><a href="#">Notebooks / Diaries</a></li>
           <li><a href="#">Art & Craft</a></li>
           <li><a href="#">General Stationery</a></li>
 
@@ -174,7 +153,7 @@
 
         <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
         <ul class="subcategories">
-          <li><a href="#" >Cold Drinks</a></li>
+          <li><a href="#">Cold Drinks</a></li>
           <li><a href="#">Soda & Water</a></li>
           <li><a href="#">Juice</a></li>
           <li><a href="#">Milk</a></li>
@@ -186,7 +165,7 @@
 
         <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
         <ul class="subcategories">
-          <li><a href="Cup.html">Cup</a></li>
+          <li><a href="#">Cup</a></li>
           <li><a href="#">Cones</a></li>
           <li><a href="#"> Kulfi</a></li>
           <li><a href="#"> Candies, Dollies</a></li>
@@ -200,10 +179,10 @@
 
         <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
         <ul class="subcategories">
-          <li><a href="#">Biscuits</a></li>
+          <li><a href="#">Salty Biscuits</a></li>
           <li><a href="#">Cookies</a></li>
           <li><a href="#">Cream Biscuits</a></li>
-          <li><a href="#" >Khari & Toasts</a></li>
+          <li><a href="#">Khari & Toasts</a></li>
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
@@ -224,16 +203,16 @@
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
-        <ul class="subcategories" style="display: block;">
-          <li><a href="#" style="color: orangered;">Namkeen</a></li>
+        <ul class="subcategories">
+          <li><a href="#">Namkeen</a></li>
           <li><a href="#">Wafers</a></li>
           <li><a href="#">Western Snacks</a></li>
 
         </ul>
 
         <div class="category" onclick="toggleCategory(this)">Others</div>
-        <ul class="subcategories">
-          <li><a href="#">Repellents</a></li>
+        <ul class="subcategories" style="display: block;">
+          <li><a href="#" style="color: orangered;">Repellents</a></li>
           <li><a href="#">Festive Decor & Gifting</a></li>
           <li><a href="#">Balm</a></li>
 
@@ -246,15 +225,14 @@
       </div>
       <div>
 
-        <div class="product-titel">All Khari & Toests Products</div>
+        <div class="product-titel">Repellents</div>
 
-        <div class="namkeen-container">
+        <div class="product-container">
+          
+<img src="https://cdn.thewirecutter.com/wp-content/media/2021/08/bug-repellent-2048px-2505-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp" class="w-100" alt="">
+<img src="https://www.cnet.com/a/img/resize/e8ce7190618cdd473e4ef0874d1f52eabcbb7ae2/hub/2021/04/29/d6dfa8f3-f9f0-4e27-acb9-24e73bef5e9e/img-5096.jpg?auto=webp&fit=crop&height=675&width=1200" class="w-100" alt="">
 
-                    <div class="namkeen">
-        <div class="Balaji"> <button> <a href="#"><img src="../../../../images/balaji_wefers_logo-removebg-preview.png" alt=""></a></button></div>
-        <div class="gopal"> <button> <a href="#"><img src="https://www.gopalnamkeen.com/front/assets/images/logo.png" alt=""></a></button></div>
-        <div class="Shree-hari"> <button><a href="#"> <img src="https://shn.nativebittechnologies.in/assets/images/logo.png" alt=""></a></button></div>
-                    </div>
+
 
 
 
