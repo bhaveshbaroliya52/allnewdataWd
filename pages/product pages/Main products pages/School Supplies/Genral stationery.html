@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../pages/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+
+
+  <header>
+    <div class="logo">
+      <a href="../../../../index.html" class="logo-1">Gel Krupa</a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+    </label>
+
+    <nav class="nav-links">
+      <h2 class="menu">Gel Krupa Mart <br>
+        <small>Serving Since 2005</small>
+      </h2>
+      <a href="../../../../index.html">Home</a>
+      <a href="../../../header pages/About.html">About</a>
+      <a href="../../../product.html">Product</a>
+      <a href="../../../header pages/Contact-us.html">Contact us</a>
+    </nav>
+
+    <div class="serch-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Serch for Product,items and other">
+    </div>
+
+
+<div class="menu-bar">
+  <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+<div class="menu-items" id="menu-items">
+  <i class="fa-solid fa-times" id="close-btn"></i>
+
+    <div id="login">
+      <i class="fa-regular fa-user"></i>Login
+      <div id="login-overlay"></div>
+    </div>
+    <div class="wishlist-header">
+      <a href="../../../header pages/wishlist.html">
+        <button id="wishlist-button">
+          <i class="fa-regular fa-heart"></i>wishlist
+          (<span id="wishlist-count">0</span>)
+        </button></a>
+    </div>
+    <div class="cart-header">
+      <a href="../../../header pages/cart.html">
+        <button id="cart-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>Cart
+          (<span id="cart-count">0</span>)
+        </button></a>
+    </div>
+  </div>
+</div>
+
+        <!-- login-form -->
+        <div id="login-form">
+          <div class="form-design">
+            <div class="lsaide">
+              <h1>Login</h1>
+              <h5>Get access to your Cart, Wishlist </h5>
+            </div>
+            <div class="rsaide">
+              <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+              <p class="note">We will never share your number with anyone.</p>
+              <button class="request-otp">Request OTP</button>
+              <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+        </div>
+  </header>
+
+  <div class="heading">
+    <button id="filter-btn" class="category-button">☰ All categories</button>
+    <div class="serch-bar-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+    </div>
+  </div>
+  <main>
+
+    <div class="product">
+      <div class="filter-container">
+        <p><strong>Filters</strong></p>
+        <p>PICK A CATEGORY</p>
+
+        <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
+        <ul class="subcategories" >
+          <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
+          <li><a href="../Beuty and Grooming/Moisturizer.html" >Moisturizer</a></li>
+          <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
+          <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
+          <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
+          <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Grocery</div>
+        <ul class="subcategories">
+          <li><a href="../Glocery/Tea.html">Tea</a></li>
+          <li><a href="../Glocery/dal.html">Dals</a></li>
+          <li><a href="../Glocery/Pulses.html">Pulses</a></li>
+          <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
+          <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
+          <li><a href="#">Grains & sooji </a></li>
+          <li><a href="#">Flours</a></li> <!-- lot chana  -->
+          <li><a href="#">Masala & Spices</a></li>
+          <li><a href="#">Ghee & Vanaspati</a></li>
+          <li><a href="#">Papad</a></li>
+          <li><a href="#">Salt / Sugar / Jaggery</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+        <ul class="subcategories" style="display: block;">
+          <li><a href="Pen-Pencile.html">Pen / Pencile</a></li>
+          <li><a href="Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+          <li><a href="Art - Craft.html">Art & Craft</a></li>
+          <li><a href="#" style="color: orangered;">General Stationery</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+        <ul class="subcategories">
+          <li><a href="#">Cold Drinks</a></li>
+          <li><a href="#">Soda & Water</a></li>
+          <li><a href="#">Juice</a></li>
+          <li><a href="#">Milk</a></li>
+          <li><a href="#">Panner</a></li>
+          <li><a href="#">Shrikhand</a></li>
+          <li><a href="#">Butter</a></li>
+          <li><a href="#">chass</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+        <ul class="subcategories">
+          <li><a href="#">Cup</a></li>
+          <li><a href="#">Cones</a></li>
+          <li><a href="#"> Kulfi</a></li>
+          <li><a href="#"> Candies, Dollies</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dessert</div>
+        <ul class="subcategories">
+          <li><a href="#">Chikki</a></li>
+          <li><a href="#">Chikki</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+        <ul class="subcategories">
+          <li><a href="#">Salty Biscuits</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Cream Biscuits</a></li>
+          <li><a href="#">Khari & Toasts</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+        <ul class="subcategories">
+          <li><a href="#">Detergent Powder</a></li>
+          <li><a href="#">Detergent Bar</a></li>
+          <li><a href="#">Cleaners</a></li>
+
+        </ul>
+
+
+        <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+        <ul class="subcategories">
+          <li><a href="#">Diwali</a></li>
+          <li><a href="#">Holi-Special</a></li>
+          <li><a href="#">Utrayan</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+        <ul class="subcategories">
+          <li><a href="#">Namkeen</a></li>
+          <li><a href="#">Wafers</a></li>
+          <li><a href="#">Western Snacks</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Others</div>
+        <ul class="subcategories">
+          <li><a href="#">Repellents</a></li>
+          <li><a href="#">Festive Decor & Gifting</a></li>
+          <li><a href="#">Balm</a></li>
+
+
+        </ul>
+
+        <button id="filter-close-btn" class="filter-close-button">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div>
+
+        <div class="product-titel">All Pen - Pencile Products</div>
+
+        <div class="product-container">
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Apsara Oil Pastels.html"><img
+                  src="https://m.media-amazon.com/images/I/717JPWAC6-L._SX522_.jpg"
+                  alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Apsara Oil Pastels offer an extensive selection of 50 vibrant and richly pigmented shades</p>
+                <span>pack of 5</span>
+
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Camel Student.html"><img
+                  src="https://m.media-amazon.com/images/I/71VGnpU31NL._SX522_.jpg" alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Camel Student 24-Shade Water Color</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 217
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/white paper.html">
+                <img src="https://m.media-amazon.com/images/I/31Lp7ElIruL.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Eclet A4 Size, 300 GSM Smooth Finish Ivory Drawing Paper </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 5
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Fevicol Mr Adhesive.html">
+                <img src="https://m.media-amazon.com/images/I/31d+G3bWT2L.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Fevicol Mr Adhesive Glue For Arts And Crafts, white </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Fevicol MR.html">
+                <img src="https://m.media-amazon.com/images/I/41YHnWwXWOL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Fevicol MR 22.5g Craft Glue | Ultimate Adhesive| DIY Art & Craft</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Cello Whitemate.html"><img
+                  src="https://m.media-amazon.com/images/I/61-X1dBWa0L._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Cello Whitemate Whiteboard BoldMarkers| Assorted Ink Colours 
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 15
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Nataraj Juicy.html"><img
+                  src="https://m.media-amazon.com/images/I/61F1WnEH9vL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Reynolds Correction Pen Whitener I Smudge Free Operation</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Heff Scissors.html">
+                <img src="https://m.media-amazon.com/images/I/61RP3v+HMtL._SX679_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Heff Scissors Set of 1, Multipurpose Scissors for Office, Home and Students</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 30
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Kangaro Stapler.html">
+                <img src="https://m.media-amazon.com/images/I/81VadRn+t-L._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Kangaro No.10 Y2 Stapler Pack with Staple Pins</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 90
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Kangaro Desk Essentials.html"><img
+                  src="https://m.media-amazon.com/images/I/715F+oVjqUL._AC_UF1000,1000_QL80_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Kangaro Desk Essentials NO. 10-1M Heavy Duty Steel Wire Staple Pin</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 10
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Rolls Essential.html"><img
+                  src="https://m.media-amazon.com/images/I/61Q02t2TxxL._SX466_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Clear Tape, Cello Tape, All-Purpose Transparent Glossy
+                  Tape for Office</p>
+                <span> pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 72
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Mini Plastic Clipboard.html"><img
+                  src="https://m.media-amazon.com/images/I/71cnOygKibL._SX450_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Mini Plastic Clipboard – (23 cm x 15.5 cm) Size, Durable
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/PARTEET Space.html">
+                <img src="https://m.media-amazon.com/images/I/61H4RG2jnlL._SX466_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">PARTEET Space Exam Pad for Kids Wooden Cardboard</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/AY FASHION Exam Board.html">
+                <img src="https://m.media-amazon.com/images/I/51cMhY1khcL._SY450_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">AY FASHION Exam Board, ExamPad,Clipboard WritingPad for Kids</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Apsara Steno Pencils.html">
+                <img src="https://m.media-amazon.com/images/I/71+ik77bEuL._SX466_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Nataraj Scale, 30 cm - Pack of 10</p>
+                <span>10 count (Pack of 1)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 100
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/Apsara Matt Magic Pencil.html">
+                <img src="https://m.media-amazon.com/images/I/71qdZRw5nTL._SY450_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Apsara Matt Magic Pencil 2.0 [Pack of 10]</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 60
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/DOMS Fsc.html">
+                <img src="https://m.media-amazon.com/images/I/716FcwG7M7S._SY450_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">DOMS Fsc 24 Shades Colour Pencil</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 84
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Art - Craft/DOMS Q Series.html">
+                <img src="https://m.media-amazon.com/images/I/61FTphNUfCS._SY450_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">DOMS Q Series 15cm Transparent Scale (Pack of 10)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+           <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook.html"><img
+                  src="https://m.media-amazon.com/images/I/81jbXrP8ClL._SX522_.jpg"
+                  alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook - Single Line, 72 Pages</p>
+                <span>pack of 10</span>
+
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 195
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-1.html"><img
+                  src="https://m.media-amazon.com/images/I/711X5KuqVKL._SX522_.jpg" alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook | 72 Pages | Single Line | 24.0cm x 18.0cm</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 20
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Navneet Youva.html">
+                <img src="https://m.media-amazon.com/images/I/718E-gqfSJL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Navneet Youva | Soft Bound | Long Note Book | Single Line </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-2.html">
+                <img src="https://m.media-amazon.com/images/I/71o2yVUvUTL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook | 72 Pages | Unruled | 24.0cm x 18.0cm</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 20
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/TARGET PUBLICATIONS.html">
+                <img src="https://m.media-amazon.com/images/I/4133+g42nAL.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">TARGET PUBLICATIONS Single Line Interleaf Notebooks, Theme Plain</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 30
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/KAANUKA Long Size.html"><img
+                  src="https://m.media-amazon.com/images/I/91HqYkGotTL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">KAANUKA Long Size Notebook - 140 Pages, Unruled, Plain
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i>  40
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/KAANUKA Long Size-1.html"><img
+                  src="https://m.media-amazon.com/images/I/81mfHqT4ByL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">KAANUKA Long Size Notebook - 140 Pages, Ruled, Single Line</p>
+                <span>Pack of 5</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 287
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/papergrid Notebook.html">
+                <img src="https://m.media-amazon.com/images/I/61AgowpMJYS._SL1500_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">papergrid Notebook - A4 (29.7 cm x 21 cm), Single Line, 216 Pages</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 100
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate LongBook.html">
+                <img src="https://m.media-amazon.com/images/I/71b+tvxmhzL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate LongBook | 172 Pages | Single Line | 29.7cm x 21cm</p>
+                <span>pack of 3</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 191
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Rush 120 Pages.html"><img
+                  src="https://m.media-amazon.com/images/I/71E43tKSYTL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Rush 120 Pages (Pack of 4) 3 in 1 Notebooks for Students</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-3.html"><img
+                  src="https://m.media-amazon.com/images/I/71s8zn+oDqL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook - Soft Cover, 124 Pages, 210x170mm, Single Line</p>
+                <span>  pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 20
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook -4.html"><img
+                  src="https://m.media-amazon.com/images/I/71s9K6a89HL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook | 172 Pages | Four Lines with Gap | 24.0cm x 18.0cm
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-5.html">
+                <img src="https://m.media-amazon.com/images/I/71xZGw5-D3L._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook - Single Line, 172 Pages, 240 mm x 180 mm</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-6.html">
+                <img src="https://m.media-amazon.com/images/I/71jK7zcYXcL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Long Notebook - 140 Pages, Single Line</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 40
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Kaanuka-Long Size.html">
+                <img src="https://m.media-amazon.com/images/I/81lFbjJq4KL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">KAANUKA Long Size Notebook - 140 Pages, Unruled</p>
+                <span>  Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 45
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Notebook- Diaries/Classmate Notebook-6.html">
+                <img src="https://m.media-amazon.com/images/I/61US-0+l2AL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Notebook | 172 Pages | Unruled | 24.0cm x 18.0cm</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+           <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Cello Cello Gripper.html"><img
+                  src="https://rukminim3.flixcart.com/image/850/1000/jdq9rbk0/pen/g/d/z/cello-gripper-50-original-imaf2jq9xf6f2jzx.jpeg?q=20&crop=false"
+                  alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Cello Cello Gripper 30 Ball Pen  (Pack of 5, Ink Color - Blue)</p>
+                <span>pack of 5</span>
+
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/saino softack.html"><img
+                  src="https://images.meesho.com/images/products/459898246/wkssn_512.webp" alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">SAINAO SOFTEK BLUE COLOUR PEN ( 20 Pcs in 1 box )</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 217
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/saino softack black.html">
+                <img src="https://m.media-amazon.com/images/I/51TzfW8oNmL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Saino Softek ball pen for ultra smooth writing use </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 217
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/saino softack red.html">
+                <img src="https://m.media-amazon.com/images/I/41Cjm3h8HfL.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Saino Softek ball pen for ultra smooth writing use </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 217
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Nataraj Snappy.html">
+                <img src="https://m.media-amazon.com/images/I/71kEe2WUFdL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">NATARAJ Snappy Ball Pen, Smooth Tip-in-tip-out, Stress-free and Long Writing</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Reynolds Brite.html"><img
+                  src="https://m.media-amazon.com/images/I/615NOg5gBJL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Reynolds Brite Ball Pen Set-5 Blue Pens With Comphortable Grid
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 31
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Nataraj Juicy.html"><img
+                  src="https://m.media-amazon.com/images/I/61hqa6bASmL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">NATARAJ Juicy Blue Ball Pen with Superior Non-Fading INK</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 25
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Reynolds Vista.html">
+                <img src="https://m.media-amazon.com/images/I/71qllAq+M0L._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Reynolds VISTA Ball Pen SET - 5 BLUE PENS WITH COMFORTABLE GRIP</p>
+                <span>Pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 31
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Classmate Octane.html">
+                <img src="https://m.media-amazon.com/images/I/71K+lDp74VL._SY879_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Classmate Octane Gel Neon - Count of 5 (Blue)</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 49
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Reynolds BRITE black.html"><img
+                  src="https://m.media-amazon.com/images/I/61PBE904CXL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Black BALL PENS FOR WRITING | PEN FOR STUDENTS & OFFICE STATIONERY</p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 31
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Cello Butterflow.html"><img
+                  src="https://m.media-amazon.com/images/I/61Hpcx3a7xL._SX522_.jpg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Cello Butterflow Simply Ball Pen Set, Pack of 5 Ball Pens</p>
+                <span>5 count pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 49
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Nataraj pencile.html"><img
+                  src="https://m.media-amazon.com/images/I/61ZXN9NGKcL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">From the Classroom to the Artist's Studio to the Boardroom
+                </p>
+                <span>pack of 1</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Cello Supreme Mechanical.html">
+                <img src="https://m.media-amazon.com/images/I/61A2H0AcB1L._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Cello Supreme Mechanical Pencil 0.5 mm - 1 pencil</p>
+                <span>180 g</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 350
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/FLAIR Clixx Medium.html">
+                <img src="https://m.media-amazon.com/images/I/61XXLFWRydL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">FLAIR Clixx Medium 0.7 mm Mechanical Pencil Pouch Pack</p>
+                <span>pack of 10</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 150
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Apsara Steno Pencils.html">
+                <img src="https://m.media-amazon.com/images/I/61GRq2T+zrL._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">The Apsara Steno Hb Pencil is Specially Designed for Stenographers</p>
+                <span>5 count (Pack of 1)</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 50
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/School Supplies/Pen -Pencile/Cello Supreme Mechanical.html">
+                <img src="https://m.media-amazon.com/images/I/61A2H0AcB1L._SX522_.jpg" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Cello Supreme Mechanical Pencil 0.5 mm - 1 pencil</p>
+                <span>180 g</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 350
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+            </div>
+          </div>
+
+        
+
+           
+
+           
+
+
+
+
+
+
+        </div>
+
+      </div>
+      <!-- <script src="hair oil.js"></script> -->
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../header pages/About.html">About</a></li>
+          <li><a href="../../../product.html">Products</a></li>
+          <li><a href="../../../header pages/Contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Gel Krupa Center</h3>
+        <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving taste since [year]!</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Connect</h3>
+        <div class="social-icons">
+          <a href="https://wa.me/919023962442"> 
+            <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <hr class="footer-divider">
+  
+    <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+  </footer>
+
+
+  <script src="../../../product.js"></script>
+
+</body>
+
+</html>
