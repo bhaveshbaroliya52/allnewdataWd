@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../../../pages/product.css">
+    <!-- <link rel="stylesheet" href="hair-oil.css"> -->
+    <!-- <link rel="stylesheet" href="hair oil.css"> -->
+    <link rel="stylesheet" href="../../../product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -114,21 +116,22 @@
                 <p><strong>Filters</strong></p>
                 <p>PICK A CATEGORY</p>
 
-                <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
-                <ul class="subcategories" style="display: block;">
-                    <li> <a href="hair oil.html">Hair Oil</a></li>
-                    <li><a href="#">Moisturizer</a></li>
-                    <li><a href="shampoo.html">Shampoo</a></li>
-                    <li><a href="facewhash.html">Face Wash</a></li>
-                    <li><a href="face pack.html">Face Pack</a></li>
-                    <li><a href="Henna.html" style="color: orangered;">Henna</a></li>
+                <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
+                <ul class="subcategories" >
+                    <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
+                    <li><a href="../Beuty and Grooming/Moisturizer.html">Moisturizer</a></li>
+                    <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
+                    <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
+                    <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
+                    <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+
                 </ul>
 
                 <div class="category" onclick="toggleCategory(this)">Grocery</div>
                 <ul class="subcategories">
-                    <li><a href="#">Tea</a></li>
-                    <li><a href="#">Dals</a></li>
-                    <li><a href="#">Pulses</a></li>
+                    <li><a href="Tea.html">Tea</a></li>
+                    <li><a href="dal.html">Dals</a></li>
+                    <li><a href="Pulses.html">Pulses</a></li>
                     <li><a href="#">Dry Fruits</a></li>
                     <li><a href="#">Cooking Oil</a></li>
                     <li><a href="#"> Grains & sooji </a></li>
@@ -141,7 +144,7 @@
 
                 <div class="category" onclick="toggleCategory(this)">School Supplies</div>
                 <ul class="subcategories">
-                    <li><a href="#">Pen / Pencile</a></li>
+                    <li><a href="../School Supplies/Pen-Pencile.html">Pen / Pencile</a></li>
                     <li><a href="#">Notebooks / Diaries</a></li>
                     <li><a href="#">Art & Craft</a></li>
                     <li><a href="#">General Stationery</a></li>
@@ -169,8 +172,8 @@
                 </ul>
 
                 <div class="category" onclick="toggleCategory(this)">Dessert</div>
-                <ul class="subcategories">
-                    <li><a href="#">Dessert</a></li>
+                <ul class="subcategories" style="display: block;">
+                    <li><a href="#"  style="color: orangered;">Dessert</a></li>
                 </ul>
 
                 <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
@@ -221,34 +224,115 @@
             </div>
             <div>
 
-                <div class="product-titel">All Henna Products</div>
+                <div class="product-titel">All Dessert Product </div>
 
                 <div class="product-container">
+                    <div class="items">
+                        <div class="items-cart">
+                            <a href="../../multiple pages/Dessert/Soan Papdi.html"><img
+                                    src="https://m.media-amazon.com/images/I/71D433PpRjL._SX679_.jpg"
+                                    alt=""></a>
 
-                        <div class="h-img d-flex">
+                            <div class="detail">
+                                <p style="margin: 0;">Soan Papdi Sweets (6 piece) </p>
+                                <span>Also available for One piece</span>
 
-                            <img src="https://rukminim2.flixcart.com/image/850/1000/kn4xhu80/hair-color/q/o/l/hair-henna-color-natural-black-pack-of-10-kajal-original-imagfw2sps2yxffw.jpeg?q=90&crop=false"
-                                style="height: 470px;" alt="">
-                            <img src="https://4.imimg.com/data4/EI/HF/MY-3706612/kajal-hair-henna-natural-black-500x500.jpg"
-                                style="height: 470px;" alt="">
-                            <img src="https://4.imimg.com/data4/XO/KN/MY-3706612/kajal-hair-henna-natural-brown-500x500.jpg"
-                                style="height: 470px;" alt="">
+                                <div class="price">
+                                    <h6 style="margin-left: 10px;">MRP</h6>
+                                    <h6 style="margin-left: 10px; display: flex;">
+                                        <i class="bi bi-currency-rupee "></i> 30 
+                                    </h6>
+                                </div>
+                            </div>
+                            <button class="cart-btn">
+                                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+                            </button>
+                            <div id="wishlist-container">
+                                <button class="wishlist-btn"> </button>
+                            </div>
                         </div>
-                        <img src="https://i0.wp.com/kajalindia.com/wp-content/uploads/2021/02/34-1.jpg?fit=1200%2C300&ssl=1" class="w-75 mt-5 d-flex justify-center" alt="">
-                        <img src="https://kajalindia.com/wp-content/uploads/2021/01/kajal-cone-box777-scaled.jpg" class="w-75 mt-5 d-flex justify-center" alt="">
-                        <img src="https://m.media-amazon.com/images/I/810lCr0mmYL.jpg" class="w-75 mt-5 d-flex justify-center" alt="">
-                        <img src="https://www.bigbasket.com/media/uploads/groot/images/1112022-98181e0a-godrej-expert_a-_1.jpg" class="w-75 mt-5 d-flex justify-center" alt="">
-                        <img src="https://images.apollo247.in/pub/media/catalog/product/G/O/GOD0101_A1.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w" class="w-75 mt-5 d-flex justify-center" alt="">
-                        <img src="https://www.bbassets.com/media/uploads/p/xl/40051259_4-godrej-expert-rich-creme-hair-colour-single-use.jpg" class="w-75 mt-5 d-flex justify-center" alt="">
 
-                                <div class="h-img d-flex">
+                    </div>
+                    <div class="items">
+                        <div class="items-cart">
+                            <a href="../../multiple pages/Dessert/chikki.html"><img
+                                    src="https://m.media-amazon.com/images/I/51tlvKKsHML.jpg"
+                                    alt=""></a>
 
-                            <img src="https://rukminim3.flixcart.com/image/850/1000/jd1z9u80/hair-color/m/r/x/natural-black-expert-powder-hair-colour-pack-of-8-godrej-original-imaf2yngxx5cgfva.jpeg?q=20&crop=false"
-                                style="height: 470px;" alt="">
-                            <img src=https://www.fmcghousebulk.com/wp-content/uploads/2024/06/GOD-DAI.jpg"
-                                style="height: 470px;" alt="">
-                             
+                            <div class="detail">
+                                <p style="margin: 0;">Peanut Chikki  (4 piece) </p>
+                                <span>Also available for One piece</span>
+
+                                <div class="price">
+                                    <h6 style="margin-left: 10px;">MRP</h6>
+                                    <h6 style="margin-left: 10px; display: flex;">
+                                        <i class="bi bi-currency-rupee "></i> 20 
+                                    </h6>
+                                </div>
+                            </div>
+                            <button class="cart-btn">
+                                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+                            </button>
+                            <div id="wishlist-container">
+                                <button class="wishlist-btn"> </button>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="items">
+                        <div class="items-cart">
+                            <a href="../../multiple pages/Dessert/Khajur Pak.html"><img
+                                    src="https://shreejifoods.in/cdn/shop/products/Khajur-pak-_28sugar-free_29.jpg?v=1616130814"
+                                    alt=""></a>
+
+                            <div class="detail">
+                                <p style="margin: 0;">Khajur Pak Mithai | Khajoor Dry Fruits Barfi </p>
+                                <span>Also available for One piece</span>
+
+                                <div class="price">
+                                    <h6 style="margin-left: 10px;">MRP</h6>
+                                    <h6 style="margin-left: 10px; display: flex;">
+                                        <i class="bi bi-currency-rupee "></i> 25 
+                                    </h6>
+                                </div>
+                            </div>
+                            <button class="cart-btn">
+                                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+                            </button>
+                            <div id="wishlist-container">
+                                <button class="wishlist-btn"> </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="items">
+                        <div class="items-cart">
+                            <a href="../../multiple pages/Glocery/Pulses pages/Green Moong Dal 1.html"><img
+                                    src="https://mirchi.com/os/cdn/content/images/kachchi%20penda%20ratilal%20chunilal_medium_0863435.webp"
+                                    alt=""></a>
+
+                            <div class="detail">
+                                <p style="margin: 0;">mava Penda 1kg </p>
+                                <span>Also available for One piece</span>
+                                <div class="price">
+                                    <h6 style="margin-left: 10px;">MRP</h6>
+                                    <h6 style="margin-left: 10px; display: flex;">
+                                        <i class="bi bi-currency-rupee "></i> 270
+                                    </h6>
+                                </div>
+                            </div>
+                            <button class="cart-btn">
+                                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+                            </button>
+                            <div id="wishlist-container">
+                                <button class="wishlist-btn"> </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                   
+ <img src="https://omenterprisesgrp.com/wp-content/uploads/2024/07/Balaji-wafer-baner-4.jpg" alt="" style="width: 100%;">
 
 
                 </div>
