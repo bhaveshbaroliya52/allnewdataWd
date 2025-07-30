@@ -1,0 +1,275 @@
+  @media(min-width:581px) {
+      .filter-container {
+          display: none;
+      }
+  }
+  @media(max-width:1339){
+    .product-container{
+        flex-wrap: wrap;
+    }
+  }
+   @media(max-width:581px) {    
+  .animate {
+      margin-top: 10px;
+      height: 50px !important;
+      text-align: center !important;
+      font-size: 16px !important;
+  }
+   .multi-pro-title{
+    text-align: center !important;
+    padding: 0 !important;
+    font-size: 22px !important;
+    margin-top: 6px !important;
+    
+  }
+  
+  .product-container .fuljar-img{
+   width: 100% !important; 
+  }
+
+  .animate .ice-cream-logo {
+      height: 40px !important;
+      width: 40px !important;
+  }
+   .product-container {
+      padding: 10px 0 30px 0 !important;
+       
+  }
+
+  .animate .product-titel {
+      font-size: 20px !important;
+      margin: 0 20px !important;
+    }
+  .product-container .ice-cream {
+      height: 300px !important;
+      width: 200px !important;
+      gap: 0px !important;
+      margin: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-container .ice-cream h2{
+    font-size: 16px !important;
+  }
+    .product-container .ice-cream img {
+      height: 130px !important;
+      width: 130px !important;
+  }
+   .product-container .ice-cream p {
+      font-size: 13px !important;
+      margin: 0px 2px !important;
+  }
+   }
+   @media(max-width:450px){
+  .product-container {
+      padding: 10px 0 30px 0 !important;
+  }
+  .product-container .ice-cream{
+     margin: 2px !important;
+  }
+   }
+    @media(max-width:426px){
+         .animate {
+      margin-top: 10px;
+      height: 36px !important;
+       margin-left: 10px !important;
+      margin-right: 10px !important;
+  }
+   .animate .ice-cream-logo {
+      height: 30px !important;
+      width: 30px !important;
+  }
+  
+  .animate .product-titel {
+      font-size: 16px !important;
+      margin: 0 10px !important;
+    }
+    }
+     @media(max-width:426px){
+  .product-container .ice-cream {
+      height: 230px !important;
+      width: 180px !important;
+      gap: 0px !important;
+      justify-content: space-evenly !important;
+      /* margin: 6px; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      border-radius: 6px;
+  } 
+      .product-container .ice-cream img {
+      height: 100px !important;
+      width: 100px !important;
+  }
+    .product-container .ice-cream h2{
+    font-size: 16px !important;
+  }  
+  .product-container .ice-cream p {
+      max-height: 70px;
+  }
+  .multi-pro-title{
+    font-size: 18px !important;
+  }
+     }
+     @media(max-width:378px){
+        .product-container{
+            gap: 0 !important;
+            
+        }
+     }
+     @media(max-width:368px){
+    .product-container .ice-cream p{
+display: none !important;
+    }
+        .product-container .ice-cream img{
+            height: 150px !important;
+            width: 150px !important;
+        }
+        .product-container .ice-cream{
+            height: 230px !important;
+      width: 170px !important;
+       
+        }
+        .product-container{
+            justify-content: space-evenly !important;
+        }
+     }
+         @media(max-width:341px){
+     .animate {
+      height: 36px !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+
+    }
+   .animate .ice-cream-logo {
+      height: 30px !important;
+      width: 30px !important;
+  }
+  
+  .animate .product-titel {
+      font-size: 14px !important;
+      margin: 0 10px !important;
+    }
+
+         }
+          @media(max-width:318px){
+  .product-container .ice-cream p {
+      display: none;
+  }
+  .product-container .ice-cream {
+      height: 150px !important;
+      width: 120px !important;
+      margin: 2px !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      border-radius: 6px;
+  }
+  .product-container .ice-cream h2{
+    text-align: center;
+  }
+          }
+  
+
+  .animate {
+      margin-top: 10px;
+      height: 100px;
+      margin-left: 40px;
+      margin-right: 40px;
+      background-color: rgb(255, 66, 167);
+    background-image: radial-gradient(yellow, orange, orangered);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .animate .ice-cream-logo {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+  }
+
+  .animate .product-titel {
+      font-size: 28px;
+      color: black;
+      font-weight: 700;
+      margin: 0;
+      margin: 0 40px;
+
+  }
+
+  .product-container {
+      display: flex;
+      background-image: linear-gradient(#fff7f0, #ffece0);
+      padding: 20px 0 70px 0;
+     
+     
+  }
+.product-container .ice-cream h2{
+    font-size: 22px;
+    text-align: center;
+    margin: 2px 10px;
+}
+  .product-container .ice-cream {
+      height: 450px;
+      width: 300px;
+      background-color:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 4px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-container .ice-cream:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-container .ice-cream img {
+      height: 260px;
+      width: 270px;
+      object-fit: cover;
+  
+  }
+
+  .product-container .ice-cream p {
+      font-size: 17px;
+      margin: 0px 12px 10px 12px;
+      text-align: center;
+      line-height: 1.5;
+      color: #444;
+  }
+
+  .ice-cream {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.6s ease-out;
+  }
+
+  .ice-cream.show {
+      opacity: 1;
+      transform: translateY(0);
+  }
+ 
+  .multi-pro-title{
+    font-size: 26px;
+    background-color: #fff7f0;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-top: 10px;
+    color: orangered;
+    font-weight: 600;
+  }
+  
+  .p-img{
+ text-align: center;
+
+  }
+
+.p-img img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

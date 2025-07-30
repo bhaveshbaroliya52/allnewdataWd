@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    
+/* VIDEO section styling */
+.video-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, height 0.6s ease, margin 0.6s ease;
+  overflow: hidden;
+}
+
+.video-section.show {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.video-section.hide {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+ </style>
+ <body>
+    
+    
+/* chatgpt */
+
+    <section id="hero-video" class="video-section">
+  <video id="introVideo"
+         src="https://youtu.be/snWuppFxBCU"
+         muted
+         playsinline
+         preload="auto"
+         style="width: 100%; height: auto;">
+    Your browser does not support HTML5 video.
+  </video>
+</section>
+
+
+        <div class="multi-pro-title">
+                    Diwali Crackers
+                </div>
+
+         <div class="product-container">
+            <img src="https://i.ytimg.com/vi/S3MM3D5xwKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRz0wLOA1jjiHBJhoDC2LS8RDWvA" class="w-50" alt="">
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61-Q+ecLSiL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                        <h2>Pop Pop</h2>
+                        <p>pop pop Popper Magic Diwali Lights and Festival for CRA Jack, chintu bintu Magic Ball and Magic Sound</p>
+                    </div>
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/411PSiyUgCL._SY300_SX300_QL70_FMwebp_.jpg"
+                            alt="">
+                        <h2>Paper Sky Lanterns</h2>
+                        <p>Art with Emphasis Paper Sky Lanterns/Wishing Lanterns</p>
+                    </div>
+                    </div>
+
+<script>
+  const videoSection = document.getElementById('hero-video');
+  const video = document.getElementById('introVideo');
+  const products = document.querySelectorAll('.ice-cream');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        videoSection.classList.add('show');
+        video.play();
+
+        // 🔥 Sirf 3 second tak chalana hai
+        setTimeout(() => {
+          video.pause();                  // video ko pause karo
+          video.currentTime = 0;         // optional: rewind to start
+          videoSection.classList.add('hide');  // hide video
+          showProducts();                // show products
+        }, 3000); // 3000ms = 3 sec
+
+        observer.unobserve(videoSection);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(videoSection);
+
+  // Product show with animation
+  function showProducts() {
+    products.forEach((card, idx) => {
+      setTimeout(() => card.classList.add('show'), idx * 150);
+    });
+  }
+</script>
+
+ </body>
+ </html>

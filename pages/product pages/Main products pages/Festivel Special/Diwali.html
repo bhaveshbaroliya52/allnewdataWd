@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../pages/product.css">
+    <link rel="stylesheet" href="festival.css">
+    <!-- <link rel="stylesheet" href="../Ice Cream/ice cream.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="logo">
+            <a href="../../../../index.html" class="logo-1">Gel Krupa</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="menu-toggle" class="close-btn">
+            <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+        </label>
+
+        <nav class="nav-links">
+            <h2 class="menu">Gel Krupa Mart <br>
+                <small>Serving Since 2005</small>
+            </h2>
+            <a href="../../../../index.html">Home</a>
+            <a href="../../../header pages/About.html">About</a>
+            <a href="../../../product.html">Product</a>
+            <a href="../../../header pages/Contact-us.html">Contact us</a>
+        </nav>
+
+        <div class="serch-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Serch for Product,items and other">
+        </div>
+
+
+        <div class="menu-bar">
+            <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+            <div class="menu-items" id="menu-items">
+                <i class="fa-solid fa-times" id="close-btn"></i>
+
+                <div id="login">
+                    <i class="fa-regular fa-user"></i>Login
+                    <div id="login-overlay"></div>
+                </div>
+                <div class="wishlist-header">
+                    <a href="../../../header pages/wishlist.html">
+                        <button id="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>wishlist
+                            (<span id="wishlist-count">0</span>)
+                        </button></a>
+                </div>
+                <div class="cart-header">
+                    <a href="../../../header pages/cart.html">
+                        <button id="cart-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                            </svg>Cart
+                            (<span id="cart-count">0</span>)
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- login-form -->
+        <div id="login-form">
+            <div class="form-design">
+                <div class="lsaide">
+                    <h1>Login</h1>
+                    <h5>Get access to your Cart, Wishlist </h5>
+                </div>
+                <div class="rsaide">
+                    <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+                    <p class="note">We will never share your number with anyone.</p>
+                    <button class="request-otp">Request OTP</button>
+                    <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <button id="filter-btn" class="category-button">☰ All categories</button>
+        <div class="serch-bar-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+        </div>
+    </div>
+    <main>
+
+        <div class="product">
+            <div class="filter-container">
+                <p><strong>Filters</strong></p>
+                <p>PICK A CATEGORY</p>
+
+                <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
+                <ul class="subcategories">
+                    <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
+                    <li><a href="../Beuty and Grooming/Moisturizer.html">Moisturizer</a></li>
+                    <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
+                    <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
+                    <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
+                    <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Grocery</div>
+                <ul class="subcategories">
+                    <li><a href="../Glocery/Tea.html">Tea</a></li>
+                    <li><a href="../Glocery/dal.html">Dals</a></li>
+                    <li><a href="../Glocery/Pulses.html">Pulses</a></li>
+                    <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
+                    <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
+                    <li><a href="#">Grains & sooji </a></li>
+                    <li><a href="#">Flours</a></li> <!-- lot chana  -->
+                    <li><a href="#">Masala & Spices</a></li>
+                    <li><a href="#">Ghee & Vanaspati</a></li>
+                    <li><a href="#">Papad</a></li>
+                    <li><a href="#">Salt / Sugar / Jaggery</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+                <ul class="subcategories">
+                    <li><a href="Pen-Pencile.html">Pen / Pencile</a></li>
+                    <li><a href="Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+                    <li><a href="#">Art & Craft</a></li>
+                    <li><a href="#">General Stationery</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+                <ul class="subcategories">
+                    <li><a href="#">Cold Drinks</a></li>
+                    <li><a href="#">Soda & Water</a></li>
+                    <li><a href="#">Juice</a></li>
+                    <li><a href="#">Milk</a></li>
+                    <li><a href="#">Panner</a></li>
+                    <li><a href="#">Shrikhand</a></li>
+                    <li><a href="#">Butter</a></li>
+                    <li><a href="#">chass</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+                <ul class="subcategories">
+                    <li><a href="#">Cup</a></li>
+                    <li><a href="#">Cones</a></li>
+                    <li><a href="#"> Kulfi</a></li>
+                    <li><a href="#"> Candies, Dollies</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Dessert</div>
+                <ul class="subcategories">
+                    <li><a href="#">Dessert</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+                <ul class="subcategories">
+                    <li><a href="#">Salty Biscuits</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Cream Biscuits</a></li>
+                    <li><a href="#">Khari & Toasts</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+                <ul class="subcategories">
+                    <li><a href="#">Detergent Powder</a></li>
+                    <li><a href="#">Detergent Bar</a></li>
+                    <li><a href="#">Cleaners</a></li>
+
+                </ul>
+
+
+                <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+                <ul class="subcategories" style="display: block;">
+                    <li><a href="#" style="color: orangered;">Diwali</a></li>
+                    <li><a href="#">Holi-Special</a></li>
+                    <li><a href="#">Utrayan</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+                <ul class="subcategories">
+                    <li><a href="#">Namkeen</a></li>
+                    <li><a href="#">Wafers</a></li>
+                    <li><a href="#">Western Snacks</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Others</div>
+                <ul class="subcategories">
+                    <li><a href="#">Repellents</a></li>
+                    <li><a href="#">Festive Decor & Gifting</a></li>
+                    <li><a href="#">Balm</a></li>
+
+
+                </ul>
+
+                <button id="filter-close-btn" class="filter-close-button">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div>
+
+                <div class="animate">
+                    <img src="https://img.freepik.com/free-vector/diwali-design-with-pink-background-typography-vector_1142-5770.jpg?semt=ais_hybrid&w=740"
+                        class="ice-cream-logo" alt="">
+                    <div class="product-titel">Festivel-Special Diwali Items</div>
+                    <img src="https://img.freepik.com/free-vector/diwali-design-with-pink-background-typography-vector_1142-5770.jpg?semt=ais_hybrid&w=740"
+                        class="ice-cream-logo" alt="">
+                </div>
+
+                <div class="multi-pro-title">
+                    Rangoli Stickers
+                </div>
+ 
+                <div class="product-container">
+ 
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71YAR9AfUAL._SX679_.jpg" alt="">
+                        <h2>Diwali Door Sticker</h2>
+                        <p>1 Shubh Deepavali, 1 Laxmi Charan, 1 Shubh Labh, 1 Shubh Labh with Swastik | Ideal to stick
+                            in any house entrances doors wall or in God's room and temples.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.meesho.com/images/products/450882737/c9pzd_512.webp" alt="">
+                        <h2>Multicolor Sticker</h2>
+                        <p>Decor Villa Diwali special Multicolor Shubh labh Festivals & Occasions sticker for Diwali
+                            pooja and home decoration, office,living room etc.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://www.bbassets.com/media/uploads/p/l/40330001_1-cs-diwali-rangoli-sticker-for-floordoorpooja-room.jpg"
+                            alt="">
+                        <h2>Rangoli Sticker </h2>
+                        <p>The Diwali Rangoli Sticker is a vibrant and convenient decoration for floors, doors, or your
+                            pooja room.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/819SI2lz3AL._SX679_.jpg" alt="">
+                        <h2>Rangoli Stickers </h2>
+
+                        <p>All Your Design Presents Diwali Sticker. It is very unique & Designer. It is ideal for
+                            lounge, bedroom, and office. <span>Size: Multisize</span></p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.meesho.com/images/products/164094761/fzdms_512.webp" alt="">
+                        <h2> Diwali Rangoli Stickers </h2>
+                        <p>Diwali Rangoli Stickers Vinyl Wall Sticker, Diwali Decoration. Size: Multisize</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71rxEJccwgL._SL1000_.jpg" alt="">
+                        <h2>Diwali Rangoli Sticker</h2>
+                        <p> rangoli stickers for floor decoration for DIWALI. This is used to decorate your floor in
+                            festive seasons. Size: Multisize</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.meesho.com/images/products/451795110/rhvim_512.webp" alt="">
+                        <h2>Occasions Sticker</h2>
+                        <p>The Diwali Rangoli Sticker is a vibrant and convenient decoration for floors, doors, or your
+                            pooja room.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2020/9/WM/RG/ZO/12325339/product-jpeg-1000x1000.jpg"
+                            alt="">
+                        <h2>Shubh Labh Sticker</h2>
+                        <p>Paper Red Diwali Shubh Labh Sticker. Diwali Decorative StickersShubh Labh Sticker.diwali
+                            decorative stickers</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://tiimg.tistatic.com/fp/1/007/872/decorative-ready-to-use-shining-waterproof-and-multicolor-rangoli-stickers-737.jpg"
+                            alt="">
+                        <h2>Rangoli Stickers</h2>
+                        <p>Decorative Ready To Use Shining Waterproof And Multicolor Rangoli Size: Multisize</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/713gCOwVZxL._SX679_.jpg" alt="">
+                        <h2> Rangoli Stickers </h2>
+                        <p>Mandala rangoli 3d rangoli stickers big size is waterproof, durable and long lasting
+                            transparent rangoli stickers. Size: Multisize</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/512XxkhEF7L.jpg" alt="">
+                        <h2>Rangoli Sticker</h2>
+                        <p>HD RAPID DESIGN Decorative Religious Floor Rangoli Sticker for Home Decoration, Diwali
+                            Stickers(Multicolor, Waterproof)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61LovE4dpAL.jpg" alt="">
+                        <h2>Rangoli Sticker</h2>
+                        <p>HD RAPID DESIGN Decorative Religious Floor Rangoli Sticker for Home Decoration, Diwali
+                            Stickers(Multicolor, Waterproof)</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/81O6SfzuJYL._AC_UL600_SR600,600_.jpg"
+                            alt="">
+                        <h2>Rangoli Sticker </h2>
+                        <p>HD RAPID DESIGN Decorative Religious Floor Rangoli Sticker for Home Decoration, Diwali
+                            Stickers(Multicolor, Waterproof)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71jJEbcegGL._SX679_.jpg" alt="">
+                        <h2>PVC Vinyl Wall Sticker </h2>
+                        <p>Ideal To Stick In Any House Entrances Doors Wall Or In God's Room And Temples Or On Table</p>
+                    </div>
+
+
+ 
+
+                </div>
+
+ 
+                <div class="multi-pro-title">
+                    Rangoli Colours
+                </div>
+
+         <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://rukminim2.flixcart.com/image/704/844/kj7gwi80-0/rangoli-powder/h/x/m/20-design-creativity-diwali-floor-rangoli-art-ceramic-colours-original-imafyuypdbssjydz.jpeg?q=90&crop=false"
+                            alt="">
+                        <h2>Rangoli Colours</h2>
+                        <p>Sure to Brighten up your Home For Diwali Festival Decoration. Smooth and Silky Flow make this
+                            art form a convenient one.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://www.jiomart.com/images/product/original/rvo8uoswy1/craftvatika-12-rangoli-colour-powder-tube-kit-diwali-decoration-pack-of-12-product-images-orvo8uoswy1-p593942352-0-202209221038.jpg?im=Resize=(1000,1000)"
+                            alt="">
+                        <h2>Rangoli Colour Powder Tube Kit</h2>
+                        <p>Used as a decoration or adornment for your entryway, doors or temples. Also, said to be an
+                            auspicious way of welcoming Hindu deities.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/711S8xGq9lL._SX679_.jpg"
+                            alt="">
+                        <h2>Rangoli Powder </h2>
+                        <p>These colors spread positive vibrations within the environment and make to lively and entertaining.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61PDRzX6z-L._SX679_.jpg"
+                            alt="">
+                        <h2>Rangoli Colour </h2>
+                        <p>Package Contains : Multi color Rangoli color pack of 10 X 100 grams each.(Total 1 Kgs)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/614lRUtHxYL._SX679_.jpg"
+                            alt="">
+                        <h2>Rangoli Colour </h2>
+                        <p>Used as a decoration or adornment for your entryway, doors or temples. Also, said to be an auspicious way of welcoming Hindu deities.</p>
+                    </div>
+ 
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/6158mWBOOML._SX679_.jpg"
+                            alt="">
+                        <h2>White Colour</h2>
+                        <p>Floor Art Colors for Rangoli Designs, Diwali, Navratri & Festival Decorations | Smooth Texture</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71M5frPZDLL._SX679_.jpg"
+                            alt="">
+                        <h2>Rangoli Colour</h2>
+                        <p>Floor Art Colors for Rangoli Designs, Diwali, Navratri & Festival Decorations | Smooth Texture</p>
+                    </div>
+ 
+
+                   
+        </div>
+
+        <div class="multi-pro-title">
+                    Rangoli Stencils
+                </div>
+
+         <div class="product-container">
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61nk-p8Su9L._SX679_.jpg" alt="">
+                        <h2>Rangoli Stencils</h2>
+                        <p>Unique and designer Diwali Rangoli Stencils for Diwali Decoration. Ideal for home, office,
+                            puja room & Temple.</p>
+                    </div>
+                    
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/VX/IE/WK/6466302/amdfr002-1-1000x1000.jpg"
+                            alt="">
+                        <h2>Rangoli Stencil</h2>
+                        <p>Round Multicolor MDF Floral Rangoli Stencils. Ideal for home, office,
+                            puja room & Temple. </p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://i.etsystatic.com/26619477/r/il/ef7bda/4231219859/il_570xN.4231219859_gva7.jpg"
+                            alt="">
+                        <h2>Rangoli Stencils</h2>
+                        <p>Rangoli Stencils, For Rangoli Colours, Diwali Diya, Diwali Decor, Home Decor, Festive Decor,
+                            Template, Kids Diwali arts and craft</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://www.specialyou.in/cdn/shop/files/SAVE_20231104_184335.jpg?v=1699610478"
+                            alt="">
+                        <h2>Shubh Labh Rangoli Stencil</h2>
+                        <p>Unique and designer Diwali Rangoli Stencils for Diwali Decoration. Ideal for home, office,
+                            puja room & Temple.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://ascension.co.in/wp-content/uploads/2020/09/71GUwzIcrcL._SL1500_.jpg"
+                            alt="">
+                        <h2>Shubh Labh Rangoli Stencil</h2>
+                        <p>Unique and designer Diwali Rangoli Stencils for Diwali Decoration. Ideal for home, office,
+                            puja room & Temple.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.meesho.com/images/products/440853933/0mkpw_512.avif?width=512"
+                            alt="">
+                        <h2>Lakshami charan</h2>
+                        <p>Swastik and Lakshami charan wooden rangoli stencil for Diwali Decoration | Home and Festival Decoration</p>
+                    </div>
+                     </div>
+
+  
+
+
+        <div class="multi-pro-title">
+                    Diwali Crackers
+                </div>
+
+         <div class="product-container">
+            <img src="https://i.ytimg.com/vi/S3MM3D5xwKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRz0wLOA1jjiHBJhoDC2LS8RDWvA" class="fuljar-img w-50"  alt="">
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61-Q+ecLSiL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                        <h2>Pop Pop</h2>
+                        <p>pop pop Popper Magic Diwali Lights and Festival for CRA Jack, chintu bintu Magic Ball and Magic Sound</p>
+                    </div>
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/411PSiyUgCL._SY300_SX300_QL70_FMwebp_.jpg"
+                            alt="">
+                        <h2>Paper Sky Lanterns</h2>
+                        <p>Art with Emphasis Paper Sky Lanterns/Wishing Lanterns</p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/51WyaDgXlqL._SY450_.jpg"
+                            alt="">
+                        <h2>Gun</h2>
+                        <p>ANAB GI Matchstick Toy Gun Diwali Toy Match Gun for Kids Girls & Boys(Pack-1)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71AZIs+YyNL._SX450_.jpg"
+                            alt="">
+                        <h2>Gun</h2>
+                        <p>Shivsoft Plastic Bullets Toy Gun (M(11)), Multicolor</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://c8.alamy.com/comp/P8JE4J/red-roll-caps-P8JE4J.jpg"
+                            alt="">
+                        <h2>paper Roll</h2>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://oscrackers.in/wp-content/uploads/2021/09/snake-tablet-img.webp"
+                            alt="">
+                        <h2>Snack Tablet</h2>
+ 
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://sakthicrackers.com/wp-content/uploads/2023/09/Bullet-Bomb-Small.png"
+                            alt="">
+                        <h2>Bullet-Bomb-Small</h2>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71s-j9nrQHL._SX679_.jpg"
+                            alt="">
+                        <h2>Rocket</h2>
+                        <p>Our cracker-shaped chocolates are a festive delight, perfect for celebrating Diwali with a touch of sweetness and tradition.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://bijili.s3.ap-south-1.amazonaws.com/product/bij_142.jpg"
+                            alt="">
+                        <h2>Sky Shot</h2>
+                        <p>12 Shots Red & Green Sky Shots</p>
+                    </div>
+
+                     
+
+                    <div class="ice-cream">
+                        <img src="https://jaipurfireworks.in/wp-content/uploads/2023/11/Black-Marshal.png"
+                            alt="">
+                        <h2>Black Marshal</h2>
+                        <p>Black Marshal Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/CK/GR/FT/6398711/17258f59-0404-41ce-a4b9-afe325468046.jpg"
+                            alt="">
+                        <h2>Nazzi</h2>
+                        <p>Nazzi Green Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://jaipurfireworks.in/wp-content/uploads/2023/11/Andhi-Toofan-300x300.png"
+                            alt="">
+                        <h2>Aandhi Tufan</h2>
+                        <p>Aandhi Tufan Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/3/293477130/ND/QO/FL/77985458/product-jpeg-500x500.jpg"
+                            alt="">
+                        <h2>K G F</h2>
+                        <p>KGF Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://siyafireworks.com/wp-content/uploads/2020/10/IMG-20201027-WA0009-300x300.jpg"
+                            alt="">
+                        <h2>Avtaar</h2>
+                        <p>Avtaar Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/MQ/BH/YK/3245621/55-sutli-bomb-crackers.jpg"
+                            alt="">
+                        <h2>55</h2>
+                        <p>55 Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://siyafireworks.com/wp-content/uploads/2020/10/IMG-20201027-WA0012.jpg"
+                            alt="">
+                        <h2>55</h2>
+                        <p>55 Atom Bomb</p>
+                    </div>
+<div class="p-img">                   
+<img src="https://jaipurfireworks.in/wp-content/uploads/2024/08/Online-Diwali-Crackers.jpg" alt="">
+<img src="https://i.ytimg.com/vi/7_n4UN_Euak/maxresdefault.jpg" alt="">
+<img src="https://i.ytimg.com/vi/JFp66gIMreg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDRwW4aYKZAnLsgf5EFfTtWzvTmcg" alt="">
+<img src="https://i.ytimg.com/vi/Y-YYK98rsdI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAR_Syp3yD4oX2WKu8uOBkMhiob0A" alt="">
+<img src="https://i.ytimg.com/vi/v19DCTJ2yyM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFGxNN3tRIjTn4TOMIMNOTGDrV6Q" alt="">
+<img src="https://i.ytimg.com/vi/6t3x5MN44mU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCMtbt0jKo_je69y0fjFmA5wACwTw" alt="">
+</div> 
+                     </div>
+ 
+ 
+    </main>
+    <script>
+        // Function: jab element screen pe aaye, to "show" class lagao
+        function handleScroll() {
+            const boxes = document.querySelectorAll('.ice-cream');
+            const windowHeight = window.innerHeight;
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+
+                if (boxTop < windowHeight - 100) {
+                    box.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll); // Load pe bhi check ho
+    </script>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3 class="footer-title">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../../index.html">Home</a></li>
+                    <li><a href="../../../header pages/About.html">About</a></li>
+                    <li><a href="../../../product.html">Products</a></li>
+                    <li><a href="../../../header pages/Contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Gel Krupa Center</h3>
+                <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving
+                    taste
+                    since [year]!</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Connect</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/919023962442">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+    </footer>
+
+
+    <script src="../../../product.js"></script>
+
+</body>
+
+</html>

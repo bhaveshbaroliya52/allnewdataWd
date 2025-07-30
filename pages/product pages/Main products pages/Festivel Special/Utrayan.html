@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../pages/product.css">
+    <link rel="stylesheet" href="festival.css">
+    <!-- <link rel="stylesheet" href="../Ice Cream/ice cream.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="logo">
+            <a href="../../../../index.html" class="logo-1">Gel Krupa</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label for="menu-toggle" class="close-btn">
+            <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+        </label>
+
+        <nav class="nav-links">
+            <h2 class="menu">Gel Krupa Mart <br>
+                <small>Serving Since 2005</small>
+            </h2>
+            <a href="../../../../index.html">Home</a>
+            <a href="../../../header pages/About.html">About</a>
+            <a href="../../../product.html">Product</a>
+            <a href="../../../header pages/Contact-us.html">Contact us</a>
+        </nav>
+
+        <div class="serch-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Serch for Product,items and other">
+        </div>
+
+
+        <div class="menu-bar">
+            <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+            <div class="menu-items" id="menu-items">
+                <i class="fa-solid fa-times" id="close-btn"></i>
+
+                <div id="login">
+                    <i class="fa-regular fa-user"></i>Login
+                    <div id="login-overlay"></div>
+                </div>
+                <div class="wishlist-header">
+                    <a href="../../../header pages/wishlist.html">
+                        <button id="wishlist-button">
+                            <i class="fa-regular fa-heart"></i>wishlist
+                            (<span id="wishlist-count">0</span>)
+                        </button></a>
+                </div>
+                <div class="cart-header">
+                    <a href="../../../header pages/cart.html">
+                        <button id="cart-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                            </svg>Cart
+                            (<span id="cart-count">0</span>)
+                        </button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- login-form -->
+        <div id="login-form">
+            <div class="form-design">
+                <div class="lsaide">
+                    <h1>Login</h1>
+                    <h5>Get access to your Cart, Wishlist </h5>
+                </div>
+                <div class="rsaide">
+                    <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+                    <p class="note">We will never share your number with anyone.</p>
+                    <button class="request-otp">Request OTP</button>
+                    <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <button id="filter-btn" class="category-button">☰ All categories</button>
+        <div class="serch-bar-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+        </div>
+    </div>
+    <main>
+
+        <div class="product">
+            <div class="filter-container">
+                <p><strong>Filters</strong></p>
+                <p>PICK A CATEGORY</p>
+
+                <div class="category open" onclick="toggleCategory(this)">Beauty and Grooming</div>
+                <ul class="subcategories">
+                    <li> <a href="../Beuty and Grooming/hair oil.html">Hair Oil</a></li>
+                    <li><a href="../Beuty and Grooming/Moisturizer.html">Moisturizer</a></li>
+                    <li><a href="../Beuty and Grooming/shampoo.html">Shampoo</a></li>
+                    <li><a href="../Beuty and Grooming/facewhash.html">Face Wash</a></li>
+                    <li><a href="../Beuty and Grooming/face pack.html">Face Pack</a></li>
+                    <li><a href="../Beuty and Grooming/Henna.html">Henna</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Grocery</div>
+                <ul class="subcategories">
+                    <li><a href="../Glocery/Tea.html">Tea</a></li>
+                    <li><a href="../Glocery/dal.html">Dals</a></li>
+                    <li><a href="../Glocery/Pulses.html">Pulses</a></li>
+                    <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
+                    <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
+                    <li><a href="#">Grains & sooji </a></li>
+                    <li><a href="#">Flours</a></li> <!-- lot chana  -->
+                    <li><a href="#">Masala & Spices</a></li>
+                    <li><a href="#">Ghee & Vanaspati</a></li>
+                    <li><a href="#">Papad</a></li>
+                    <li><a href="#">Salt / Sugar / Jaggery</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+                <ul class="subcategories">
+                    <li><a href="Pen-Pencile.html">Pen / Pencile</a></li>
+                    <li><a href="Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+                    <li><a href="#">Art & Craft</a></li>
+                    <li><a href="#">General Stationery</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+                <ul class="subcategories">
+                    <li><a href="#">Cold Drinks</a></li>
+                    <li><a href="#">Soda & Water</a></li>
+                    <li><a href="#">Juice</a></li>
+                    <li><a href="#">Milk</a></li>
+                    <li><a href="#">Panner</a></li>
+                    <li><a href="#">Shrikhand</a></li>
+                    <li><a href="#">Butter</a></li>
+                    <li><a href="#">chass</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+                <ul class="subcategories">
+                    <li><a href="#">Cup</a></li>
+                    <li><a href="#">Cones</a></li>
+                    <li><a href="#"> Kulfi</a></li>
+                    <li><a href="#"> Candies, Dollies</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Dessert</div>
+                <ul class="subcategories">
+                    <li><a href="#">Dessert</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+                <ul class="subcategories">
+                    <li><a href="#">Salty Biscuits</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Cream Biscuits</a></li>
+                    <li><a href="#">Khari & Toasts</a></li>
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+                <ul class="subcategories">
+                    <li><a href="#">Detergent Powder</a></li>
+                    <li><a href="#">Detergent Bar</a></li>
+                    <li><a href="#">Cleaners</a></li>
+
+                </ul>
+
+
+                <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+                <ul class="subcategories" style="display: block;">
+                    <li><a href="#">Diwali</a></li>
+                    <li><a href="#">Holi-Special</a></li>
+                    <li><a href="#" style="color: orangered;">Utrayan</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+                <ul class="subcategories">
+                    <li><a href="#">Namkeen</a></li>
+                    <li><a href="#">Wafers</a></li>
+                    <li><a href="#">Western Snacks</a></li>
+
+                </ul>
+
+                <div class="category" onclick="toggleCategory(this)">Others</div>
+                <ul class="subcategories">
+                    <li><a href="#">Repellents</a></li>
+                    <li><a href="#">Festive Decor & Gifting</a></li>
+                    <li><a href="#">Balm</a></li>
+
+
+                </ul>
+
+                <button id="filter-close-btn" class="filter-close-button">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div>
+
+                <div class="animate">
+                    <img src="https://i.pinimg.com/736x/dc/c4/85/dcc4857a4e51fd885358520f0d798cdd.jpg"
+                        class="ice-cream-logo" style="object-fit: cover;" alt="">
+                    <div class="product-titel"> Utrayan Special Items</div>
+                    <img src="https://i.pinimg.com/736x/dc/c4/85/dcc4857a4e51fd885358520f0d798cdd.jpg"
+                        class="ice-cream-logo" style="object-fit: cover;" alt="">
+                </div>
+
+                <div class="multi-pro-title">
+                    spool reel
+                </div>
+
+                <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://buykitesonline.com/wp-content/uploads/2021/10/Screenshot_2024-09-24-11-13-36-25_4eb35ec74e289d512f4db1c472be1ff3.jpg"
+                            alt="">
+                        <h2>Vardhman</h2>
+                        <p>1 pieces VARDHMAN Y-905, 300 gram cone 16 cord raw Threads Worlds Best strong threads to
+                            prepare Manjha</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/06/20241018_172906_0000.png?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Challange 8 No.</h2>
+                        <p>All Vardhaman cotton thread, high in strength and polished for kite-flying purpose, 16 cord
+                            250gms 500gms and 1000 meter.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2025/7/529685607/AK/OG/FZ/32282711/coats-kites-thread-250-grams-500x500.jpg"
+                            alt="">
+                        <h2>Genda</h2>
+                        <p>White 2 ply Coats Kites Thread 250 Grams, 9 Cors</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71+SWmikEnL._SY879_.jpg" alt="">
+                        <h2>Bear/Genda Premium</h2>
+                        <p>100 percent cotton thread, high in strength and polished for kite-flying purpose, </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/51ssh7MKBpL.jpg" alt="">
+                        <h2>vardhaman</h2>
+                        <p>vardhaman Sewing Threads,10 White Reels,800 Mts Each Spool For Tailoring,Sewing,(Art&Craft)
+                            Home, Polyester, 230 Gram</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://coatscrafts.in/wp-content/uploads/2024/11/MC0631124-KF-Products-Mockups-Bear.jpg"
+                            alt="">
+                        <h2>Genda 12 Cord</h2>
+                        <p>Bear is made from superior cotton which makes it strong thread for kite flying</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/414dpaUjVOS.jpg" alt="">
+                        <h2>Gun Cotton</h2>
+                        <p>Coats Gun Cotton Kite Flying Thread 10 White Tube 300 Meter Each Spool Flying Kites, Hand</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/2/ID/GA/ZM/32282711/product-jpeg-250x250.jpg"
+                            alt="">
+                        <h2>Kala Chand</h2>
+                        <p>Kite Thread - Krishna COATS 100% Original Glaced Cotton Kite Flying Threads</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://buykitesonline.com/wp-content/uploads/2020/09/IMG_1238.jpg" alt="">
+                        <h2>Krishna</h2>
+                        <p>Krishna COATS 100% Original Glaced Cotton Kite Flying</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://buykitesonline.com/wp-content/uploads/2020/08/IMG_0749.jpg" alt="">
+                        <h2>Krishna 900 m</h2>
+                        <p>Krishna 100% Glaced Cotton Kite Flying Threads : 5 Tubes 900 Meter Each</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/2/HK/GX/TU/32282711/product-jpeg.jpg"
+                            alt="">
+                        <h2>Krishna Cotton</h2>
+                        <p>ARTPARASITE Kala Chand White threads High super glaced Threads for Kite Flying</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://buykitesonline.com/wp-content/uploads/2022/05/Screenshot_2023-09-17-10-51-04-41_4eb35ec74e289d512f4db1c472be1ff3.jpg"
+                            alt="">
+                        <h2>Panda No.8</h2>
+                        <p>900 meter each 6 cord PANDA 8 raw threads</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2021/06/Vardhaman-Panda-5-100-glazed-cotton-kite-flying-thread-9-cord-1000-METER-Can-be-used-for-preparing-best-quality-sharp-Manja-pack-of-10-reels-1000-meters-each-1.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Vardhman Panda</h2>
+                        <p>All Vardhaman cotton thread, high in strength and polished for kite-flying purpose, available
+                            in 9 cord</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/339167637/XT/VX/MQ/8656513/chota-panda-super-glaced-kite-thread.jpeg"
+                            alt="">
+                        <h2>Chota Panda</h2>
+                        <p>White Chota Panda Super Glaced Kite Thread, Packaging Size: 10 Reels, Packaging Type: Box
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2017/03/panda-gold.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Panda Gold</h2>
+                        <p>ORIGINAL PANDA GOLD Premium kite flying thread 9 cord (PLY) : High Strength : For making best
+                            quality manja</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/10/Vardhaman-premium-panda-Platinum-premium-9-cord-panda-for-best-manjha-manking-2.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Platinum Panda</h2>
+                        <p>Vardhman Panda Platinum Best Kite Flying thread</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/11/Titanium-panda-9-cor.jpg?fit=204%2C247&ssl=1"
+                            alt="">
+                        <h2>Titanium Panda</h2>
+                        <p> India's Premium kite flying thread Titanium Panda 9 cord 500 gram </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/11/PDC-Vardhaman-Challenge-8-No.-100-glace-Color-cotton-kite-flying-thread-9-cord-2.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Vardhman Challange</h2>
+                        <p>Vardhaman Challenge 8 No. 100% glace Color cotton kite flying thread 9 cord 500gms</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://buykitesonline.com/wp-content/uploads/2021/10/IMG_5196.jpg" alt="">
+                        <h2>Vardhman Challange</h2>
+                        <p>Vardhaman Challenge 8 No. 100% glace Color cotton kite flying thread 12 cord 250gms</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://tiimg.tistatic.com/fp/1/006/409/coats-chain-cotton-premium-kite-flying-thread-139.jpg"
+                            alt="">
+                        <h2>Super Sankal </h2>
+                        <p>Light In Weight Coats Chain Cotton Premium Kite Flying Thread at Best Price in Gel Krupa
+                            Center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/09/PDC-Chain-Thread-Maha-Sankal-Premium-Cotton-Thread-for-Kite-Flying-250-gm-2.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Maha Sankal </h2>
+                        <p>Chain/Maha Sankal Premium Cotton Thread for Kite-Flying; 500 gm</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/06/20241018_172951_0000.png?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>AK 56</h2>
+                        <p>VARDHAMAN AK 56 GOLD Premium kite flying thread 9 cord (PLY) : High Strength</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2019/04/Untitled-design-72.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>24 Carat </h2>
+                        <p>Coats Brand premium 24 carat 9 Cord Glaced 100% cotton Kite flying</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2021/11/AK-56-NSG-1.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>AK 56</h2>
+                        <p>K-56 NSG Premium 100% Cotton 9 cord 500 Gms vardhaman Thread for Kite-Flying</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/06/20241018_173549_0000.png?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Suprim Panda</h2>
+                        <p> Original Vardhaman Brand SUPREME PANDA Premium 100% Cotton 12 cord Thread for Kite-Flying
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://pbs.twimg.com/media/EQ1UEPCXYAALgvp.jpg" alt="">
+                        <h2>Bear 9 cord</h2>
+                        <p>PatangDori_com on X: "Best kite flying thread from coats company available. Bear Thread 9
+                            cord</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://tiimg.tistatic.com/fp/1/006/409/coats-yuva-cotton-premium-kite-flying-thread-138.jpg"
+                            alt="">
+                        <h2>YUVA Sankal</h2>
+                        <p>Light In Weight Coats Yuva Cotton Premium Kite Flying Thread at Best Price in Gel Krupa
+                            Center</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="multi-pro-title">
+                    Paper Kite
+                </div>
+
+                <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341281904/IF/VG/NI/69063882/34-gsm-square-paper-kite-500x500.jpeg"
+                            alt="">
+                        <h2>Size: 32cm X 32cm</h2>
+                        <p>A paper kite is a type of kite made primarily from paper and other lightweight materials.
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2015/07/Addhi-Kite-4.jpg?resize=1024%2C1024&ssl=1"
+                            alt="">
+                        <h2>set of 40 kites</h2>
+                        <p>PatangDori Combo 40 Kites 5 different designs Guaranteed & 1 charkhi/firki/spool</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/07/Chand-kite-4.jpg?resize=1024%2C1024&ssl=1"
+                            alt="">
+                        <h2>set of 40 kites</h2>
+                        <p>Very well balanced fighter kite., Good to fly in medium and fast wind condition. Multicolor
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341305869/ZT/XY/ST/69063882/15-gsm-red-paper-kite-500x500.jpg"
+                            alt="">
+                        <h2>Set of 20 Kites</h2>
+                        <p>Good to fly in medium and fast wind condition. Multicolor</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.jdmagicbox.com/quickquotes/images_main/manjoli-paper-kite-size-19-x23-inch-pack-of-100-2220878267-qg4fun99.jpg"
+                            alt="">
+                        <h2>Manjoli Kite</h2>
+                        <p>The Manjoli Paper Kite, a perfect companion for endless hours of outdoor fun! Crafted with
+                            utmost care and love</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341296587/BR/JI/TC/69063882/19-gsm-pink-blue-paper-kite.jpg"
+                            alt="">
+                        <h2>Pink Blue Kite</h2>
+                        <p> Pink Blue Paper Kite</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341305507/IN/ZO/TV/69063882/44-gsm-black-paper-kite-500x500.jpg"
+                            alt="">
+                        <h2>Set of 40 Kites</h2>
+                        <p>Black Paper Kite at best price in Gel Krupa Center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341306213/YX/MN/KO/69063882/15-gsm-dark-blue-paper-kite-500x500.jpeg"
+                            alt="">
+                        <h2>Set of 30 Kites</h2>
+                        <p>A paper kite is a type of kite made primarily from paper and other lightweight materials.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341305869/ZT/XY/ST/69063882/15-gsm-red-paper-kite-1000x1000.jpg"
+                            alt="">
+                        <h2>Set of 30 Kites</h2>
+                        <p>These kites are often associated with traditional Asian kite-making and flying practices,
+                            particularly in countries like China, Japan, and India. </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341286630/SA/US/IL/69063882/32-gsm-paper-kite.jpeg"
+                            alt="">
+                        <h2>Set of 30 Kites</h2>
+                        <p>These kites are often associated with traditional Asian kite-making and flying practices,
+                            particularly in countries like China, Japan, and India. </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71wAUbrzL0L._UF1000,1000_QL80_.jpg" alt="">
+                        <h2>Design 15 Multicolor</h2>
+                        <p>Paper Kite Patang Large Size | Indian Fighter Cheel Kite Patang Multi Color (Pack of 20)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71-UsS8sCTL._AC_SX679_.jpg" alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>Paper Kite Patang Large Size | Indian Fighter Cheel Kite Patang Multi Color (Pack of 20)</p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341295041/OA/HY/QU/69063882/30-gsm-paper-kite-1000x1000.jpeg"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>A paper kite is a type of kite made primarily from paper and other lightweight materials.
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341315319/CD/WS/DH/69063882/50-gsm-abstract-paper-kite.jpeg"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>A paper kite is a type of kite made primarily from paper and other lightweight materials.
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.jdmagicbox.com/quickquotes/images_main/manjoli-paper-kite-size-19-x23-inch-pack-of-100-2220878267-qg4fun99.jpg"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>A paper kite is a type of kite made primarily from paper and other lightweight materials.
+                        </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/07/Chand-kite-5.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Paper Kite Patang Large Size | Indian Fighter Cheel Kite Patang Multi Color (Pack of 40)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/31NGR25fFRL._UF894,1000_QL80_.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtV1lHxhsY-gp5SyRUYkE7EiEUx2GpPOJVWWxhUKFcc-syNNPKgwMciowrwrvC2PqPNWs&usqp=CAU"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ3vOF_41Ydrez8_Q4q9gdZM1Sp7xlu0xZ9B6Kqf93rgsqeadMTnbcMhtROH1ncvCx4Pw&usqp=CAU"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341305507/IN/ZO/TV/69063882/44-gsm-black-paper-kite-500x500.jpg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71-UsS8sCTL._UF350,350_QL80_.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMd_T_yQMhTO07ksYICFWp9qQyRNT60_JBpfrS29zUy2l42zS0TnW3M-eJ5wy3_Cq73h0&usqp=CAU"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT72izlR9cl5MQyKPTvo4DLvRBgj9Vk6aVlDQ&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIalMqBSGVbxL0-JV-hVLIqzX3bHrpPB4JA&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_bNVL_a583-QSjEDD3Xf3eaFASeZmgpQCqw&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFfkSBYUvwobq7MoggjrVNJJ-hYkfU3wgzQ&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYtBSrinHjQbC0nMY82J5k3OMnBSrpv68Dw&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2V6w8YJ_ltMZPQucT8cOCAEGrqjmNTQIEVhyEJSnUirKEVl4LcDvOOWiTCfal86_DJM&usqp=CAU"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="multi-pro-title">
+                    Plastic Kites
+                </div>
+
+                <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/41yJuVllmYL._SX466_.jpg" alt="">
+                        <h2>set of 50 Kites</h2>
+                        <p>reusable plastic kite patang medium size, Multi color, colour indian kite, plastic paper sky
+                            kites</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK8_nNJMPKPYmdt9hp5ADihJLsAOIuyq-0Lg&s"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Designer Plastic Kite Size 36 Inch Pack Of 100 in Gel krupa center</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2025/06/Plastic-kites-6.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>set of 100 Kites</h2>
+                        <p>KIDS SPECIAL Kite Super print Plastic paper Kite Multi-Designer Plastic- Patang Pack of 100
+                        </p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2023/05/Plastic-Paper-Metal-kite-pauni-1.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>MATKA Kite Super print Plastic paper Kite - Designer Plastic- Patang With export quality
+                            finishing Pack of 20</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61HQgo-K0qL.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>RUHANI Plain Plastic Kite Patang Pack of 40</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNM5w8Cq9DhFz7hWMPgjuOQMfey2Og9qTM6jvS0VBQNQAwg2VX6t6H0tnj8WwQ-RRp7LE&usqp=CAU"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>Bamboo Stick multi Designer Plastic Kite Pack of 20</p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://img500.exportersindia.com/product_images/bc-500/2022/4/8580510/fancy-plastic-kite-1651057255-6311190.jpeg"
+                            alt="">
+                        <h2>set of 20 Kites</h2>
+                        <p>Limon Traditional Pepar Kite Patang Large Size Multi Design Indian Handicraft Pepar Kite </p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/81yamcOoxyL._SX679_.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Combo of 20 Plastic Kite patang Medium Size </p>
+                    </div>
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/GT/GN/LS/45006041/royal-blue-printed-plastic-kite.jpeg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Royal Blue Printed Plastic Kite, Shape: Rhombus, Size: 26 Inch pack of 40</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/363262022/PS/ZH/WT/45006041/green-plastic-kite-500x500.jpeg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>Green Plastic Kite, Shape: Rhombus at 40 pack in Gel Krupa center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/ET/AQ/SA/45006041/golden-printed-plastic-kite-500x500.jpeg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p> Printed Plastic Kite in rhombus shape on Gel krupa enter. You can contact the supplier,
+                            Shivay Kite Enterprises </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/711mDcI2CvL.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>(Pack of 40 Piece) Limon Traditional Plastic Kite Patang Medium Size Multi Design Indian
+                            Handicraft Plastic Kite.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61cyvlANNKL.jpg" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>(Pack of 40 Piece) Limon Traditional Plastic Kite Patang Medium Size Multi Design Indian
+                            Handicraft Plastic Kite.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.meesho.com/images/products/470883890/trnsi_512.webp" alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>(Pack of 40 Piece) Limon Traditional Plastic Kite Patang Medium Size Multi Design Indian
+                            Handicraft Plastic Kite.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://images.jdmagicbox.com/quickquotes/images_main/designer-plastic-patang-36-and-prime-size-pack-of-100-2220877588-t4t21f8x.jpg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>(Pack of 40 Piece) Limon Traditional Plastic Kite Patang Medium Size Multi Design Indian
+                            Handicraft Plastic Kite.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/GT/GN/LS/45006041/royal-blue-printed-plastic-kite.jpeg"
+                            alt="">
+                        <h2>set of 40 Kites</h2>
+                        <p>(Pack of 40 Piece) Limon Traditional Plastic Kite Patang Medium Size Multi Design Indian
+                            Handicraft Plastic Kite.</p>
+                    </div>
+
+                </div>
+                <div class="multi-pro-title">
+                    Charkhi
+                </div>
+
+                <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2020/08/Classic-wooden-Charkhi-Lotai-spool-Firki-1800-meter-plain-kite-flying-thread-3.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Money Heist </h2>
+                        <p>Classic wooden Charkhi , Lotai , spool , Firki + 1800 meter plain kite flying thread</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2023/11/Younus-Iqbal-2.jpg?resize=300%2C300&ssl=1" alt="">
+                        <h2>Hecker</h2>
+                        <p>Tournament Quality No.1 Manjha for Professionals </p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/12/Untitled-design-58.jpg?resize=300%2C300&ssl=1"
+                            alt="">
+                        <h2>Ghost Face Mask</h2>
+                        <p>WR : World's Famous Shona kite 16 cord 3 reel 3000 var ( yards ) Manja </p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/10/Sultan-MMS-2.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>Panda Gold</h2>
+                        <p>SULTAN High Quality Premium Manja MMS Brand on PANDA GOLD Premium kite flying thread 12 cord</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/11/shakir-samrat-9-cord-manja.jpg?fit=1200%2C1200&ssl=1"
+                            alt="">
+                        <h2>9 cord </h2>
+                        <p>9 Cord Manjha, 2000 var</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/11/12-CORD-MANJA-FOR-PATANGDORI.jpg?fit=300%2C300&ssl=1"
+                            alt="">
+                        <h2>9 cord</h2>
+                        <p>9 Cord Manjha, 2000 var Mine Star</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/11/Manja.jpg?fit=300%2C300&ssl=1"
+                            alt="">
+                        <h2>9 Cord</h2>
+                        <p>9 Cord Manjha, 2000 var best price in gel krupa center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/01/pATANGDORI-SPECIAL-3.jpg?resize=768%2C768&ssl=1"
+                            alt="">
+                        <h2>9 Cord</h2>
+                        <p>9 Cord Manjha, 2000 var best price in gel krupa center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2024/11/12-cord-Manja-1.jpg?fit=300%2C300&ssl=1"
+                            alt="">
+                        <h2>9 Cord</h2>
+                        <p>9 Cord Manjha, 2000 var best price in gel krupa center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/DH/HR/PL/15589263/sks-special-maidani-manjha-500x500.jpg"
+                            alt="">
+                        <h2>9 Cord</h2>
+                        <p>9 Cord Manjha, 2000 best price in gel krupa center</p>
+                    </div>
+                </div>
+
+                <div class="multi-pro-title">
+                    Face Mask
+                </div>
+
+                <div class="product-container">
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/7/ZR/CO/IH/82260816/51lt-klb87l-ac-ul1000-1-500x500.jpg"
+                            alt="">
+                        <h2>Money Heist </h2>
+                        <p>Skin Plastic Money Heist Face Mask, 120g, 15 X 10cm at best price in Gelkrupa center</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/31rDbajwIHL._UF1000,1000_QL80_.jpg" alt="">
+                        <h2>Hecker</h2>
+                        <p>Selibration V for Vendetta Anonymous Costume Mask (White)</p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://rukminim2.flixcart.com/image/704/844/xif0q/mask/z/l/i/free-size-halloween-white-scary-party-ghost-mask-1-ptcmart-original-imah268sucdmk6en.jpeg?q=90&crop=false"
+                            alt="">
+                        <h2>Ghost Face Mask</h2>
+                        <p>KAIKO Ghostface Scary Plastic Halloween Costume Mask Party Mask (White, Pack of 1)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mask/q/f/w/free-size-rubber-latex-funny-scary-horror-full-face-mask-for-original-imagpa5engsdtyed.jpeg?q=70&crop=false"
+                            alt="">
+                        <h2>Gulal</h2>
+                        <p>Gulal Holi Colors for Family, Party, Holi Color Powder Pack of 10 Random Color</p>
+                    </div>
+                </div>
+
+                <!-- <div class="multi-pro-title">
+                    Diwali Crackers
+                </div>
+
+         <div class="product-container">
+            <img src="https://i.ytimg.com/vi/S3MM3D5xwKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRz0wLOA1jjiHBJhoDC2LS8RDWvA" class="fuljar-img w-50"  alt="">
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/61-Q+ecLSiL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                        <h2>Pop Pop</h2>
+                        <p>pop pop Popper Magic Diwali Lights and Festival for CRA Jack, chintu bintu Magic Ball and Magic Sound</p>
+                    </div>
+                    
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/411PSiyUgCL._SY300_SX300_QL70_FMwebp_.jpg"
+                            alt="">
+                        <h2>Paper Sky Lanterns</h2>
+                        <p>Art with Emphasis Paper Sky Lanterns/Wishing Lanterns</p>
+                    </div>
+
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/51WyaDgXlqL._SY450_.jpg"
+                            alt="">
+                        <h2>Gun</h2>
+                        <p>ANAB GI Matchstick Toy Gun Diwali Toy Match Gun for Kids Girls & Boys(Pack-1)</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71AZIs+YyNL._SX450_.jpg"
+                            alt="">
+                        <h2>Gun</h2>
+                        <p>Shivsoft Plastic Bullets Toy Gun (M(11)), Multicolor</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://c8.alamy.com/comp/P8JE4J/red-roll-caps-P8JE4J.jpg"
+                            alt="">
+                        <h2>paper Roll</h2>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://oscrackers.in/wp-content/uploads/2021/09/snake-tablet-img.webp"
+                            alt="">
+                        <h2>Snack Tablet</h2>
+ 
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://sakthicrackers.com/wp-content/uploads/2023/09/Bullet-Bomb-Small.png"
+                            alt="">
+                        <h2>Bullet-Bomb-Small</h2>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://m.media-amazon.com/images/I/71s-j9nrQHL._SX679_.jpg"
+                            alt="">
+                        <h2>Rocket</h2>
+                        <p>Our cracker-shaped chocolates are a festive delight, perfect for celebrating Diwali with a touch of sweetness and tradition.</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://bijili.s3.ap-south-1.amazonaws.com/product/bij_142.jpg"
+                            alt="">
+                        <h2>Sky Shot</h2>
+                        <p>12 Shots Red & Green Sky Shots</p>
+                    </div>
+
+                     
+
+                    <div class="ice-cream">
+                        <img src="https://jaipurfireworks.in/wp-content/uploads/2023/11/Black-Marshal.png"
+                            alt="">
+                        <h2>Black Marshal</h2>
+                        <p>Black Marshal Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/CK/GR/FT/6398711/17258f59-0404-41ce-a4b9-afe325468046.jpg"
+                            alt="">
+                        <h2>Nazzi</h2>
+                        <p>Nazzi Green Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://jaipurfireworks.in/wp-content/uploads/2023/11/Andhi-Toofan-300x300.png"
+                            alt="">
+                        <h2>Aandhi Tufan</h2>
+                        <p>Aandhi Tufan Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/3/293477130/ND/QO/FL/77985458/product-jpeg-500x500.jpg"
+                            alt="">
+                        <h2>K G F</h2>
+                        <p>KGF Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://siyafireworks.com/wp-content/uploads/2020/10/IMG-20201027-WA0009-300x300.jpg"
+                            alt="">
+                        <h2>Avtaar</h2>
+                        <p>Avtaar Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2020/10/MQ/BH/YK/3245621/55-sutli-bomb-crackers.jpg"
+                            alt="">
+                        <h2>55</h2>
+                        <p>55 Atom Bomb</p>
+                    </div>
+
+                    <div class="ice-cream">
+                        <img src="https://siyafireworks.com/wp-content/uploads/2020/10/IMG-20201027-WA0012.jpg"
+                            alt="">
+                        <h2>55</h2>
+                        <p>55 Atom Bomb</p>
+                    </div> -->
+                <div class="product-container"></div>
+                <div class="p-img">
+                    <img src="https://i0.wp.com/patangdori.com/wp-content/uploads/2022/03/IMG_6933.jpg?fit=1500%2C560&ssl=1"
+                        alt="">
+                </div>
+            </div>
+
+
+    </main>
+    <script>
+        // Function: jab element screen pe aaye, to "show" class lagao
+        function handleScroll() {
+            const boxes = document.querySelectorAll('.ice-cream');
+            const windowHeight = window.innerHeight;
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top;
+
+                if (boxTop < windowHeight - 100) {
+                    box.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll); // Load pe bhi check ho
+    </script>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3 class="footer-title">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="../../../../index.html">Home</a></li>
+                    <li><a href="../../../header pages/About.html">About</a></li>
+                    <li><a href="../../../product.html">Products</a></li>
+                    <li><a href="../../../header pages/Contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Gel Krupa Center</h3>
+                <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving
+                    taste
+                    since [year]!</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Connect</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/919023962442">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+    </footer>
+
+
+    <script src="../../../product.js"></script>
+
+</body>
+
+</html>
