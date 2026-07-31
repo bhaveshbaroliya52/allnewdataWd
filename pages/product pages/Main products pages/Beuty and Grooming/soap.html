@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gel Krupa - General Store</title>
+  <link rel="stylesheet" href="../../../product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+
+
+  <header>
+    <div class="logo">
+      <a href="../../../index.html" class="logo-1">Gel Krupa</a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+    </label>
+
+    <nav class="nav-links">
+      <h2 class="menu">Gel Krupa Mart <br>
+        <small>Serving Since 2005</small>
+      </h2>
+      <a href="../../../../index.html">Home</a>
+      <a href="../../../header pages/About.html">About</a>
+      <a href="../../../product.html">Product</a>
+      <a href="../../../header pages/Contact-us.html">Contact us</a>
+    </nav>
+
+    <div class="serch-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Serch for Product,items and other">
+    </div>
+
+
+<div class="menu-bar">
+  <i class="bi bi-three-dots-vertical menu-icon" id="three-dots"></i>
+<div class="menu-items" id="menu-items">
+  <i class="fa-solid fa-times" id="close-btn"></i>
+
+    <div id="login">
+      <i class="fa-regular fa-user"></i>Login
+      <div id="login-overlay"></div>
+    </div>
+    <div class="wishlist-header">
+      <a href="../../../header pages/wishlist.html">
+        <button id="wishlist-button">
+          <i class="fa-regular fa-heart"></i>wishlist
+          (<span id="wishlist-count">0</span>)
+        </button></a>
+    </div>
+    <div class="cart-header">
+      <a href="../../../header pages/cart.html">
+        <button id="cart-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>Cart
+          (<span id="cart-count">0</span>)
+        </button></a>
+    </div>
+  </div>
+</div>
+
+        <!-- login-form -->
+        <div id="login-form">
+          <div class="form-design">
+            <div class="lsaide">
+              <h1>Login</h1>
+              <h5>Get access to your Cart, Wishlist </h5>
+            </div>
+            <div class="rsaide">
+              <input type="text" id="mobile" placeholder="Enter Your Mobile Number" required>
+              <p class="note">We will never share your number with anyone.</p>
+              <button class="request-otp">Request OTP</button>
+              <button id="form-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+        </div>
+  </header>
+
+  <div class="heading">
+    <button id="filter-btn" class="category-button">☰ All categories</button>
+    <div class="serch-bar-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="serch-products" placeholder="Serch for Product, items and other" />
+    </div>
+  </div>
+  <main>
+
+    <div class="product">
+      <div class="filter-container">
+        <p><strong>Filters</strong></p>
+        <p>PICK A CATEGORY</p>
+
+        <div class="category" onclick="toggleCategory(this)">Beauty and Grooming</div>
+        <ul class="subcategories" style="display: block;">
+          <li> <a href="hair oil.html">Hair Oil</a></li>
+          <li><a href="Moisturizer.html" >Moisturizer</a></li>
+          <li><a href="shampoo.html">Shampoo</a></li>
+          <li><a href="facewhash.html">Face Wash</a></li>
+          <li><a href="face pack.html">Face Pack</a></li>
+          <li><a href="Henna.html">Henna</a></li>
+          <li><a href="#" style="color: orangered;">Soap</a></li>
+       
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Grocery</div>
+        <ul class="subcategories">
+          <li><a href="../Glocery/Tea.html">Tea</a></li>
+          <li><a href="../Glocery/dal.html">Dals</a></li>
+          <li><a href="../Glocery/Pulses.html">Pulses</a></li>
+          <li><a href="../Glocery/Dry Fruits.html">Dry Fruits</a></li>
+          <li><a href="../Glocery/Cooking oil.html">Cooking Oil</a></li>
+          <li><a href="../Glocery/Grains  sooji.html"> Grains & sooji </a></li>
+          <li><a href="../Glocery/Flours.html">Flours</a></li>  
+          <li><a href="../Glocery/Masala - Spices.html">Masala & Spices</a></li>
+          <li><a href="../Glocery/Ghee - Vanaspati.html">Ghee & Vanaspati</a></li>
+          <li><a href="../Glocery/Papad.html">Papad</a></li>
+          <li><a href="../Glocery/Salt-Sugar-Jaggery.html">Salt / Sugar / Jaggery</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">School Supplies</div>
+        <ul class="subcategories">
+          <li><a href="../School Supplies/Pen-Pencile.html">Pen / Pencile</a></li>
+          <li><a href="../School Supplies/Notebooks - Diaries.html">Notebooks / Diaries</a></li>
+          <li><a href="../School Supplies/Art - Craft.html">Art & Craft</a></li>
+          <li><a href="../School Supplies/Genral stationery.html">General Stationery</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dairy & Beverages</div>
+        <ul class="subcategories">
+          <li><a href="../Dairy - Beverages/Cold drinks.html">Cold Drinks</a></li>
+          <li><a href="../Dairy - Beverages/Soda - Water.html">Soda & Water</a></li>
+          <li><a href="../Dairy - Beverages/Juice.html">Juice</a></li>
+          <li><a href="../Dairy - Beverages/Milk.html">Milk</a></li>
+          <li><a href="../Dairy - Beverages/paneer.html">Panner</a></li>
+          <li><a href="../Dairy - Beverages/shrikhand.html">Shrikhand</a></li>
+          <li><a href="../Dairy - Beverages/Butter.html">Butter</a></li>
+          <li><a href="../Dairy - Beverages/Chass.html">chass</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Ice Cream</div>
+        <ul class="subcategories">
+          <li><a href="../Ice Cream/Cup.html">Cup</a></li>
+          <li><a href="../Ice Cream/Cones.html">Cones</a></li>
+          <li><a href="../Ice Cream/Kulfi.html"> Kulfi</a></li>
+          <li><a href="../Ice Cream/Candies-Dollies.html"> Candies, Dollies</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Dessert</div>
+        <ul class="subcategories">
+          <li><a href="../Dessert/desert.html">Dessert</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Food</div>
+        <ul class="subcategories">
+          <li><a href="../Packaged Food/Biscuits.html">Salty Biscuits</a></li>
+          <li><a href="../Packaged Food/cookies.html">Cookies</a></li>
+          <li><a href="../Packaged Food/Cream Biscuits.html">Cream Biscuits</a></li>
+          <li><a href="../Packaged Food/Khari - toests.html">Khari & Toasts</a></li>
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Home & Kitchen</div>
+        <ul class="subcategories">
+          <li><a href="../Home - Kitchen/Detergent Powder.html">Detergent Powder</a></li>
+          <li><a href="../Home - Kitchen/Detergent bar.html">Detergent Bar</a></li>
+          <li><a href="../Home - Kitchen/Cleaner.html">Cleaners</a></li>
+
+        </ul>
+
+
+        <div class="category" onclick="toggleCategory(this)">Festivel-Special</div>
+        <ul class="subcategories">
+          <li><a href="../Festivel Special/Diwali.html">Diwali</a></li>
+          <li><a href="../Festivel Special/holi.html">Holi-Special</a></li>
+          <li><a href="../Festivel Special/Utrayan.html">Utrayan</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Packaged Product</div>
+        <ul class="subcategories">
+          <li><a href="../Packaged Product/balaji Namkeen.html">Namkeen</a></li>
+          <li><a href="../Packaged Product/balaji wefers.html">Wafers</a></li>
+          <li><a href="../Packaged Product/Western Snacks.html">Western Snacks</a></li>
+
+        </ul>
+
+        <div class="category" onclick="toggleCategory(this)">Others</div>
+        <ul class="subcategories">
+          <li><a href="../Others/Electronics.html">Electronics</a></li>
+          <li><a href="../Others/Festive Decor - Gifting.html">Festive Decor & Gifting</a></li>
+          <li><a href="../Others/Balm.html">Balm</a></li>
+
+
+        </ul>
+
+        <button id="filter-close-btn" class="filter-close-button">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div>
+
+        <div class="product-titel">All Shampoo Products</div>
+
+        <div class="product-container">
+            <div class="items">
+                <div class="items-cart">
+                  <a href="../../multiple pages/Beuty and Grooming/soap pages/dettol.html">
+                    <img src="https://www.bbassets.com/media/uploads/p/l/40322060_8-dettol-original-germ-protection-bathing-soap-bar.jpg"
+                      alt=""></a>
+                  <div class="detail">
+                    <p style="margin: 0;">Dettol Original Bathing Soap Bar pack of 4</p>
+                    <span>400g</span>
+                    <div class="price">
+                      <h6 style="margin-left: 10px;">MRP</h6>
+                      <h6 style="margin-left: 10px; display: flex;">
+                        <i class="bi bi-currency-rupee "></i> 145
+                      </h6>
+                    </div>
+                  </div>
+                  <button class="cart-btn">
+                    <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+                  </button>
+                  <div id="wishlist-container">
+                    <button class="wishlist-btn"> </button>
+                  </div>
+                </div>
+              </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Beuty and Grooming/soap pages/santoor.html"><img
+                  src="https://bankurasamabaybipani.com/wp-content/uploads/2025/06/f3-1.jpg" alt=""></a>
+
+              <div class="detail">
+                <p style="margin: 0;">Santoor Sandal & Turmeric Soap for Total Skin Care</p>
+                <span>pack of 4</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 100
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Beuty and Grooming/soap pages/lux.html">
+                <img src="https://cdn.dotpe.in/longtail/store-items/8272836/Wtqo0PhI.jpeg"
+                  alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Lux Soap 154 g </p>
+                <span>pack of 4</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 40
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="items-cart">
+              <a href="../../multiple pages/Beuty and Grooming/shampoo pages/Sunsilk Thick.html">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrezJFK7xr1i1o0dxXF0lmYdHeDNE4lDgYATySraHhxoqLpjlTVo7rlVs&s=10" alt=""></a>
+              <div class="detail">
+                <p style="margin: 0;">Dove Serum Bar | with Nutrient Serum</p>
+                <span>125 g</span>
+                <div class="price">
+                  <h6 style="margin-left: 10px;">MRP</h6>
+                  <h6 style="margin-left: 10px; display: flex;">
+                    <i class="bi bi-currency-rupee "></i> 68
+                  </h6>
+                </div>
+              </div>
+              <button class="cart-btn">
+                <a href="#"><i class="bi bi-cart2"></i> Add To Cart</a>
+              </button>
+              <div id="wishlist-container">
+                <button class="wishlist-btn"> </button>
+              </div>
+
+            </div>
+          </div>
+
+          
+
+
+
+
+
+        </div>
+
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../header pages/About.html">About</a></li>
+          <li><a href="../../../product.html">Products</a></li>
+          <li><a href="../../../header pages/Contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Gel Krupa Center</h3>
+        <p class="footer-text">Quality groceries and sweet delights delivered fresh to your doorstep. Serving taste since [year]!</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Connect</h3>
+        <div class="social-icons">
+          <a href="https://wa.me/919023962442"> 
+            <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/gelkrupa_official"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://t.me/+919023962442"> <i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <hr class="footer-divider">
+  
+    <p class="footer-copy">© 2025 Gel Krupa Center. All rights reserved.</p>
+  </footer>
+
+
+  <script src="../../../product.js"></script>
+
+</body>
+
+</html>
